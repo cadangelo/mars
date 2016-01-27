@@ -1,0 +1,996 @@
+TITLE
+
+* Set the defaults for precision simulations
+DEFAULTS                                                              PRECISIO
+* Define the beam characteristics
+BEAM            -1.0                                                  PROTON
+* Define the beam position
+SOURCE           0.0       0.0       0.0     2.0E6     2.0E6     9.9E8GCR
+SOURCE      3.3895E8                                                   &
+*
+GEOBEGIN                                                              COMBNAME
+    0    0          
+* Mars Radius
+SPH ATMOS1     0.0 0.0 -3.4895E8 3.4895010E+08
+SPH ATMOS2     0.0 0.0 -3.4895E8 3.4895016E+08
+SPH ATMOS3     0.0 0.0 -3.4895E8 3.4895025E+08
+SPH ATMOS4     0.0 0.0 -3.4895E8 3.4895040E+08
+SPH ATMOS5     0.0 0.0 -3.4895E8 3.4895063E+08
+SPH ATMOS6     0.0 0.0 -3.4895E8 3.4895100E+08
+SPH ATMOS7     0.0 0.0 -3.4895E8 3.4895158E+08
+SPH ATMOS8     0.0 0.0 -3.4895E8 3.4895251E+08
+SPH ATMOS9     0.0 0.0 -3.4895E8 3.4895398E+08
+SPH ATMOS10    0.0 0.0 -3.4895E8 3.4895631E+08
+SPH ATMOS11    0.0 0.0 -3.4895E8 3.4896000E+08
+SPH ATMOS12    0.0 0.0 -3.4895E8 3.4896585E+08
+SPH ATMOS13    0.0 0.0 -3.4895E8 3.4897512E+08
+SPH ATMOS14    0.0 0.0 -3.4895E8 3.4898981E+08
+SPH ATMOS15    0.0 0.0 -3.4895E8 3.4901310E+08
+SPH ATMOS16    0.0 0.0 -3.4895E8 3.4905000E+08
+SPH ATMOS17    0.0 0.0 -3.4895E8 3.4910849E+08
+SPH ATMOS18    0.0 0.0 -3.4895E8 3.4920119E+08
+SPH ATMOS19    0.0 0.0 -3.4895E8 3.4934811E+08
+SPH ATMOS20    0.0 0.0 -3.4895E8 3.4958096E+08
+SPH ATMOS21    0.0 0.0 -3.4895E8 3.4995000E+08
+SPH ATMOS22    0.0 0.0 -3.4895E8 3.5053489E+08
+SPH ATMOS23    0.0 0.0 -3.4895E8 3.5146189E+08
+SPH ATMOS24    0.0 0.0 -3.4895E8 3.5293107E+08
+SPH ATMOS25    0.0 0.0 -3.4895E8 3.5525957E+08
+SPH ATMOS26    0.0 0.0 -3.4895E8 3.5895000E+08
+SPH ATMOS27    0.0 0.0 -3.4895E8 3.6479893E+08
+SPH MARS       0.0 0.0 -3.48950E+08 3.48950E+08
+SPH TOPATMOS   0.0 0.0 -3.4895E8 3.68950E+08
+RPP REGION     -1E6 1E6 -1E6 1E6 -1E6 1E6
+XYP AT_CUT     -1E6
+XYP SURFACE    0.0
+SPH UNIVERSE   0.0 0.0 -3.3895E8 1E9
+ELL MH1B3      0.0 0.0 4.714E5 0.0 0.0 -4.714E5 1E6
+ELL MH1B2      0.0 0.0 3.73E5 0.0 0.0 -3.73E5 1E6
+SPH MH1B1      0.0 0.0 0.0 5E5
+ELL MH2B3      0.0 0.0 2.89E5 0.0 0.0 -2.89E5 6.666E5
+SPH MH2B2      0.0 0.0 0.0 3.333E5
+ELL MH2B1      0.0 3.73E5 0.0 0.0 -3.73E5 0.0 1E6
+SPH MH3B3      0.0 0.0 0.0 1.666E5
+ELL MH3B2      0.0 2.89E5 0.0 0.0 -2.89E5 0.0 6.666E5
+ELL MH3B1      0.0 4.71E5 0.0 0.0 -4.71E5 0.0 1E6
+SPH DH1B_t     0.0 0.0 5.001E5 100.
+SPH DH2B_t     0.0 0.0 3.3345E5 100.
+SPH DH3B_t     0.0 0.0 1.668E5 100.0
+SPH DH_B3b     0.0 1.662E5 80. 100.0
+SPH DH_B2b     0.0 3.334E5 105. 100.0
+SPH DH_B1b     0.0 5.001E5 105. 100.0
+SPH DH1B3a     0.0 4.17E5 110. 100.0
+SPH DH1B2a     0.0 5.834E5 105. 100.0
+SPH DH1B1a     0.0 7.501E5 105. 100.0
+SPH DH2B3a     0.0 3.334E5 -50. 100.0
+SPH DH2B2a     0.0 5001E5 105. 100.0
+SPH DH2B1a     0.0 6.668E5 105. 100.0
+SPH DH3B1a     0.0 2.501E5 105. 100.0
+SPH DH3B2a     0.0 4.168E5 105. 100.0
+SPH DH3B3a     0.0 5.834E5 105. 100.0
+SPH DH1B3h     0.0 1.445E5 2.5E5 100.0
+SPH DH1B2h     0.0 2.885E5 2.5E5 100.0
+SPH DH1B1h     0.0 4.3355E5 2.5E5 100.0
+SPH DH2B3h     0.0 1.440E5 1.666E5 100.0
+SPH DH2B2h     0.0 2.888E5 1.666E5 100.0
+SPH DH2B1h     0.0 4.332E5 1.666E5 100.0
+END
+* Black hole
+MARS         5 +MARS -REGION
+UNIVERSE     5 -UNIVERSE
+DEEPSPAC     5 -TOPATMOS +UNIVERSE
+GROUND       5 +REGION +MARS
+AVEATMOS     5 +TOPATMOS -MARS +AT_CUT
+ATMOS1       5 -AT_CUT +ATMOS1 -MARS -MH2B3  -DH_B3b -DH2B3a
+ATMOS2       5 -AT_CUT +ATMOS2 -ATMOS1 -MH2B3 -DH_B3b -DH2B3a
+ATMOS3       5 -AT_CUT +ATMOS3 -ATMOS2 -MH2B3 -DH_B3b -DH2B3a
+ATMOS4       5 -AT_CUT +ATMOS4 -ATMOS3 -MH2B3
+ATMOS5       5 -AT_CUT +ATMOS5 -ATMOS4 -MH2B3
+ATMOS6       5 -AT_CUT +ATMOS6 -ATMOS5 -MH2B3
+ATMOS7       5 -AT_CUT +ATMOS7 -ATMOS6 -MH2B3
+ATMOS8       5 -AT_CUT +ATMOS8 -ATMOS7 -MH2B3
+ATMOS9       5 -AT_CUT +ATMOS9 -ATMOS8 -MH2B3
+ATMOS10      5 -AT_CUT +ATMOS10 -ATMOS9 -MH2B3
+ATMOS11      5 -AT_CUT +ATMOS11 -ATMOS10 -MH2B3
+ATMOS12      5 -AT_CUT +ATMOS12 -ATMOS11 -MH2B3
+ATMOS13      5 -AT_CUT +ATMOS13 -ATMOS12 -MH2B3
+ATMOS14      5 -AT_CUT +ATMOS14 -ATMOS13 -MH2B3
+ATMOS15      5 -AT_CUT +ATMOS15 -ATMOS14 -MH2B3
+ATMOS16      5 -AT_CUT +ATMOS16 -ATMOS15 -MH2B3
+ATMOS17      5 -AT_CUT +ATMOS17 -ATMOS16 -MH2B3
+ATMOS18      5 -AT_CUT +ATMOS18 -ATMOS17 -MH2B3 -DH2B3h
+ATMOS19      5 -AT_CUT +ATMOS19 -ATMOS18 -MH2B3 -DH2B_t
+ATMOS20      5 -AT_CUT +ATMOS20 -ATMOS19
+ATMOS21      5 -AT_CUT +ATMOS21 -ATMOS20
+ATMOS22      5 -AT_CUT +ATMOS22 -ATMOS21
+ATMOS23      5 -AT_CUT +ATMOS23 -ATMOS22
+ATMOS24      5 -AT_CUT +ATMOS24 -ATMOS23
+ATMOS25      5 -AT_CUT +ATMOS25 -ATMOS24
+ATMOS26      5 -AT_CUT +ATMOS26 -ATMOS25
+ATMOS27      5 -AT_CUT +ATMOS27 -ATMOS26
+ATMOS28      5 -AT_CUT +TOPATMOS -ATMOS27
+MOUNTAIN     5 +MH2B3 -MARS
+dtctr_t      5 +DH2B_t
+dtctr_h1     5 +DH2B3h
+dtctr_g1     5 +DH_B3b
+dtctr_g2     5 +DH2B3a
+END
+GEOEND
+* ..+....1....+....2....+....3....+....4....+....5....+....6....+....7..
+MATERIAL          1.        1.       1.6       26.                    REGOLITH
+MATERIAL         25. 54.938044       7.9       27.                    MANGANES
+LOW-MAT     MANGANES       25.       55.       87.                    MANGANES
+MATERIAL         16.     32.06       2.8       28.                    SULFUR
+LOW-MAT       SULFUR       16.       -2.       87.                    SULFUR
+MATERIAL         19.   39.0983       3.0       29.                    POTASSIU
+LOW-MAT     POTASSIU       19.       -2.       87.                    POTASSIU
+MATERIAL         15.  30.97376       3.0       30.                    PHOSPHO
+MATERIAL         17.     35.45       3.0       31.                    CHLORINE
+LOW-MAT     CHLORINE       17.       -2.       87.                    CHLORINE
+MATERIAL         24.   51.9961       2.0       32.                    CHROMIUM
+LOW-MAT     CHROMIUM       24.       -2.       87.                    CHROMIUM
+MATERIAL         30.    65.382       3.0       33.                    ZINC
+LOW-MAT         ZINC       30.       -2.       87.                    ZINC
+MATERIAL         35.    79.904       2.0       34.                    BROMINE
+LOW-MAT      BROMINE       35.       -2.       87.                    BROMINE
+* ..+....1....+....2....+....3....+....4....+....5....+....6....+....7..
+COMPOUND      -.3621    OXYGEN   -.03259    SODIUM     -.082  MAGNESIUREGOLITH
+COMPOUND      -.1085  ALUMINUM   -.04107   SILICON  -.006391   PHOSPHOREGOLITH
+COMPOUND     -.04189    SULFUR   -.01046  CHLORINE  -.008684  POTASSIUREGOLITH
+COMPOUND      -.1047   CALCIUM   -.02508  TITANIUM   -.02576  CHROMIUMREGOLITH
+COMPOUND     -.00324  MANGANES   -.03252      IRON   -.06276    NICKELREGOLITH
+COMPOUND     -.04812      ZINC  -.004184   BROMINE                    REGOLITH
+* ..+....1....+....2....+....3....+....4....+....5....+....6....+....7..
+MATERIAL          1.        1.        1.       35.                    ATMOSPHE
+MATERIAL          1.  1.007825       1.0       36.                    HYDROG-1
+LOW-MAT     HYDROG-1        1.        1.       87.                    HYDROG-1
+MATERIAL          1.2.01410178       1.0       37.                    DEUTERIU
+LOW-MAT     DEUTERIU        1.        2.       87.                    DEUTERIU
+MATERIAL         10.   20.1797       1.0       38.                    NEON
+LOW-MAT         NEON       35.       -2.       87.                    BROMINE
+MATERIAL         36.   83.7982       1.0       39.                    KRYPTON
+LOW-MAT      KRYPTON       36.       -2.      120.                    KRYPTON
+MATERIAL         54.   131.293       1.0       40.                    XENON
+LOW-MAT        XENON       54.       -2.       87.                    XENON
+* ..+....1....+....2....+....3....+....4....+....5....+....6....+....7..
+COMPOUND     -.01017  HYDROGEN  -.004817  HYDROG-1  -.009626  DEUTERIUATMOSPHE
+COMPOUND     -.06379    CARBON    -.1333      NEON    -.4146    OXYGENATMOSPHE
+COMPOUND     -.09091      NEON   -.09091     ARGON   -.09091   KRYPTONATMOSPHE
+COMPOUND     -.09091     XENON                                        ATMOSPHE
+* ..+....1....+....2....+....3....+....4....+....5....+....6....+....7..
+MATERIAL                      1.99991E-5       41.                    ATMOS1
+COMPOUND     -.01017  HYDROGEN  -.004817  HYDROG-1  -.009626  DEUTERIUATMOS1
+COMPOUND     -.06379    CARBON    -.1333      NEON    -.4146    OXYGENATMOS1
+COMPOUND     -.09091      NEON   -.09091     ARGON   -.09091   KRYPTONATMOS1
+COMPOUND     -.09091     XENON                                        ATMOS1
+MATERIAL                      1.99977E-5       42.                    ATMOS2
+COMPOUND     -.01017  HYDROGEN  -.004817  HYDROG-1  -.009626  DEUTERIUATMOS2
+COMPOUND     -.06379    CARBON    -.1333      NEON    -.4146    OXYGENATMOS2
+COMPOUND     -.09091      NEON   -.09091     ARGON   -.09091   KRYPTONATMOS2
+COMPOUND     -.09091     XENON                                        ATMOS2
+MATERIAL                      1.99963E-5       43.                    ATMOS3
+COMPOUND     -.01017  HYDROGEN  -.004817  HYDROG-1  -.009626  DEUTERIUATMOS3
+COMPOUND     -.06379    CARBON    -.1333      NEON    -.4146    OXYGENATMOS3
+COMPOUND     -.09091      NEON   -.09091     ARGON   -.09091   KRYPTONATMOS3
+COMPOUND     -.09091     XENON                                        ATMOS3
+MATERIAL                      1.99942E-5       44.                    ATMOS4
+COMPOUND     -.01017  HYDROGEN  -.004817  HYDROG-1  -.009626  DEUTERIUATMOS4
+COMPOUND     -.06379    CARBON    -.1333      NEON    -.4146    OXYGENATMOS4
+COMPOUND     -.09091      NEON   -.09091     ARGON   -.09091   KRYPTONATMOS4
+COMPOUND     -.09091     XENON                                        ATMOS4
+MATERIAL                      1.99907E-5       45.                    ATMOS5
+COMPOUND     -.01017  HYDROGEN  -.004817  HYDROG-1  -.009626  DEUTERIUATMOS5
+COMPOUND     -.06379    CARBON    -.1333      NEON    -.4146    OXYGENATMOS5
+COMPOUND     -.09091      NEON   -.09091     ARGON   -.09091   KRYPTONATMOS5
+COMPOUND     -.09091     XENON                                        ATMOS5
+MATERIAL                      1.99853E-5       46.                    ATMOS6
+COMPOUND     -.01017  HYDROGEN  -.004817  HYDROG-1  -.009626  DEUTERIUATMOS6
+COMPOUND     -.06379    CARBON    -.1333      NEON    -.4146    OXYGENATMOS6
+COMPOUND     -.09091      NEON   -.09091     ARGON   -.09091   KRYPTONATMOS6
+COMPOUND     -.09091     XENON                                        ATMOS6
+MATERIAL                      1.99767E-5       47.                    ATMOS7
+COMPOUND     -.01017  HYDROGEN  -.004817  HYDROG-1  -.009626  DEUTERIUATMOS7
+COMPOUND     -.06379    CARBON    -.1333      NEON    -.4146    OXYGENATMOS7
+COMPOUND     -.09091      NEON   -.09091     ARGON   -.09091   KRYPTONATMOS7
+COMPOUND     -.09091     XENON                                        ATMOS7
+MATERIAL                      1.99631E-5       48.                    ATMOS8
+COMPOUND     -.01017  HYDROGEN  -.004817  HYDROG-1  -.009626  DEUTERIUATMOS8
+COMPOUND     -.06379    CARBON    -.1333      NEON    -.4146    OXYGENATMOS8
+COMPOUND     -.09091      NEON   -.09091     ARGON   -.09091   KRYPTONATMOS8
+COMPOUND     -.09091     XENON                                        ATMOS8
+MATERIAL                      1.99416E-5       49.                    ATMOS9
+COMPOUND     -.01017  HYDROGEN  -.004817  HYDROG-1  -.009626  DEUTERIUATMOS9
+COMPOUND     -.06379    CARBON    -.1333      NEON    -.4146    OXYGENATMOS9
+COMPOUND     -.09091      NEON   -.09091     ARGON   -.09091   KRYPTONATMOS9
+COMPOUND     -.09091     XENON                                        ATMOS9
+MATERIAL                      1.99075E-5       50.                    ATMOS10
+COMPOUND     -.01017  HYDROGEN  -.004817  HYDROG-1  -.009626  DEUTERIUATMOS10
+COMPOUND     -.06379    CARBON    -.1333      NEON    -.4146    OXYGENATMOS10
+COMPOUND     -.09091      NEON   -.09091     ARGON   -.09091   KRYPTONATMOS10
+COMPOUND     -.09091     XENON                                        ATMOS10
+MATERIAL                      1.98536E-5       51.                    ATMOS11
+COMPOUND     -.01017  HYDROGEN  -.004817  HYDROG-1  -.009626  DEUTERIUATMOS11
+COMPOUND     -.06379    CARBON    -.1333      NEON    -.4146    OXYGENATMOS11
+COMPOUND     -.09091      NEON   -.09091     ARGON   -.09091   KRYPTONATMOS11
+COMPOUND     -.09091     XENON                                        ATMOS11
+MATERIAL                      1.97685E-5       52.                    ATMOS12
+COMPOUND     -.01017  HYDROGEN  -.004817  HYDROG-1  -.009626  DEUTERIUATMOS12
+COMPOUND     -.06379    CARBON    -.1333      NEON    -.4146    OXYGENATMOS12
+COMPOUND     -.09091      NEON   -.09091     ARGON   -.09091   KRYPTONATMOS12
+COMPOUND     -.09091     XENON                                        ATMOS12
+MATERIAL                      1.96343E-5       53.                    ATMOS13
+COMPOUND     -.01017  HYDROGEN  -.004817  HYDROG-1  -.009626  DEUTERIUATMOS13
+COMPOUND     -.06379    CARBON    -.1333      NEON    -.4146    OXYGENATMOS13
+COMPOUND     -.09091      NEON   -.09091     ARGON   -.09091   KRYPTONATMOS13
+COMPOUND     -.09091     XENON                                        ATMOS13
+MATERIAL                      1.94235E-5       54.                    ATMOS14
+COMPOUND     -.01017  HYDROGEN  -.004817  HYDROG-1  -.009626  DEUTERIUATMOS14
+COMPOUND     -.06379    CARBON    -.1333      NEON    -.4146    OXYGENATMOS14
+COMPOUND     -.09091      NEON   -.09091     ARGON   -.09091   KRYPTONATMOS14
+COMPOUND     -.09091     XENON                                        ATMOS14
+MATERIAL                      1.90941E-5       55.                    ATMOS15
+COMPOUND     -.01017  HYDROGEN  -.004817  HYDROG-1  -.009626  DEUTERIUATMOS15
+COMPOUND     -.06379    CARBON    -.1333      NEON    -.4146    OXYGENATMOS15
+COMPOUND     -.09091      NEON   -.09091     ARGON   -.09091   KRYPTONATMOS15
+COMPOUND     -.09091     XENON                                        ATMOS15
+MATERIAL                      1.85833E-5       56.                    ATMOS16
+COMPOUND     -.01017  HYDROGEN  -.004817  HYDROG-1  -.009626  DEUTERIUATMOS16
+COMPOUND     -.06379    CARBON    -.1333      NEON    -.4146    OXYGENATMOS16
+COMPOUND     -.09091      NEON   -.09091     ARGON   -.09091   KRYPTONATMOS16
+COMPOUND     -.09091     XENON                                        ATMOS16
+MATERIAL                      1.78017E-5       57.                    ATMOS17
+COMPOUND     -.01017  HYDROGEN  -.004817  HYDROG-1  -.009626  DEUTERIUATMOS17
+COMPOUND     -.06379    CARBON    -.1333      NEON    -.4146    OXYGENATMOS17
+COMPOUND     -.09091      NEON   -.09091     ARGON   -.09091   KRYPTONATMOS17
+COMPOUND     -.09091     XENON                                        ATMOS17
+MATERIAL                      1.66297E-5       58.                    ATMOS18
+COMPOUND     -.01017  HYDROGEN  -.004817  HYDROG-1  -.009626  DEUTERIUATMOS18
+COMPOUND     -.06379    CARBON    -.1333      NEON    -.4146    OXYGENATMOS18
+COMPOUND     -.09091      NEON   -.09091     ARGON   -.09091   KRYPTONATMOS18
+COMPOUND     -.09091     XENON                                        ATMOS18
+MATERIAL                      1.49283E-5       59.                    ATMOS19
+COMPOUND     -.01017  HYDROGEN  -.004817  HYDROG-1  -.009626  DEUTERIUATMOS19
+COMPOUND     -.06379    CARBON    -.1333      NEON    -.4146    OXYGENATMOS19
+COMPOUND     -.09091      NEON   -.09091     ARGON   -.09091   KRYPTONATMOS19
+COMPOUND     -.09091     XENON                                        ATMOS19
+MATERIAL                       1.2581E-5       60.                    ATMOS20
+COMPOUND     -.01017  HYDROGEN  -.004817  HYDROG-1  -.009626  DEUTERIUATMOS20
+COMPOUND     -.06379    CARBON    -.1333      NEON    -.4146    OXYGENATMOS20
+COMPOUND     -.09091      NEON   -.09091     ARGON   -.09091   KRYPTONATMOS20
+COMPOUND     -.09091     XENON                                        ATMOS20
+MATERIAL                      9.59332E-6       61.                    ATMOS21
+COMPOUND     -.01017  HYDROGEN  -.004817  HYDROG-1  -.009626  DEUTERIUATMOS21
+COMPOUND     -.06379    CARBON    -.1333      NEON    -.4146    OXYGENATMOS21
+COMPOUND     -.09091      NEON   -.09091     ARGON   -.09091   KRYPTONATMOS21
+COMPOUND     -.09091     XENON                                        ATMOS21
+MATERIAL                      6.24241E-6       62.                    ATMOS22
+COMPOUND     -.01017  HYDROGEN  -.004817  HYDROG-1  -.009626  DEUTERIUATMOS22
+COMPOUND     -.06379    CARBON    -.1333      NEON    -.4146    OXYGENATMOS22
+COMPOUND     -.09091      NEON   -.09091     ARGON   -.09091   KRYPTONATMOS22
+COMPOUND     -.09091     XENON                                        ATMOS22
+MATERIAL                      3.15925E-6       63.                    ATMOS23
+COMPOUND     -.01017  HYDROGEN  -.004817  HYDROG-1  -.009626  DEUTERIUATMOS23
+COMPOUND     -.06379    CARBON    -.1333      NEON    -.4146    OXYGENATMOS23
+COMPOUND     -.09091      NEON   -.09091     ARGON   -.09091   KRYPTONATMOS23
+COMPOUND     -.09091     XENON                                        ATMOS23
+MATERIAL                      1.07356E-6       64.                    ATMOS24
+COMPOUND     -.01017  HYDROGEN  -.004817  HYDROG-1  -.009626  DEUTERIUATMOS24
+COMPOUND     -.06379    CARBON    -.1333      NEON    -.4146    OXYGENATMOS24
+COMPOUND     -.09091      NEON   -.09091     ARGON   -.09091   KRYPTONATMOS24
+COMPOUND     -.09091     XENON                                        ATMOS24
+MATERIAL                       1.9404E-7       65.                    ATMOS25
+COMPOUND     -.01017  HYDROGEN  -.004817  HYDROG-1  -.009626  DEUTERIUATMOS25
+COMPOUND     -.06379    CARBON    -.1333      NEON    -.4146    OXYGENATMOS25
+COMPOUND     -.09091      NEON   -.09091     ARGON   -.09091   KRYPTONATMOS25
+COMPOUND     -.09091     XENON                                        ATMOS25
+MATERIAL                      1.28949E-8       66.                    ATMOS26
+COMPOUND     -.01017  HYDROGEN  -.004817  HYDROG-1  -.009626  DEUTERIUATMOS26
+COMPOUND     -.06379    CARBON    -.1333      NEON    -.4146    OXYGENATMOS26
+COMPOUND     -.09091      NEON   -.09091     ARGON   -.09091   KRYPTONATMOS26
+COMPOUND     -.09091     XENON                                        ATMOS26
+MATERIAL                      1.7549E-10       67.                    ATMOS27
+COMPOUND     -.01017  HYDROGEN  -.004817  HYDROG-1  -.009626  DEUTERIUATMOS27
+COMPOUND     -.06379    CARBON    -.1333      NEON    -.4146    OXYGENATMOS27
+COMPOUND     -.09091      NEON   -.09091     ARGON   -.09091   KRYPTONATMOS27
+COMPOUND     -.09091     XENON                                        ATMOS27
+* densit less than 1e-9 g/cc breaks things
+* ..+....1....+....2....+....3....+....4....+....5....+....6....+....7..
+ASSIGNMA    REGOLITH      MARS
+ASSIGNMA    BLCKHOLE  UNIVERSE
+ASSIGNMA    REGOLITH    GROUND
+ASSIGNMA      ATMOS1    ATMOS1
+ASSIGNMA      ATMOS2    ATMOS2
+ASSIGNMA      ATMOS3    ATMOS3
+ASSIGNMA      ATMOS4    ATMOS4
+ASSIGNMA      ATMOS5    ATMOS5
+ASSIGNMA      ATMOS6    ATMOS6
+ASSIGNMA      ATMOS7    ATMOS7
+ASSIGNMA      ATMOS8    ATMOS8
+ASSIGNMA      ATMOS9    ATMOS9
+ASSIGNMA     ATMOS10   ATMOS10
+ASSIGNMA     ATMOS11   ATMOS11
+ASSIGNMA     ATMOS12   ATMOS12
+ASSIGNMA     ATMOS13   ATMOS13
+ASSIGNMA     ATMOS14   ATMOS14
+ASSIGNMA     ATMOS15   ATMOS15
+ASSIGNMA     ATMOS16   ATMOS16
+ASSIGNMA     ATMOS17   ATMOS17
+ASSIGNMA     ATMOS18   ATMOS18
+ASSIGNMA     ATMOS19   ATMOS19
+ASSIGNMA     ATMOS20   ATMOS20
+ASSIGNMA     ATMOS21   ATMOS21
+ASSIGNMA     ATMOS22   ATMOS22
+ASSIGNMA     ATMOS23   ATMOS23
+ASSIGNMA     ATMOS24   ATMOS24
+ASSIGNMA     ATMOS25   ATMOS25
+ASSIGNMA     ATMOS26   ATMOS26
+ASSIGNMA      VACUUM   ATMOS27
+ASSIGNMA      VACUUM   ATMOS28
+ASSIGNMA      VACUUM  DEEPSPAC
+ASSIGNMA      ATMOS8  AVEATMOS
+ASSIGNMA    REGOLITH  MOUNTAIN
+ASSIGNMA     ATMOS19   dtctr_t
+ASSIGNMA     ATMOS18  dtctr_h1
+ASSIGNMA      ATMOS1  dtctr_g1
+ASSIGNMA      ATMOS1  dtctr_g2
+EMF
+LOW-NEUT        260.                           0.0                -11.
+USRBDX          109.    PROTON      -25.    GROUND    ATMOS1        1.GtoAT1_pro
+USRBDX            1.      1E-6     1000.6.28318531       0.0        1. &
+USRBDX          109.   NEUTRON      -25.    GROUND    ATMOS1        1.GtoAT1_n
+USRBDX            1.      1E-6     1000.6.28318531       0.0        1. &
+USRBDX          109.  ELECTRON      -25.    GROUND    ATMOS1        1.GtoAT1_e
+USRBDX            1.      1E-6     1000.6.28318531       0.0        1. &
+USRBDX          109.     MUONS      -25.    GROUND    ATMOS1        1.GtoAT1_mu
+USRBDX            1.      1E-6     1000.6.28318531       0.0        1. &
+USRBDX          109.    PHOTON      -25.    GROUND    ATMOS1        1.GtoAT1_pho
+USRBDX            1.      1E-6     1000.6.28318531       0.0        1. &
+USRBDX          109.  3-HELIUM      -25.    GROUND    ATMOS1        1.GtoAT1_he3
+USRBDX            1.      1E-6     1000.6.28318531       0.0        1. &
+USRBDX          109.  4-HELIUM      -25.    GROUND    ATMOS1        1.GtoAT1_he4
+USRBDX            1.      1E-6     1000.6.28318531       0.0        1. &
+USRBDX          109.    TRITON      -25.    GROUND    ATMOS1        1.GtoAT1_tri
+USRBDX            1.      1E-6     1000.6.28318531       0.0        1. &
+USRBDX          109.  DEUTERON      -25.    GROUND    ATMOS1        1.GtoAT1_deu
+USRBDX            1.      1E-6     1000.6.28318531       0.0        1. &
+USRBDX          109.  HEAVYION      -25.    GROUND    ATMOS1        1.GtoAT1_h
+USRBDX            1.      1E-6     1000.6.28318531       0.0        1. &
+USRBDX          109.    PROTON      -26.    ATMOS1    GROUND        1.AT1toG_pro
+USRBDX            1.      1E-6     1000.6.28318531       0.0        1. &
+USRBDX          109.   NEUTRON      -26.    ATMOS1    GROUND        1.AT1toG_n
+USRBDX            1.      1E-6     1000.6.28318531       0.0        1. &
+USRBDX          109.  ELECTRON      -26.    ATMOS1    GROUND        1.AT1toG_e
+USRBDX            1.      1E-6     1000.6.28318531       0.0        1. &
+USRBDX          109.     MUONS      -26.    ATMOS1    GROUND        1.AT1toG_mu
+USRBDX            1.      1E-6     1000.6.28318531       0.0        1. &
+USRBDX          109.    PHOTON      -26.    ATMOS1    GROUND        1.AT1toG_pho
+USRBDX            1.      1E-6     1000.6.28318531       0.0        1. &
+USRBDX          109.  3-HELIUM      -26.    ATMOS1    GROUND        1.AT1toG_he3
+USRBDX            1.      1E-6     1000.6.28318531       0.0        1. &
+USRBDX          109.  4-HELIUM      -26.    ATMOS1    GROUND        1.AT1toG_he4
+USRBDX            1.      1E-6     1000.6.28318531       0.0        1. &
+USRBDX          109.    TRITON      -26.    ATMOS1    GROUND        1.AT1toG_tri
+USRBDX            1.      1E-6     1000.6.28318531       0.0        1. &
+USRBDX          109.  DEUTERON      -26.    ATMOS1    GROUND        1.AT1toG_deu
+USRBDX            1.      1E-6     1000.6.28318531       0.0        1. &
+USRBDX          109.  HEAVYION      -26.    GROUND    ATMOS1        1.AT1toG_h
+USRBDX            1.      1E-6     1000.6.28318531       0.0        1. &
+USRBDX          109.    PROTON      -27.    ATMOS2    ATMOS1        1.AT2to1_pro
+USRBDX            1.      1E-6     1000.6.28318531       0.0        1. &
+USRBDX          109.   NEUTRON      -27.    ATMOS2    ATMOS1        1.AT2to1_n
+USRBDX            1.      1E-6     1000.6.28318531       0.0        1. &
+USRBDX          109.  ELECTRON      -27.    ATMOS2    ATMOS1        1.AT2to1_e
+USRBDX            1.      1E-6     1000.6.28318531       0.0        1. &
+USRBDX          109.     MUONS      -27.    ATMOS2    ATMOS1        1.AT2to1_mu
+USRBDX            1.      1E-6     1000.6.28318531       0.0        1. &
+USRBDX          109.    PHOTON      -27.    ATMOS2    ATMOS1        1.AT2to1_pho
+USRBDX            1.      1E-6     1000.6.28318531       0.0        1. &
+USRBDX          109.  3-HELIUM      -27.    ATMOS2    ATMOS1        1.AT2to1_he3
+USRBDX            1.      1E-6     1000.6.28318531       0.0        1. &
+USRBDX          109.  4-HELIUM      -27.    ATMOS2    ATMOS1        1.AT2to1_he4
+USRBDX            1.      1E-6     1000.6.28318531       0.0        1. &
+USRBDX          109.    TRITON      -27.    ATMOS2    ATMOS1        1.AT2to1_tri
+USRBDX            1.      1E-6     1000.6.28318531       0.0        1. &
+USRBDX          109.  DEUTERON      -27.    ATMOS2    ATMOS1        1.AT2to1_deu
+USRBDX            1.      1E-6     1000.6.28318531       0.0        1. &
+USRBDX          109.  HEAVYION      -27.    ATMOS2    ATMOS1        1.AT2to1_h
+USRBDX            1.      1E-6     1000.6.28318531       0.0        1. &
+USRBDX          109.    PROTON      -28.    ATMOS3    ATMOS2        1.AT3to2_pro
+USRBDX            1.      1E-6     1000.6.28318531       0.0        1. &
+USRBDX          109.   NEUTRON      -28.    ATMOS3    ATMOS2        1.AT3to2_n
+USRBDX            1.      1E-6     1000.6.28318531       0.0        1. &
+USRBDX          109.  ELECTRON      -28.    ATMOS3    ATMOS2        1.AT3to2_e
+USRBDX            1.      1E-6     1000.6.28318531       0.0        1. &
+USRBDX          109.     MUONS      -28.    ATMOS3    ATMOS2        1.AT3to2_mu
+USRBDX            1.      1E-6     1000.6.28318531       0.0        1. &
+USRBDX          109.    PHOTON      -28.    ATMOS3    ATMOS2        1.AT3to2_pho
+USRBDX            1.      1E-6     1000.6.28318531       0.0        1. &
+USRBDX          109.  3-HELIUM      -28.    ATMOS3    ATMOS2        1.AT3to2_he3
+USRBDX            1.      1E-6     1000.6.28318531       0.0        1. &
+USRBDX          109.  4-HELIUM      -28.    ATMOS3    ATMOS2        1.AT3to2_he4
+USRBDX            1.      1E-6     1000.6.28318531       0.0        1. &
+USRBDX          109.    TRITON      -28.    ATMOS3    ATMOS2        1.AT3to2_tri
+USRBDX            1.      1E-6     1000.6.28318531       0.0        1. &
+USRBDX          109.  DEUTERON      -28.    ATMOS3    ATMOS2        1.AT3to2_deu
+USRBDX            1.      1E-6     1000.6.28318531       0.0        1. &
+USRBDX          109.  HEAVYION      -28.    ATMOS3    ATMOS2        1.AT3to2_h
+USRBDX            1.      1E-6     1000.6.28318531       0.0        1. &
+USRBDX          109.    PROTON      -29.    ATMOS4    ATMOS3        1.AT4to3_pro
+USRBDX            1.      1E-6     1000.6.28318531       0.0        1. &
+USRBDX          109.   NEUTRON      -29.    ATMOS4    ATMOS3        1.AT4to3_n
+USRBDX            1.      1E-6     1000.6.28318531       0.0        1. &
+USRBDX          109.  ELECTRON      -29.    ATMOS4    ATMOS3        1.AT4to3_e
+USRBDX            1.      1E-6     1000.6.28318531       0.0        1. &
+USRBDX          109.     MUONS      -29.    ATMOS4    ATMOS3        1.AT4to3_mu
+USRBDX            1.      1E-6     1000.6.28318531       0.0        1. &
+USRBDX          109.    PHOTON      -29.    ATMOS4    ATMOS3        1.AT4to3_pho
+USRBDX            1.      1E-6     1000.6.28318531       0.0        1. &
+USRBDX          109.  3-HELIUM      -29.    ATMOS4    ATMOS3        1.AT4to3_he3
+USRBDX            1.      1E-6     1000.6.28318531       0.0        1. &
+USRBDX          109.  4-HELIUM      -29.    ATMOS4    ATMOS3        1.AT4to3_he4
+USRBDX            1.      1E-6     1000.6.28318531       0.0        1. &
+USRBDX          109.    TRITON      -29.    ATMOS4    ATMOS3        1.AT4to3_tri
+USRBDX            1.      1E-6     1000.6.28318531       0.0        1. &
+USRBDX          109.  DEUTERON      -29.    ATMOS4    ATMOS3        1.AT4to3_deu
+USRBDX            1.      1E-6     1000.6.28318531       0.0        1. &
+USRBDX          109.  HEAVYION      -29.    ATMOS4    ATMOS3        1.AT4to3_h
+USRBDX            1.      1E-6     1000.6.28318531       0.0        1. &
+USRBDX          109.    PROTON      -30.    ATMOS5    ATMOS4        1.AT5to4_pro
+USRBDX            1.      1E-6     1000.6.28318531       0.0        1. &
+USRBDX          109.   NEUTRON      -30.    ATMOS5    ATMOS4        1.AT5to4_n
+USRBDX            1.      1E-6     1000.6.28318531       0.0        1. &
+USRBDX          109.  ELECTRON      -30.    ATMOS5    ATMOS4        1.AT5to4_e
+USRBDX            1.      1E-6     1000.6.28318531       0.0        1. &
+USRBDX          109.     MUONS      -30.    ATMOS5    ATMOS4        1.AT5to4_mu
+USRBDX            1.      1E-6     1000.6.28318531       0.0        1. &
+USRBDX          109.    PHOTON      -30.    ATMOS5    ATMOS4        1.AT5to4_pho
+USRBDX            1.      1E-6     1000.6.28318531       0.0        1. &
+USRBDX          109.  3-HELIUM      -30.    ATMOS5    ATMOS4        1.AT5to4_he3
+USRBDX            1.      1E-6     1000.6.28318531       0.0        1. &
+USRBDX          109.  4-HELIUM      -30.    ATMOS5    ATMOS4        1.AT5to4_he4
+USRBDX            1.      1E-6     1000.6.28318531       0.0        1. &
+USRBDX          109.    TRITON      -30.    ATMOS5    ATMOS4        1.AT5to4_tri
+USRBDX            1.      1E-6     1000.6.28318531       0.0        1. &
+USRBDX          109.  DEUTERON      -30.    ATMOS5    ATMOS4        1.AT5to4_deu
+USRBDX            1.      1E-6     1000.6.28318531       0.0        1. &
+USRBDX          109.  HEAVYION      -30.    ATMOS5    ATMOS4        1.AT5to4_h
+USRBDX            1.      1E-6     1000.6.28318531       0.0        1. &
+USRBDX          109.    PROTON      -31.    ATMOS6    ATMOS5        1.AT6to5_pro
+USRBDX            1.      1E-6     1000.6.28318531       0.0        1. &
+USRBDX          109.   NEUTRON      -31.    ATMOS6    ATMOS5        1.AT6to5_neu
+USRBDX            1.      1E-6     1000.6.28318531       0.0        1. &
+USRBDX          109.  ELECTRON      -31.    ATMOS6    ATMOS5        1.AT6to5_e
+USRBDX            1.      1E-6     1000.6.28318531       0.0        1. &
+USRBDX          109.     MUONS      -31.    ATMOS6    ATMOS5        1.AT6to5_mu
+USRBDX            1.      1E-6     1000.6.28318531       0.0        1. &
+USRBDX          109.    PHOTON      -31.    ATMOS6    ATMOS5        1.AT6to5_pho
+USRBDX            1.      1E-6     1000.6.28318531       0.0        1. &
+USRBDX          109.  3-HELIUM      -31.    ATMOS6    ATMOS5        1.AT6to5_he3
+USRBDX            1.      1E-6     1000.6.28318531       0.0        1. &
+USRBDX          109.  4-HELIUM      -31.    ATMOS6    ATMOS5        1.AT6to5_he4
+USRBDX            1.      1E-6     1000.6.28318531       0.0        1. &
+USRBDX          109.    TRITON      -31.    ATMOS6    ATMOS5        1.AT6to5_tri
+USRBDX            1.      1E-6     1000.6.28318531       0.0        1. &
+USRBDX          109.  DEUTERON      -31.    ATMOS6    ATMOS5        1.AT6to5_deu
+USRBDX            1.      1E-6     1000.6.28318531       0.0        1. &
+USRBDX          109.  HEAVYION      -31.    ATMOS6    ATMOS5        1.AT6to5_h
+USRBDX            1.      1E-6     1000.6.28318531       0.0        1. &
+USRBDX          109.    PROTON      -32.    ATMOS7    ATMOS6        1.AT7to6_pro
+USRBDX            1.      1E-6     1000.6.28318531       0.0        1. &
+USRBDX          109.   NEUTRON      -32.    ATMOS7    ATMOS6        1.AT7to6_n
+USRBDX            1.      1E-6     1000.6.28318531       0.0        1. &
+USRBDX          109.  ELECTRON      -32.    ATMOS7    ATMOS6        1.AT7to6_e
+USRBDX            1.      1E-6     1000.6.28318531       0.0        1. &
+USRBDX          109.     MUONS      -32.    ATMOS7    ATMOS6        1.AT7to6_mu
+USRBDX            1.      1E-6     1000.6.28318531       0.0        1. &
+USRBDX          109.    PHOTON      -32.    ATMOS7    ATMOS6        1.AT7to6_pho
+USRBDX            1.      1E-6     1000.6.28318531       0.0        1. &
+USRBDX          109.  3-HELIUM      -32.    ATMOS7    ATMOS6        1.AT7to6_he3
+USRBDX            1.      1E-6     1000.6.28318531       0.0        1. &
+USRBDX          109.  4-HELIUM      -32.    ATMOS7    ATMOS6        1.AT7to6_he4
+USRBDX            1.      1E-6     1000.6.28318531       0.0        1. &
+USRBDX          109.    TRITON      -32.    ATMOS7    ATMOS6        1.AT7to6_tri
+USRBDX            1.      1E-6     1000.6.28318531       0.0        1. &
+USRBDX          109.  DEUTERON      -32.    ATMOS7    ATMOS6        1.AT7to6_deu
+USRBDX            1.      1E-6     1000.6.28318531       0.0        1. &
+USRBDX          109.  HEAVYION      -32.    ATMOS7    ATMOS6        1.AT7to6_h
+USRBDX            1.      1E-6     1000.6.28318531       0.0        1. &
+USRBDX          109.    PROTON      -33.    ATMOS8    ATMOS7        1.AT8to7_pro
+USRBDX            1.      1E-6     1000.6.28318531       0.0        1. &
+USRBDX          109.   NEUTRON      -33.    ATMOS8    ATMOS7        1.AT8to7_n
+USRBDX            1.      1E-6     1000.6.28318531       0.0        1. &
+USRBDX          109.  ELECTRON      -33.    ATMOS8    ATMOS7        1.AT8to7_e
+USRBDX            1.      1E-6     1000.6.28318531       0.0        1. &
+USRBDX          109.     MUONS      -33.    ATMOS8    ATMOS7        1.AT8to7_mu
+USRBDX            1.      1E-6     1000.6.28318531       0.0        1. &
+USRBDX          109.    PHOTON      -33.    ATMOS8    ATMOS7        1.AT8to7_pho
+USRBDX            1.      1E-6     1000.6.28318531       0.0        1. &
+USRBDX          109.  3-HELIUM      -33.    ATMOS8    ATMOS7        1.AT8to7_he3
+USRBDX            1.      1E-6     1000.6.28318531       0.0        1. &
+USRBDX          109.  4-HELIUM      -33.    ATMOS8    ATMOS7        1.AT8to7_he4
+USRBDX            1.      1E-6     1000.6.28318531       0.0        1. &
+USRBDX          109.    TRITON      -33.    ATMOS8    ATMOS7        1.AT8to7_tri
+USRBDX            1.      1E-6     1000.6.28318531       0.0        1. &
+USRBDX          109.  DEUTERON      -33.    ATMOS8    ATMOS7        1.AT8to7_deu
+USRBDX            1.      1E-6     1000.6.28318531       0.0        1. &
+USRBDX          109.  HEAVYION      -33.    ATMOS8    ATMOS7        1.AT8to7_h
+USRBDX            1.      1E-6     1000.6.28318531       0.0        1. &
+USRBDX          109.    PROTON      -34.    ATMOS9    ATMOS8        1.AT9to8_pro
+USRBDX            1.      1E-6     1000.6.28318531       0.0        1. &
+USRBDX          109.   NEUTRON      -34.    ATMOS9    ATMOS8        1.AT9to8_n
+USRBDX            1.      1E-6     1000.6.28318531       0.0        1. &
+USRBDX          109.  ELECTRON      -34.    ATMOS9    ATMOS8        1.AT9to8_e
+USRBDX            1.      1E-6     1000.6.28318531       0.0        1. &
+USRBDX          109.     MUONS      -34.    ATMOS9    ATMOS8        1.AT9to8_mu
+USRBDX            1.      1E-6     1000.6.28318531       0.0        1. &
+USRBDX          109.    PHOTON      -34.    ATMOS9    ATMOS8        1.AT9to8_pho
+USRBDX            1.      1E-6     1000.6.28318531       0.0        1. &
+USRBDX          109.  3-HELIUM      -34.    ATMOS9    ATMOS8        1.AT9to8_he3
+USRBDX            1.      1E-6     1000.6.28318531       0.0        1. &
+USRBDX          109.  4-HELIUM      -34.    ATMOS9    ATMOS8        1.AT9to8_he4
+USRBDX            1.      1E-6     1000.6.28318531       0.0        1. &
+USRBDX          109.    TRITON      -34.    ATMOS9    ATMOS8        1.AT9to8_tri
+USRBDX            1.      1E-6     1000.6.28318531       0.0        1. &
+USRBDX          109.  DEUTERON      -34.    ATMOS9    ATMOS8        1.AT9to8_deu
+USRBDX            1.      1E-6     1000.6.28318531       0.0        1. &
+USRBDX          109.  HEAVYION      -34.    ATMOS9    ATMOS8        1.AT9to8_h
+USRBDX            1.      1E-6     1000.6.28318531       0.0        1. &
+USRBDX          109.    PROTON      -35.   ATMOS10    ATMOS9        1.AT10t9_pro
+USRBDX            1.      1E-6     1000.6.28318531       0.0        1. &
+USRBDX          109.   NEUTRON      -35.   ATMOS10    ATMOS9        1.AT10t9_n
+USRBDX            1.      1E-6     1000.6.28318531       0.0        1. &
+USRBDX          109.  ELECTRON      -35.   ATMOS10    ATMOS9        1.AT10t9_e
+USRBDX            1.      1E-6     1000.6.28318531       0.0        1. &
+USRBDX          109.     MUONS      -35.   ATMOS10    ATMOS9        1.AT10t9_mu
+USRBDX            1.      1E-6     1000.6.28318531       0.0        1. &
+USRBDX          109.    PHOTON      -35.   ATMOS10    ATMOS9        1.AT10t9_pho
+USRBDX            1.      1E-6     1000.6.28318531       0.0        1. &
+USRBDX          109.  3-HELIUM      -35.   ATMOS10    ATMOS9        1.AT10t9_he3
+USRBDX            1.      1E-6     1000.6.28318531       0.0        1. &
+USRBDX          109.  4-HELIUM      -35.   ATMOS10    ATMOS9        1.AT10t9_he4
+USRBDX            1.      1E-6     1000.6.28318531       0.0        1. &
+USRBDX          109.    TRITON      -35.   ATMOS10    ATMOS9        1.AT10t9_tri
+USRBDX            1.      1E-6     1000.6.28318531       0.0        1. &
+USRBDX          109.  DEUTERON      -35.   ATMOS10    ATMOS9        1.AT10t9_deu
+USRBDX            1.      1E-6     1000.6.28318531       0.0        1. &
+USRBDX          109.  HEAVYION      -35.   ATMOS10    ATMOS9        1.AT10t9_h
+USRBDX            1.      1E-6     1000.6.28318531       0.0        1. &
+USRBDX          109.    PROTON      -36.   ATMOS11   ATMOS10        1.AT11t10_pr
+USRBDX            1.      1E-6     1000.6.28318531       0.0        1. &
+USRBDX          109.   NEUTRON      -36.   ATMOS11   ATMOS10        1.AT11t10_n
+USRBDX            1.      1E-6     1000.6.28318531       0.0        1. &
+USRBDX          109.  ELECTRON      -36.   ATMOS11   ATMOS10        1.AT11t10_e
+USRBDX            1.      1E-6     1000.6.28318531       0.0        1. &
+USRBDX          109.     MUONS      -36.   ATMOS11   ATMOS10        1.AT11t10_mu
+USRBDX            1.      1E-6     1000.6.28318531       0.0        1. &
+USRBDX          109.    PHOTON      -36.   ATMOS11   ATMOS10        1.AT11t10_ph
+USRBDX            1.      1E-6     1000.6.28318531       0.0        1. &
+USRBDX          109.  3-HELIUM      -36.   ATMOS11   ATMOS10        1.A11t10_he3
+USRBDX            1.      1E-6     1000.6.28318531       0.0        1. &
+USRBDX          109.  4-HELIUM      -36.   ATMOS11   ATMOS10        1.A11t10_he4
+USRBDX            1.      1E-6     1000.6.28318531       0.0        1. &
+USRBDX          109.    TRITON      -36.   ATMOS11   ATMOS10        1.A11t10_tri
+USRBDX            1.      1E-6     1000.6.28318531       0.0        1. &
+USRBDX          109.  DEUTERON      -36.   ATMOS11   ATMOS10        1.A11t10_deu
+USRBDX            1.      1E-6     1000.6.28318531       0.0        1. &
+USRBDX          109.  HEAVYION      -36.   ATMOS11   ATMOS10        1.A11t10_h
+USRBDX            1.      1E-6     1000.6.28318531       0.0        1. &
+USRBDX          109.    PROTON      -57.   ATMOS12   ATMOS11        1.AT12t11_pr
+USRBDX            1.      1E-6     1000.6.28318531       0.0        1. &
+USRBDX          109.   NEUTRON      -57.   ATMOS12   ATMOS11        1.AT12t11_n
+USRBDX            1.      1E-6     1000.6.28318531       0.0        1. &
+USRBDX          109.  ELECTRON      -57.   ATMOS12   ATMOS11        1.AT12t11_e
+USRBDX            1.      1E-6     1000.6.28318531       0.0        1. &
+USRBDX          109.     MUONS      -57.   ATMOS12   ATMOS11        1.AT12t11_mu
+USRBDX            1.      1E-6     1000.6.28318531       0.0        1. &
+USRBDX          109.    PHOTON      -57.   ATMOS12   ATMOS11        1.AT12t11_ph
+USRBDX            1.      1E-6     1000.6.28318531       0.0        1. &
+USRBDX          109.  3-HELIUM      -57.   ATMOS12   ATMOS11        1.A12t11_he3
+USRBDX            1.      1E-6     1000.6.28318531       0.0        1. &
+USRBDX          109.  4-HELIUM      -57.   ATMOS12   ATMOS11        1.A12t11_he4
+USRBDX            1.      1E-6     1000.6.28318531       0.0        1. &
+USRBDX          109.    TRITON      -57.   ATMOS12   ATMOS11        1.A12t11_tri
+USRBDX            1.      1E-6     1000.6.28318531       0.0        1. &
+USRBDX          109.  DEUTERON      -57.   ATMOS12   ATMOS11        1.A12t11_deu
+USRBDX            1.      1E-6     1000.6.28318531       0.0        1. &
+USRBDX          109.  HEAVYION      -57.   ATMOS12   ATMOS11        1.A12t11_h
+USRBDX            1.      1E-6     1000.6.28318531       0.0        1. &
+USRBDX          109.    PROTON      -58.   ATMOS13   ATMOS12        1.AT13t12_pr
+USRBDX            1.      1E-6     1000.6.28318531       0.0        1. &
+USRBDX          109.   NEUTRON      -58.   ATMOS13   ATMOS12        1.AT13t12_n
+USRBDX            1.      1E-6     1000.6.28318531       0.0        1. &
+USRBDX          109.  ELECTRON      -58.   ATMOS13   ATMOS12        1.AT13t12_e
+USRBDX            1.      1E-6     1000.6.28318531       0.0        1. &
+USRBDX          109.     MUONS      -58.   ATMOS13   ATMOS12        1.AT13t12_mu
+USRBDX            1.      1E-6     1000.6.28318531       0.0        1. &
+USRBDX          109.    PHOTON      -58.   ATMOS13   ATMOS12        1.AT13t12_ph
+USRBDX            1.      1E-6     1000.6.28318531       0.0        1. &
+USRBDX          109.  3-HELIUM      -58.   ATMOS13   ATMOS12        1.A13t12_he3
+USRBDX            1.      1E-6     1000.6.28318531       0.0        1. &
+USRBDX          109.  4-HELIUM      -58.   ATMOS13   ATMOS12        1.A13t12_he4
+USRBDX            1.      1E-6     1000.6.28318531       0.0        1. &
+USRBDX          109.    TRITON      -58.   ATMOS13   ATMOS12        1.A13t12_tri
+USRBDX            1.      1E-6     1000.6.28318531       0.0        1. &
+USRBDX          109.  DEUTERON      -58.   ATMOS13   ATMOS12        1.A13t12_deu
+USRBDX            1.      1E-6     1000.6.28318531       0.0        1. &
+USRBDX          109.  HEAVYION      -58.   ATMOS13   ATMOS12        1.A13t12_h
+USRBDX            1.      1E-6     1000.6.28318531       0.0        1. &
+USRBDX          109.    PROTON      -59.   ATMOS14   ATMOS13        1.AT14t13_pr
+USRBDX            1.      1E-6     1000.6.28318531       0.0        1. &
+USRBDX          109.   NEUTRON      -59.   ATMOS14   ATMOS13        1.AT14t13_n
+USRBDX            1.      1E-6     1000.6.28318531       0.0        1. &
+USRBDX          109.  ELECTRON      -59.   ATMOS14   ATMOS13        1.AT14t13_e
+USRBDX            1.      1E-6     1000.6.28318531       0.0        1. &
+USRBDX          109.     MUONS      -59.   ATMOS14   ATMOS13        1.AT14t13_mu
+USRBDX            1.      1E-6     1000.6.28318531       0.0        1. &
+USRBDX          109.    PHOTON      -59.   ATMOS14   ATMOS13        1.AT14t13_ph
+USRBDX            1.      1E-6     1000.6.28318531       0.0        1. &
+USRBDX          109.  3-HELIUM      -59.   ATMOS14   ATMOS13        1.A14t13_he3
+USRBDX            1.      1E-6     1000.6.28318531       0.0        1. &
+USRBDX          109.  4-HELIUM      -59.   ATMOS14   ATMOS13        1.A14t13_he4
+USRBDX            1.      1E-6     1000.6.28318531       0.0        1. &
+USRBDX          109.    TRITON      -59.   ATMOS14   ATMOS13        1.A14t13_tri
+USRBDX            1.      1E-6     1000.6.28318531       0.0        1. &
+USRBDX          109.  DEUTERON      -59.   ATMOS14   ATMOS13        1.A14t13_deu
+USRBDX            1.      1E-6     1000.6.28318531       0.0        1. &
+USRBDX          109.  HEAVYION      -59.   ATMOS14   ATMOS13        1.A14t13_h
+USRBDX            1.      1E-6     1000.6.28318531       0.0        1. &
+USRBDX          109.    PROTON      -60.   ATMOS15   ATMOS14        1.AT15t14_pr
+USRBDX            1.      1E-6     1000.6.28318531       0.0        1. &
+USRBDX          109.   NEUTRON      -60.   ATMOS15   ATMOS14        1.AT15t14_n
+USRBDX            1.      1E-6     1000.6.28318531       0.0        1. &
+USRBDX          109.  ELECTRON      -60.   ATMOS15   ATMOS14        1.AT15t14_e
+USRBDX            1.      1E-6     1000.6.28318531       0.0        1. &
+USRBDX          109.     MUONS      -60.   ATMOS15   ATMOS14        1.AT15t14_mu
+USRBDX            1.      1E-6     1000.6.28318531       0.0        1. &
+USRBDX          109.    PHOTON      -60.   ATMOS15   ATMOS14        1.AT15t14_ph
+USRBDX            1.      1E-6     1000.6.28318531       0.0        1. &
+USRBDX          109.  3-HELIUM      -60.   ATMOS15   ATMOS14        1.A15t14_he3
+USRBDX            1.      1E-6     1000.6.28318531       0.0        1. &
+USRBDX          109.  4-HELIUM      -60.   ATMOS15   ATMOS14        1.A15t14_he4
+USRBDX            1.      1E-6     1000.6.28318531       0.0        1. &
+USRBDX          109.    TRITON      -60.   ATMOS15   ATMOS14        1.A15t14_tri
+USRBDX            1.      1E-6     1000.6.28318531       0.0        1. &
+USRBDX          109.  DEUTERON      -60.   ATMOS15   ATMOS14        1.A15t14_deu
+USRBDX            1.      1E-6     1000.6.28318531       0.0        1. &
+USRBDX          109.  HEAVYION      -60.   ATMOS15   ATMOS14        1.A15t14_h
+USRBDX            1.      1E-6     1000.6.28318531       0.0        1. &
+USRBDX          109.    PROTON      -61.   ATMOS16   ATMOS15        1.AT16t15_pr
+USRBDX            1.      1E-6     1000.6.28318531       0.0        1. &
+USRBDX          109.   NEUTRON      -61.   ATMOS16   ATMOS15        1.AT16t15_n
+USRBDX            1.      1E-6     1000.6.28318531       0.0        1. &
+USRBDX          109.  ELECTRON      -61.   ATMOS16   ATMOS15        1.AT16t15_e
+USRBDX            1.      1E-6     1000.6.28318531       0.0        1. &
+USRBDX          109.     MUONS      -61.   ATMOS16   ATMOS15        1.AT16t15_mu
+USRBDX            1.      1E-6     1000.6.28318531       0.0        1. &
+USRBDX          109.    PHOTON      -61.   ATMOS16   ATMOS15        1.AT16t15_ph
+USRBDX            1.      1E-6     1000.6.28318531       0.0        1. &
+USRBDX          109.  3-HELIUM      -61.   ATMOS16   ATMOS15        1.A16t15_he3
+USRBDX            1.      1E-6     1000.6.28318531       0.0        1. &
+USRBDX          109.  4-HELIUM      -61.   ATMOS16   ATMOS15        1.A16t15_he4
+USRBDX            1.      1E-6     1000.6.28318531       0.0        1. &
+USRBDX          109.    TRITON      -61.   ATMOS16   ATMOS15        1.A16t15_tri
+USRBDX            1.      1E-6     1000.6.28318531       0.0        1. &
+USRBDX          109.  DEUTERON      -61.   ATMOS16   ATMOS15        1.A16t15_deu
+USRBDX            1.      1E-6     1000.6.28318531       0.0        1. &
+USRBDX          109.  HEAVYION      -61.   ATMOS16   ATMOS15        1.A16t15_h
+USRBDX            1.      1E-6     1000.6.28318531       0.0        1. &
+USRBDX          109.    PROTON      -62.   ATMOS17   ATMOS16        1.AT17t16_pr
+USRBDX            1.      1E-6     1000.6.28318531       0.0        1. &
+USRBDX          109.   NEUTRON      -62.   ATMOS17   ATMOS16        1.AT17t16_n
+USRBDX            1.      1E-6     1000.6.28318531       0.0        1. &
+USRBDX          109.  ELECTRON      -62.   ATMOS17   ATMOS16        1.AT17t16_e
+USRBDX            1.      1E-6     1000.6.28318531       0.0        1. &
+USRBDX          109.     MUONS      -62.   ATMOS17   ATMOS16        1.AT17t16_mu
+USRBDX            1.      1E-6     1000.6.28318531       0.0        1. &
+USRBDX          109.    PHOTON      -62.   ATMOS17   ATMOS16        1.AT17t16_ph
+USRBDX            1.      1E-6     1000.6.28318531       0.0        1. &
+USRBDX          109.  3-HELIUM      -62.   ATMOS17   ATMOS16        1.A17t16_he3
+USRBDX            1.      1E-6     1000.6.28318531       0.0        1. &
+USRBDX          109.  4-HELIUM      -62.   ATMOS17   ATMOS16        1.A17t16_he4
+USRBDX            1.      1E-6     1000.6.28318531       0.0        1. &
+USRBDX          109.    TRITON      -62.   ATMOS17   ATMOS16        1.A17t16_tri
+USRBDX            1.      1E-6     1000.6.28318531       0.0        1. &
+USRBDX          109.  DEUTERON      -62.   ATMOS17   ATMOS16        1.A17t16_deu
+USRBDX            1.      1E-6     1000.6.28318531       0.0        1. &
+USRBDX          109.  HEAVYION      -62.   ATMOS17   ATMOS16        1.A17t16_h
+USRBDX            1.      1E-6     1000.6.28318531       0.0        1. &
+USRBDX          109.    PROTON      -63.   ATMOS18   ATMOS17        1.AT18t17_pr
+USRBDX            1.      1E-6     1000.6.28318531       0.0        1. &
+USRBDX          109.   NEUTRON      -63.   ATMOS18   ATMOS17        1.AT18t17_n
+USRBDX            1.      1E-6     1000.6.28318531       0.0        1. &
+USRBDX          109.  ELECTRON      -63.   ATMOS18   ATMOS17        1.AT18t17_e
+USRBDX            1.      1E-6     1000.6.28318531       0.0        1. &
+USRBDX          109.     MUONS      -63.   ATMOS18   ATMOS17        1.AT18t17_mu
+USRBDX            1.      1E-6     1000.6.28318531       0.0        1. &
+USRBDX          109.    PHOTON      -63.   ATMOS18   ATMOS17        1.AT18t17_ph
+USRBDX            1.      1E-6     1000.6.28318531       0.0        1. &
+USRBDX          109.  3-HELIUM      -63.   ATMOS18   ATMOS17        1.A18t17_he3
+USRBDX            1.      1E-6     1000.6.28318531       0.0        1. &
+USRBDX          109.  4-HELIUM      -63.   ATMOS18   ATMOS17        1.A18t17_he4
+USRBDX            1.      1E-6     1000.6.28318531       0.0        1. &
+USRBDX          109.    TRITON      -63.   ATMOS18   ATMOS17        1.A18t17_tri
+USRBDX            1.      1E-6     1000.6.28318531       0.0        1. &
+USRBDX          109.  DEUTERON      -63.   ATMOS18   ATMOS17        1.A18t17_deu
+USRBDX            1.      1E-6     1000.6.28318531       0.0        1. &
+USRBDX          109.  HEAVYION      -63.   ATMOS18   ATMOS17        1.A18t17_h
+USRBDX            1.      1E-6     1000.6.28318531       0.0        1. &
+USRBDX          109.    PROTON      -64.   ATMOS19   ATMOS18        1.AT19t18_pr
+USRBDX            1.      1E-6     1000.6.28318531       0.0        1. &
+USRBDX          109.   NEUTRON      -64.   ATMOS19   ATMOS18        1.AT19t18_n
+USRBDX            1.      1E-6     1000.6.28318531       0.0        1. &
+USRBDX          109.  ELECTRON      -64.   ATMOS19   ATMOS18        1.AT19t18_e
+USRBDX            1.      1E-6     1000.6.28318531       0.0        1. &
+USRBDX          109.     MUONS      -64.   ATMOS19   ATMOS18        1.AT19t18_mu
+USRBDX            1.      1E-6     1000.6.28318531       0.0        1. &
+USRBDX          109.    PHOTON      -64.   ATMOS19   ATMOS18        1.AT19t18_ph
+USRBDX            1.      1E-6     1000.6.28318531       0.0        1. &
+USRBDX          109.  3-HELIUM      -64.   ATMOS19   ATMOS18        1.A19t18_he3
+USRBDX            1.      1E-6     1000.6.28318531       0.0        1. &
+USRBDX          109.  4-HELIUM      -64.   ATMOS19   ATMOS18        1.A19t18_he4
+USRBDX            1.      1E-6     1000.6.28318531       0.0        1. &
+USRBDX          109.    TRITON      -64.   ATMOS19   ATMOS18        1.A19t18_tri
+USRBDX            1.      1E-6     1000.6.28318531       0.0        1. &
+USRBDX          109.  DEUTERON      -64.   ATMOS19   ATMOS18        1.A19t18_deu
+USRBDX            1.      1E-6     1000.6.28318531       0.0        1. &
+USRBDX          109.  HEAVYION      -64.   ATMOS19   ATMOS18        1.A19t18_h
+USRBDX            1.      1E-6     1000.6.28318531       0.0        1. &
+USRBDX          109.    PROTON      -65.   ATMOS20   ATMOS19        1.AT20t19_pr
+USRBDX            1.      1E-6     1000.6.28318531       0.0        1. &
+USRBDX          109.   NEUTRON      -65.   ATMOS20   ATMOS19        1.AT20t19_n
+USRBDX            1.      1E-6     1000.6.28318531       0.0        1. &
+USRBDX          109.  ELECTRON      -65.   ATMOS20   ATMOS19        1.AT20t19_e
+USRBDX            1.      1E-6     1000.6.28318531       0.0        1. &
+USRBDX          109.     MUONS      -65.   ATMOS20   ATMOS19        1.AT20t19_mu
+USRBDX            1.      1E-6     1000.6.28318531       0.0        1. &
+USRBDX          109.    PHOTON      -65.   ATMOS20   ATMOS19        1.AT20t19_ph
+USRBDX            1.      1E-6     1000.6.28318531       0.0        1. &
+USRBDX          109.  3-HELIUM      -65.   ATMOS20   ATMOS19        1.A20t19_he3
+USRBDX            1.      1E-6     1000.6.28318531       0.0        1. &
+USRBDX          109.  4-HELIUM      -65.   ATMOS20   ATMOS19        1.A20t19_he4
+USRBDX            1.      1E-6     1000.6.28318531       0.0        1. &
+USRBDX          109.    TRITON      -65.   ATMOS20   ATMOS19        1.A20t19_tri
+USRBDX            1.      1E-6     1000.6.28318531       0.0        1. &
+USRBDX          109.  DEUTERON      -65.   ATMOS20   ATMOS19        1.A20t19_deu
+USRBDX            1.      1E-6     1000.6.28318531       0.0        1. &
+USRBDX          109.  HEAVYION      -65.   ATMOS20   ATMOS19        1.A20t19_h
+USRBDX            1.      1E-6     1000.6.28318531       0.0        1. &
+USRBDX          109.    PROTON      -66.   ATMOS21   ATMOS20        1.AT21t20_pr
+USRBDX            1.      1E-6     1000.6.28318531       0.0        1. &
+USRBDX          109.   NEUTRON      -66.   ATMOS21   ATMOS20        1.AT21t20_n
+USRBDX            1.      1E-6     1000.6.28318531       0.0        1. &
+USRBDX          109.  ELECTRON      -66.   ATMOS21   ATMOS20        1.AT21t20_e
+USRBDX            1.      1E-6     1000.6.28318531       0.0        1. &
+USRBDX          109.     MUONS      -66.   ATMOS21   ATMOS20        1.AT21t20_mu
+USRBDX            1.      1E-6     1000.6.28318531       0.0        1. &
+USRBDX          109.    PHOTON      -66.   ATMOS21   ATMOS20        1.AT21t20_ph
+USRBDX            1.      1E-6     1000.6.28318531       0.0        1. &
+USRBDX          109.  3-HELIUM      -66.   ATMOS21   ATMOS20        1.A21t20_he3
+USRBDX            1.      1E-6     1000.6.28318531       0.0        1. &
+USRBDX          109.  4-HELIUM      -66.   ATMOS21   ATMOS20        1.A21t20_he4
+USRBDX            1.      1E-6     1000.6.28318531       0.0        1. &
+USRBDX          109.    TRITON      -66.   ATMOS21   ATMOS20        1.A21t20_tri
+USRBDX            1.      1E-6     1000.6.28318531       0.0        1. &
+USRBDX          109.  DEUTERON      -66.   ATMOS21   ATMOS20        1.A21t20_deu
+USRBDX            1.      1E-6     1000.6.28318531       0.0        1. &
+USRBDX          109.  HEAVYION      -66.   ATMOS21   ATMOS20        1.A21t20_h
+USRBDX            1.      1E-6     1000.6.28318531       0.0        1. &
+USRBDX          109.    PROTON      -67.   ATMOS22   ATMOS21        1.AT22t21_pr
+USRBDX            1.      1E-6     1000.6.28318531       0.0        1. &
+USRBDX          109.   NEUTRON      -67.   ATMOS22   ATMOS21        1.AT22t21_n
+USRBDX            1.      1E-6     1000.6.28318531       0.0        1. &
+USRBDX          109.  ELECTRON      -67.   ATMOS22   ATMOS21        1.AT22t21_e
+USRBDX            1.      1E-6     1000.6.28318531       0.0        1. &
+USRBDX          109.     MUONS      -67.   ATMOS22   ATMOS21        1.AT22t21_mu
+USRBDX            1.      1E-6     1000.6.28318531       0.0        1. &
+USRBDX          109.    PHOTON      -67.   ATMOS22   ATMOS21        1.AT22t21_ph
+USRBDX            1.      1E-6     1000.6.28318531       0.0        1. &
+USRBDX          109.  3-HELIUM      -67.   ATMOS22   ATMOS21        1.A22t21_he3
+USRBDX            1.      1E-6     1000.6.28318531       0.0        1. &
+USRBDX          109.  4-HELIUM      -67.   ATMOS22   ATMOS21        1.A22t21_he4
+USRBDX            1.      1E-6     1000.6.28318531       0.0        1. &
+USRBDX          109.    TRITON      -67.   ATMOS22   ATMOS21        1.A22t21_tri
+USRBDX            1.      1E-6     1000.6.28318531       0.0        1. &
+USRBDX          109.  DEUTERON      -67.   ATMOS22   ATMOS21        1.A22t21_deu
+USRBDX            1.      1E-6     1000.6.28318531       0.0        1. &
+USRBDX          109.  HEAVYION      -67.   ATMOS22   ATMOS21        1.A22t21_h
+USRBDX            1.      1E-6     1000.6.28318531       0.0        1. &
+USRBDX          109.    PROTON      -68.   ATMOS23   ATMOS22        1.AT23t22_pr
+USRBDX            1.      1E-6     1000.6.28318531       0.0        1. &
+USRBDX          109.   NEUTRON      -68.   ATMOS23   ATMOS22        1.AT23t22_n
+USRBDX            1.      1E-6     1000.6.28318531       0.0        1. &
+USRBDX          109.  ELECTRON      -68.   ATMOS23   ATMOS22        1.AT23t22_e
+USRBDX            1.      1E-6     1000.6.28318531       0.0        1. &
+USRBDX          109.     MUONS      -68.   ATMOS23   ATMOS22        1.AT23t22_mu
+USRBDX            1.      1E-6     1000.6.28318531       0.0        1. &
+USRBDX          109.    PHOTON      -68.   ATMOS23   ATMOS22        1.AT23t22_ph
+USRBDX            1.      1E-6     1000.6.28318531       0.0        1. &
+USRBDX          109.  3-HELIUM      -68.   ATMOS23   ATMOS22        1.A23t22_he3
+USRBDX            1.      1E-6     1000.6.28318531       0.0        1. &
+USRBDX          109.  4-HELIUM      -68.   ATMOS23   ATMOS22        1.A23t22_he4
+USRBDX            1.      1E-6     1000.6.28318531       0.0        1. &
+USRBDX          109.    TRITON      -68.   ATMOS23   ATMOS22        1.A23t22_tri
+USRBDX            1.      1E-6     1000.6.28318531       0.0        1. &
+USRBDX          109.  DEUTERON      -68.   ATMOS23   ATMOS22        1.A23t22_deu
+USRBDX            1.      1E-6     1000.6.28318531       0.0        1. &
+USRBDX          109.  HEAVYION      -68.   ATMOS23   ATMOS22        1.A23t22_h
+USRBDX            1.      1E-6     1000.6.28318531       0.0        1. &
+USRBDX          109.    PROTON      -69.   ATMOS24   ATMOS23        1.AT24t23_pr
+USRBDX            1.      1E-6     1000.6.28318531       0.0        1. &
+USRBDX          109.   NEUTRON      -69.   ATMOS24   ATMOS23        1.AT24t23_n
+USRBDX            1.      1E-6     1000.6.28318531       0.0        1. &
+USRBDX          109.  ELECTRON      -69.   ATMOS24   ATMOS23        1.AT24t23_e
+USRBDX            1.      1E-6     1000.6.28318531       0.0        1. &
+USRBDX          109.     MUONS      -69.   ATMOS24   ATMOS23        1.AT24t23_mu
+USRBDX            1.      1E-6     1000.6.28318531       0.0        1. &
+USRBDX          109.    PHOTON      -69.   ATMOS24   ATMOS23        1.AT24t23_ph
+USRBDX            1.      1E-6     1000.6.28318531       0.0        1. &
+USRBDX          109.  3-HELIUM      -69.   ATMOS24   ATMOS23        1.A24t23_he3
+USRBDX            1.      1E-6     1000.6.28318531       0.0        1. &
+USRBDX          109.  4-HELIUM      -69.   ATMOS24   ATMOS23        1.A24t23_he4
+USRBDX            1.      1E-6     1000.6.28318531       0.0        1. &
+USRBDX          109.    TRITON      -69.   ATMOS24   ATMOS23        1.A24t23_tri
+USRBDX            1.      1E-6     1000.6.28318531       0.0        1. &
+USRBDX          109.  DEUTERON      -69.   ATMOS24   ATMOS23        1.A24t23_deu
+USRBDX            1.      1E-6     1000.6.28318531       0.0        1. &
+USRBDX          109.  HEAVYION      -69.   ATMOS24   ATMOS23        1.A24t23_h
+USRBDX            1.      1E-6     1000.6.28318531       0.0        1. &
+USRBDX          109.    PROTON      -70.   ATMOS25   ATMOS24        1.AT25t24_pr
+USRBDX            1.      1E-6     1000.6.28318531       0.0        1. &
+USRBDX          109.   NEUTRON      -70.   ATMOS25   ATMOS24        1.AT25t24_n
+USRBDX            1.      1E-6     1000.6.28318531       0.0        1. &
+USRBDX          109.  ELECTRON      -70.   ATMOS25   ATMOS24        1.AT25t24_e
+USRBDX            1.      1E-6     1000.6.28318531       0.0        1. &
+USRBDX          109.     MUONS      -70.   ATMOS25   ATMOS24        1.AT25t24_mu
+USRBDX            1.      1E-6     1000.6.28318531       0.0        1. &
+USRBDX          109.    PHOTON      -70.   ATMOS25   ATMOS24        1.AT25t24_ph
+USRBDX            1.      1E-6     1000.6.28318531       0.0        1. &
+USRBDX          109.  3-HELIUM      -70.   ATMOS25   ATMOS24        1.A25t24_he3
+USRBDX            1.      1E-6     1000.6.28318531       0.0        1. &
+USRBDX          109.  4-HELIUM      -70.   ATMOS25   ATMOS24        1.A25t24_he4
+USRBDX            1.      1E-6     1000.6.28318531       0.0        1. &
+USRBDX          109.    TRITON      -70.   ATMOS25   ATMOS24        1.A25t24_tri
+USRBDX            1.      1E-6     1000.6.28318531       0.0        1. &
+USRBDX          109.  DEUTERON      -70.   ATMOS25   ATMOS24        1.A25t24_deu
+USRBDX            1.      1E-6     1000.6.28318531       0.0        1. &
+USRBDX          109.  HEAVYION      -70.   ATMOS25   ATMOS24        1.A25t24_h
+USRBDX            1.      1E-6     1000.6.28318531       0.0        1. &
+USRBDX          109.    PROTON      -71.   ATMOS26   ATMOS25        1.AT26t25_pr
+USRBDX            1.      1E-6     1000.6.28318531       0.0        1. &
+USRBDX          109.   NEUTRON      -71.   ATMOS26   ATMOS25        1.AT26t25_n
+USRBDX            1.      1E-6     1000.6.28318531       0.0        1. &
+USRBDX          109.  ELECTRON      -71.   ATMOS26   ATMOS25        1.AT26t25_e
+USRBDX            1.      1E-6     1000.6.28318531       0.0        1. &
+USRBDX          109.     MUONS      -71.   ATMOS26   ATMOS25        1.AT26t25_mu
+USRBDX            1.      1E-6     1000.6.28318531       0.0        1. &
+USRBDX          109.    PHOTON      -71.   ATMOS26   ATMOS25        1.AT26t25_ph
+USRBDX            1.      1E-6     1000.6.28318531       0.0        1. &
+USRBDX          109.  3-HELIUM      -71.   ATMOS26   ATMOS25        1.A26t25_he3
+USRBDX            1.      1E-6     1000.6.28318531       0.0        1. &
+USRBDX          109.  4-HELIUM      -71.   ATMOS26   ATMOS25        1.A26t25_he4
+USRBDX            1.      1E-6     1000.6.28318531       0.0        1. &
+USRBDX          109.    TRITON      -71.   ATMOS26   ATMOS25        1.A26t25_tri
+USRBDX            1.      1E-6     1000.6.28318531       0.0        1. &
+USRBDX          109.  DEUTERON      -71.   ATMOS26   ATMOS25        1.A26t25_deu
+USRBDX            1.      1E-6     1000.6.28318531       0.0        1. &
+USRBDX          109.  HEAVYION      -71.   ATMOS26   ATMOS25        1.A26t25_h
+USRBDX            1.      1E-6     1000.6.28318531       0.0        1. &
+USRBDX          109.    PROTON      -72.   ATMOS27   ATMOS26        1.AT27t26_pr
+USRBDX            1.      1E-6     1000.6.28318531       0.0        1. &
+USRBDX          109.   NEUTRON      -72.   ATMOS27   ATMOS26        1.AT27t26_n
+USRBDX            1.      1E-6     1000.6.28318531       0.0        1. &
+USRBDX          109.  ELECTRON      -72.   ATMOS27   ATMOS26        1.AT27t26_e
+USRBDX            1.      1E-6     1000.6.28318531       0.0        1. &
+USRBDX          109.     MUONS      -72.   ATMOS27   ATMOS26        1.AT27t26_mu
+USRBDX            1.      1E-6     1000.6.28318531       0.0        1. &
+USRBDX          109.    PHOTON      -72.   ATMOS27   ATMOS26        1.AT27t26_ph
+USRBDX            1.      1E-6     1000.6.28318531       0.0        1. &
+USRBDX          109.  3-HELIUM      -72.   ATMOS27   ATMOS26        1.A27t26_he3
+USRBDX            1.      1E-6     1000.6.28318531       0.0        1. &
+USRBDX          109.  4-HELIUM      -72.   ATMOS27   ATMOS26        1.A27t26_he4
+USRBDX            1.      1E-6     1000.6.28318531       0.0        1. &
+USRBDX          109.    TRITON      -72.   ATMOS27   ATMOS26        1.A27t26_tri
+USRBDX            1.      1E-6     1000.6.28318531       0.0        1. &
+USRBDX          109.  DEUTERON      -72.   ATMOS27   ATMOS26        1.A27t26_deu
+USRBDX            1.      1E-6     1000.6.28318531       0.0        1. &
+USRBDX          109.  HEAVYION      -72.   ATMOS27   ATMOS26        1.A27t26_h
+USRBDX            1.      1E-6     1000.6.28318531       0.0        1. &
+USRBDX          109.    PROTON      -73.   ATMOS28   ATMOS27        1.AT28t27_pr
+USRBDX            1.      1E-6     1000.6.28318531       0.0        1. &
+USRBDX          109.   NEUTRON      -73.   ATMOS28   ATMOS27        1.AT28t27_n
+USRBDX            1.      1E-6     1000.6.28318531       0.0        1. &
+USRBDX          109.  ELECTRON      -73.   ATMOS28   ATMOS27        1.AT28t27_e
+USRBDX            1.      1E-6     1000.6.28318531       0.0        1. &
+USRBDX          109.     MUONS      -73.   ATMOS28   ATMOS27        1.AT28t27_mu
+USRBDX            1.      1E-6     1000.6.28318531       0.0        1. &
+USRBDX          109.    PHOTON      -73.   ATMOS28   ATMOS27        1.AT28t27_ph
+USRBDX            1.      1E-6     1000.6.28318531       0.0        1. &
+USRBDX          109.  3-HELIUM      -73.   ATMOS28   ATMOS27        1.A28t27_he3
+USRBDX            1.      1E-6     1000.6.28318531       0.0        1. &
+USRBDX          109.  4-HELIUM      -73.   ATMOS28   ATMOS27        1.A28t27_he4
+USRBDX            1.      1E-6     1000.6.28318531       0.0        1. &
+USRBDX          109.    TRITON      -73.   ATMOS28   ATMOS27        1.A28t27_tri
+USRBDX            1.      1E-6     1000.6.28318531       0.0        1. &
+USRBDX          109.  DEUTERON      -73.   ATMOS28   ATMOS27        1.A28t27_deu
+USRBDX            1.      1E-6     1000.6.28318531       0.0        1. &
+USRBDX          109.  HEAVYION      -73.   ATMOS28   ATMOS27        1.A28t27_h
+USRBDX            1.      1E-6     1000.6.28318531       0.0        1. &
+USRTRACK         -1.    PROTON      -24.    GROUND        1.     1000.pro
+USRTRACK          1.      1E-6                                         &
+USRTRACK         -1.   NEUTRON      -24.    GROUND        1.     1000.neu
+USRTRACK          1.      1E-6                                         &
+USRTRACK         -1.  ELECTRON      -24.    GROUND        1.     1000.elec
+USRTRACK          1.      1E-6                                         &
+USRTRACK         -1.     MUONS      -24.    GROUND        1.     1000.mu
+USRTRACK          1.      1E-6                                         &
+USRTRACK         -1.    PHOTON      -24.    GROUND        1.     1000.pho
+USRTRACK          1.      1E-6                                         &
+USRTRACK         -1.  3-HELIUM      -24.    GROUND        1.     1000.he3
+USRTRACK          1.      1E-6                                         &
+USRTRACK         -1.  4-HELIUM      -24.    GROUND        1.     1000.he4
+USRTRACK          1.      1E-6                                         &
+USRTRACK         -1.    TRITON      -24.    GROUND        1.     1000.tri
+USRTRACK          1.      1E-6                                         &
+USRTRACK         -1.  DEUTERON      -24.    GROUND        1.     1000.deu
+USRTRACK          1.      1E-6                                         &
+USRTRACK         -1.  HEAVYION      -24.    GROUND        1.     1000.heavyion
+USRTRACK          1.      1E-6                                         &
+USRTRACK         -1.   DOSE-EQ      -24.    GROUND        1.     1000.dose-eq
+USRTRACK          1.      1E-6                                         &
+* ..+....1....+....2....+....3....+....4....+....5....+....6....+....7..
+*USRBIN           10.   DOSE-EQ      -21.       1E5       1E5   500000.DOSE
+*USRBIN          -1E5      -1E5       0.0      100.      100.      300. &
+*USRBIN           10.    PROTON      -22.       1E5       1E5   500000.PRO
+*USRBIN          -1E5      -1E5       0.0      100.      100.      300. &
+*USRBIN           10.     MUONS      -23.       1E5       1E5   500000.MU
+*USRBIN          -1E5      -1E5       0.0      100.      100.      300. &
+*USRBIN           10.   NEUTRON      -37.       1E5       1E5   500000.NEU
+*USRBIN          -1E5      -1E5       0.0      100.      100.      300. &
+*USRBIN           10.  ELECTRON      -37.       1E5       1E5   500000.ELEC
+*USRBIN          -1E5      -1E5       0.0      100.      100.      300. &
+USRBIN           10.   DOSE-EQ      -38.     5.1E5     5.1E5   5.002E5TOP
+USRBIN           0.0       0.0     5.0E5     2550.     2550.        1. &
+USRBIN           10.   DOSE-EQ      -39.     5.1E5     5.1E5   2.502E5HALFWAY
+USRBIN           0.0       0.0     2.5E5     2550.     2550.        1. &
+USRBIN           10.   DOSE-EQ      -40.     5.1E5     5.1E5      100.GROUND
+USRBIN           0.0       0.0     -100.     2550.     2550.        1. &
+USRBIN           10.      DOSE      -41.      100.     5.1E5     5.1E5Haf-side
+USRBIN         -100.       0.0       0.0        1.     2550.     2550. &
+USRBIN           10.   DOSE-EQ      -42.    10000.       1E6     1.5E7Side_dose
+USRBIN           0.0      -1E6       0.0        1.      200.     1500. &
+USRBIN           10.  BEAMPART      -43.    10000.       1E6     1.5E7Side_beamp
+USRBIN           0.0      -1E6       0.0        1.      200.     1500. &
+USRBIN           10.   NEUTRON      -44.    10000.       1E6     1.5E7Side_neu
+USRBIN           0.0      -1E6       0.0        1.      200.     1500. &
+*USRBIN           10.   DOSE-EQ      -45.       6E5       6E5       6E53D_dose
+*USRBIN           0.0       0.0       0.0      200.      200.      200. &
+*USRBIN           10.    TRITON      -46.      200.     5.1E5     5.1E5SIDE_tri
+*USRBIN           0.0       0.0       0.0        1.     2550.     2550. &
+*USRBIN           10.   NEUTRON      -47.      200.     5.1E5     5.1E5SIDE_n
+*USRBIN           0.0       0.0       0.0        1.     2550.     2550. &
+*USRBIN           10.   DOSE-EQ      -47.     5.1E5     5.1E5   5.002E5TOP_d
+*USRBIN           0.0       0.0       5E5     2550.     2550.        1. &
+*USRBIN           10.  ELECTRON      -48.     5.1E5     5.1E5   5.002E5TOP_e
+*USRBIN           0.0       0.0       5E5     2550.     2550.        1. &
+*USRBIN           10.    PROTON      -49.     5.1E5     5.1E5   5.002E5TOP_pro
+*USRBIN           0.0       0.0       5E5     2550.     2550.        1. &
+*USRBIN           10.  3-HELIUM      -50.     5.1E5     5.1E5   5.002E5TOP_he3
+*USRBIN           0.0       0.0       5E5     2550.     2550.        1. &
+*USRBIN           10.  4-HELIUM      -51.     5.1E5     5.1E5   5.002E5TOP_he4
+*USRBIN           0.0       0.0       5E5     2550.     2550.        1. &
+*USRBIN           10.    PHOTON      -52.     5.1E5     5.1E5   5.002E5TOP_pho
+*USRBIN           0.0       0.0       5E5     2550.     2550.        1. &
+*USRBIN           10.  DEUTERON      -53.     5.1E5     5.1E5   5.002E5TOP_deu
+*USRBIN           0.0       0.0       5E5     2550.     2550.        1. &
+*USRBIN           10.     MUONS      -54.     5.1E5     5.1E5   5.002E5TOP_mu
+*USRBIN           0.0       0.0       5E5     2550.     2550.        1. &
+*USRBIN           10.    TRITON      -55.     5.1E5     5.1E5   5.002E5TOP_tri
+*USRBIN           0.0       0.0       5E5     2550.     2550.        1. &
+*USRBIN           10.   NEUTRON      -56.     5.1E5     5.1E5   5.002E5TOP_n
+*USRBIN           0.0       0.0       5E5     2550.     2550.        1. &
+* ..+....1....+....2....+....3....+....4....+....5....+....6....+....7..
+* Set the random number seed
+RANDOMIZ         1.0
+* Set the number of primary histories to be simulated in the run
+START          1.0E6                            1.
+STOP
