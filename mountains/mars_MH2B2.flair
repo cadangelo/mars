@@ -1,0 +1,486 @@
+#!/home/nancy/opt/flair/flair
+# FLUKA Project file
+Version: 2
+Title: 
+Input: mars_MH2B2.inp
+Submit: *Default
+Tabs: 0.1 0.32 0.56 0.81 1.0
+Page: Geometry
+DefMain: True
+LinkPrg: lfluka
+F77bound: True
+F77dline: False
+
+# Run information
+Run: <default>
+	Prev:     0
+	Last:     5
+	Status:   0
+	Pid:      0
+	StartRun: 0
+End
+
+# Material
+Material: ATMOS13
+	shine: 10.0
+	color: #803030
+	ior: 1.0
+	specular: 0.0
+	alpha: 0
+	fuzz: 0.0
+End
+
+# Material
+Material: ZINC
+	shine: 10.0
+	color: #1070B0
+	ior: 1.0
+	specular: 0.0
+	alpha: 0
+	fuzz: 0.0
+End
+
+# Material
+Material: MANGANES
+	shine: 10.0
+	color: #B050D0
+	ior: 1.0
+	specular: 0.0
+	alpha: 0
+	fuzz: 0.0
+End
+
+# Material
+Material: KRYPTON
+	shine: 10.0
+	color: #907030
+	ior: 1.0
+	specular: 0.0
+	alpha: 0
+	fuzz: 0.0
+End
+
+# Material
+Material: ATMOS18
+	shine: 10.0
+	color: #909090
+	ior: 1.0
+	specular: 0.0
+	alpha: 0
+	fuzz: 0.0
+End
+
+# Material
+Material: ATMOS19
+	shine: 10.0
+	color: #E010B0
+	ior: 1.0
+	specular: 0.0
+	alpha: 0
+	fuzz: 0.0
+End
+
+# Material
+Material: ATMOS16
+	shine: 10.0
+	color: #5010D0
+	ior: 1.0
+	specular: 0.0
+	alpha: 0
+	fuzz: 0.0
+End
+
+# Material
+Material: ATMOS17
+	shine: 10.0
+	color: #A07010
+	ior: 1.0
+	specular: 0.0
+	alpha: 0
+	fuzz: 0.0
+End
+
+# Material
+Material: ATMOS14
+	shine: 10.0
+	color: #70D030
+	ior: 1.0
+	specular: 0.0
+	alpha: 0
+	fuzz: 0.0
+End
+
+# Material
+Material: ATMOS15
+	shine: 10.0
+	color: #C050D0
+	ior: 1.0
+	specular: 0.0
+	alpha: 0
+	fuzz: 0.0
+End
+
+# Material
+Material: ATMOS12
+	shine: 10.0
+	color: #30B010
+	ior: 1.0
+	specular: 0.0
+	alpha: 0
+	fuzz: 0.0
+End
+
+# Material
+Material: POTASSIU
+	shine: 10.0
+	color: #70B0B0
+	ior: 1.0
+	specular: 0.0
+	alpha: 0
+	fuzz: 0.0
+End
+
+# Material
+Material: ATMOS10
+	shine: 10.0
+	color: #503050
+	ior: 1.0
+	specular: 0.0
+	alpha: 0
+	fuzz: 0.0
+End
+
+# Material
+Material: ATMOS11
+	shine: 10.0
+	color: #A09070
+	ior: 1.0
+	specular: 0.0
+	alpha: 0
+	fuzz: 0.0
+End
+
+# Material
+Material: BROMINE
+	shine: 10.0
+	color: #407090
+	ior: 1.0
+	specular: 0.0
+	alpha: 0
+	fuzz: 0.0
+End
+
+# Material
+Material: CHLORINE
+	shine: 10.0
+	color: #503010
+	ior: 1.0
+	specular: 0.0
+	alpha: 0
+	fuzz: 0.0
+End
+
+# Material
+Material: ATMOSPHE
+	shine: 10.0
+	color: #C01070
+	ior: 1.0
+	specular: 0.0
+	alpha: 0
+	fuzz: 0.0
+End
+
+# Material
+Material: NEON
+	shine: 10.0
+	color: #309010
+	ior: 1.0
+	specular: 0.0
+	alpha: 0
+	fuzz: 0.0
+End
+
+# Material
+Material: DEUTERIU
+	shine: 10.0
+	color: #6070D0
+	ior: 1.0
+	specular: 0.0
+	alpha: 0
+	fuzz: 0.0
+End
+
+# Material
+Material: XENON
+	shine: 10.0
+	color: #E03070
+	ior: 1.0
+	specular: 0.0
+	alpha: 0
+	fuzz: 0.0
+End
+
+# Material
+Material: HYDROG-1
+	shine: 10.0
+	color: #C01030
+	ior: 1.0
+	specular: 0.0
+	alpha: 0
+	fuzz: 0.0
+End
+
+# Material
+Material: ATMOS27
+	shine: 10.0
+	color: #50D070
+	ior: 1.0
+	specular: 0.0
+	alpha: 0
+	fuzz: 0.0
+End
+
+# Material
+Material: ATMOS26
+	shine: 10.0
+	color: #205030
+	ior: 1.0
+	specular: 0.0
+	alpha: 0
+	fuzz: 0.0
+End
+
+# Material
+Material: ATMOS25
+	shine: 10.0
+	color: #70B050
+	ior: 1.0
+	specular: 0.0
+	alpha: 0
+	fuzz: 0.0
+End
+
+# Material
+Material: ATMOS24
+	shine: 10.0
+	color: #C0B070
+	ior: 1.0
+	specular: 0.0
+	alpha: 0
+	fuzz: 0.0
+End
+
+# Material
+Material: ATMOS23
+	shine: 10.0
+	color: #303090
+	ior: 1.0
+	specular: 0.0
+	alpha: 0
+	fuzz: 0.0
+End
+
+# Material
+Material: ATMOS22
+	shine: 10.0
+	color: #E090B0
+	ior: 1.0
+	specular: 0.0
+	alpha: 0
+	fuzz: 0.0
+End
+
+# Material
+Material: ATMOS21
+	shine: 10.0
+	color: #501070
+	ior: 1.0
+	specular: 0.0
+	alpha: 0
+	fuzz: 0.0
+End
+
+# Material
+Material: ATMOS20
+	shine: 10.0
+	color: #A07090
+	ior: 1.0
+	specular: 0.0
+	alpha: 0
+	fuzz: 0.0
+End
+
+# Material
+Material: REGOLITH
+	shine: 10.0
+	color: #B090D0
+	ior: 1.0
+	specular: 0.0
+	alpha: 0
+	fuzz: 0.0
+End
+
+# Material
+Material: ATMOS4
+	shine: 10.0
+	color: #50D090
+	ior: 1.0
+	specular: 0.0
+	alpha: 0
+	fuzz: 0.0
+End
+
+# Material
+Material: ATMOS5
+	shine: 10.0
+	color: #205050
+	ior: 1.0
+	specular: 0.0
+	alpha: 0
+	fuzz: 0.0
+End
+
+# Material
+Material: ATMOS6
+	shine: 10.0
+	color: #70B070
+	ior: 1.0
+	specular: 0.0
+	alpha: 0
+	fuzz: 0.0
+End
+
+# Material
+Material: ATMOS7
+	shine: 10.0
+	color: #C03090
+	ior: 1.0
+	specular: 0.0
+	alpha: 0
+	fuzz: 0.0
+End
+
+# Material
+Material: ATMOS1
+	shine: 10.0
+	color: #E010D0
+	ior: 1.0
+	specular: 0.0
+	alpha: 0
+	fuzz: 0.0
+End
+
+# Material
+Material: ATMOS2
+	shine: 10.0
+	color: #507090
+	ior: 1.0
+	specular: 0.0
+	alpha: 0
+	fuzz: 0.0
+End
+
+# Material
+Material: ATMOS3
+	shine: 10.0
+	color: #A070B0
+	ior: 1.0
+	specular: 0.0
+	alpha: 0
+	fuzz: 0.0
+End
+
+# Material
+Material: ATMOS8
+	shine: 10.0
+	color: #509010
+	ior: 1.0
+	specular: 0.0
+	alpha: 0
+	fuzz: 0.0
+End
+
+# Material
+Material: ATMOS9
+	shine: 10.0
+	color: #A09030
+	ior: 1.0
+	specular: 0.0
+	alpha: 0
+	fuzz: 0.0
+End
+
+# Geometry Information
+Geometry:
+	Frame.bsplit: 0.99
+	Frame.tsplit: 0.5
+	Frame.vsplit: 0.01
+End
+
+# Pet
+Pet: pet
+End
+
+# Geometry plot "GeoViewer Red plot"
+Plot: Red
+	Format: .eps
+	Type:   Geometry
+	origin: 0 0 0
+	layer: Media
+	title: GeoViewer Red plot
+	labels: 1
+	coord: X-Y
+	boundaries: 1
+	subtype: Material
+	extends: 100 0.120627
+	basisu: 1 0 0
+	basisv: 0 1 0
+End
+
+# Geometry plot "GeoViewer Green plot"
+Plot: Green
+	Format: .eps
+	Type:   Geometry
+	origin: 500246 0 1564.41
+	layer: Media
+	title: GeoViewer Green plot
+	labels: 1
+	coord: Z-X
+	boundaries: 1
+	subtype: Material
+	extends: 3194.8 3.8538
+	basisu: 0 0 1
+	basisv: 1 0 0
+End
+
+# Geometry plot "GeoViewer Blue plot"
+Plot: Blue
+	Format: .eps
+	Type:   Geometry
+	origin: 0 500155 -435.786
+	layer: Media
+	title: GeoViewer Blue plot
+	labels: 1
+	coord: Z-Y
+	boundaries: 1
+	subtype: Material
+	extends: 4.47946e+08 2.34469e+08
+	basisu: 0 0 1
+	basisv: 0 1 0
+End
+
+# Geometry plot "GeoViewer Magenta plot"
+Plot: Magenta
+	Format: .eps
+	Type:   Geometry
+	origin: 0 0 0
+	layer: Media
+	title: GeoViewer Magenta plot
+	labels: 1
+	coord: X-Y
+	boundaries: 1
+	subtype: Material
+	extends: 3.26085e+06 1.86955e+08
+	basisu: -1 0 0
+	basisv: 0 1 0
+End
