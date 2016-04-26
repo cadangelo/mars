@@ -756,6 +756,340 @@ USRTRACK         10.      1E-6                                         &
 USRTRACK         -1.      DOSE      -77.    DtctrA    4.19E6     1000.das36
 USRTRACK         10.      1E-6                                         &
 * ..+....1....+....2....+....3....+....4....+....5....+....6....+....7..
+AUXSCORE    USRTRACK -1703500.             dtCl_35   daCl_35
+USRTRACK         -1.      DOSE      -74.    DtctrT    4.19E6     1000.dtCl_35
+USRTRACK         10.      1E-6                                         &
+USRTRACK         -1.      DOSE      -75.    DtctrH    4.19E6     1000.dhCl_35
+USRTRACK         10.      1E-6                                         &
+USRTRACK         -1.      DOSE      -76.    DtctrB    4.19E6     1000.dbCl_35
+USRTRACK         10.      1E-6                                         &
+USRTRACK         -1.      DOSE      -77.    DtctrA    4.19E6     1000.daCl_35
+USRTRACK         10.      1E-6                                         &
+AUXSCORE    USRTRACK -1703700.             dtCl_37   daCl_37
+USRTRACK         -1.      DOSE      -74.    DtctrT    4.19E6     1000.dtCl_37
+USRTRACK         10.      1E-6                                         &
+USRTRACK         -1.      DOSE      -75.    DtctrH    4.19E6     1000.dhCl_37
+USRTRACK         10.      1E-6                                         &
+USRTRACK         -1.      DOSE      -76.    DtctrB    4.19E6     1000.dbCl_37
+USRTRACK         10.      1E-6                                         &
+USRTRACK         -1.      DOSE      -77.    DtctrA    4.19E6     1000.daCl_37
+USRTRACK         10.      1E-6                                         &
+AUXSCORE    USRTRACK -1803600.             dtAr_36   daAr_36
+USRTRACK         -1.      DOSE      -74.    DtctrT    4.19E6     1000.dtAr_36
+USRTRACK         10.      1E-6                                         &
+USRTRACK         -1.      DOSE      -75.    DtctrH    4.19E6     1000.dhAr_36
+USRTRACK         10.      1E-6                                         &
+USRTRACK         -1.      DOSE      -76.    DtctrB    4.19E6     1000.dbAr_36
+USRTRACK         10.      1E-6                                         &
+USRTRACK         -1.      DOSE      -77.    DtctrA    4.19E6     1000.daAr_36
+USRTRACK         10.      1E-6                                         &
+AUXSCORE    USRTRACK -1803800.             dtAr_38   daAr_38
+USRTRACK         -1.      DOSE      -74.    DtctrT    4.19E6     1000.dtAr_38
+USRTRACK         10.      1E-6                                         &
+USRTRACK         -1.      DOSE      -75.    DtctrH    4.19E6     1000.dhAr_38
+USRTRACK         10.      1E-6                                         &
+USRTRACK         -1.      DOSE      -76.    DtctrB    4.19E6     1000.dbAr_38
+USRTRACK         10.      1E-6                                         &
+USRTRACK         -1.      DOSE      -77.    DtctrA    4.19E6     1000.daAr_38
+USRTRACK         10.      1E-6                                         &
+AUXSCORE    USRTRACK -1804000.             dtAr_40   daAr_40
+USRTRACK         -1.      DOSE      -74.    DtctrT    4.19E6     1000.dtAr_40
+USRTRACK         10.      1E-6                                         &
+USRTRACK         -1.      DOSE      -75.    DtctrH    4.19E6     1000.dhAr_40
+USRTRACK         10.      1E-6                                         &
+USRTRACK         -1.      DOSE      -76.    DtctrB    4.19E6     1000.dbAr_40
+USRTRACK         10.      1E-6                                         &
+USRTRACK         -1.      DOSE      -77.    DtctrA    4.19E6     1000.daAr_40
+USRTRACK         10.      1E-6                                         &
+AUXSCORE    USRTRACK -1903900.              dtK_39    daK_39
+USRTRACK         -1.      DOSE      -74.    DtctrT    4.19E6     1000.dtK_39
+USRTRACK         10.      1E-6                                         &
+USRTRACK         -1.      DOSE      -75.    DtctrH    4.19E6     1000.dhK_39
+USRTRACK         10.      1E-6                                         &
+USRTRACK         -1.      DOSE      -76.    DtctrB    4.19E6     1000.dbK_39
+USRTRACK         10.      1E-6                                         &
+USRTRACK         -1.      DOSE      -77.    DtctrA    4.19E6     1000.daK_39
+USRTRACK         10.      1E-6                                         &
+AUXSCORE    USRTRACK -1904100.              dtK_41    daK_41
+USRTRACK         -1.      DOSE      -74.    DtctrT    4.19E6     1000.dtK_41
+USRTRACK         10.      1E-6                                         &
+USRTRACK         -1.      DOSE      -75.    DtctrH    4.19E6     1000.dhK_41
+USRTRACK         10.      1E-6                                         &
+USRTRACK         -1.      DOSE      -76.    DtctrB    4.19E6     1000.dbK_41
+USRTRACK         10.      1E-6                                         &
+USRTRACK         -1.      DOSE      -77.    DtctrA    4.19E6     1000.daK_41
+USRTRACK         10.      1E-6                                         &
+AUXSCORE    USRTRACK -2004000.             dtCa_40   daCa_40
+USRTRACK         -1.      DOSE      -74.    DtctrT    4.19E6     1000.dtCa_40
+USRTRACK         10.      1E-6                                         &
+USRTRACK         -1.      DOSE      -75.    DtctrH    4.19E6     1000.dhCa_40
+USRTRACK         10.      1E-6                                         &
+USRTRACK         -1.      DOSE      -76.    DtctrB    4.19E6     1000.dbCa_40
+USRTRACK         10.      1E-6                                         &
+USRTRACK         -1.      DOSE      -77.    DtctrA    4.19E6     1000.daCa_40
+USRTRACK         10.      1E-6                                         &
+AUXSCORE    USRTRACK -2004200.             dtCa_42   daCa_42
+USRTRACK         -1.      DOSE      -74.    DtctrT    4.19E6     1000.dtCa_42
+USRTRACK         10.      1E-6                                         &
+USRTRACK         -1.      DOSE      -75.    DtctrH    4.19E6     1000.dhCa_42
+USRTRACK         10.      1E-6                                         &
+USRTRACK         -1.      DOSE      -76.    DtctrB    4.19E6     1000.dbCa_42
+USRTRACK         10.      1E-6                                         &
+USRTRACK         -1.      DOSE      -77.    DtctrA    4.19E6     1000.daCa_42
+USRTRACK         10.      1E-6                                         &
+AUXSCORE    USRTRACK -2004300.             dtCa_43   daCa_43
+USRTRACK         -1.      DOSE      -74.    DtctrT    4.19E6     1000.dtCa_43
+USRTRACK         10.      1E-6                                         &
+USRTRACK         -1.      DOSE      -75.    DtctrH    4.19E6     1000.dhCa_43
+USRTRACK         10.      1E-6                                         &
+USRTRACK         -1.      DOSE      -76.    DtctrB    4.19E6     1000.dbCa_43
+USRTRACK         10.      1E-6                                         &
+USRTRACK         -1.      DOSE      -77.    DtctrA    4.19E6     1000.daCa_43
+USRTRACK         10.      1E-6                                         &
+AUXSCORE    USRTRACK -2004400.             dtCa_44   daCa_44
+USRTRACK         -1.      DOSE      -74.    DtctrT    4.19E6     1000.dtCa_44
+USRTRACK         10.      1E-6                                         &
+USRTRACK         -1.      DOSE      -75.    DtctrH    4.19E6     1000.dhCa_44
+USRTRACK         10.      1E-6                                         &
+USRTRACK         -1.      DOSE      -76.    DtctrB    4.19E6     1000.dbCa_44
+USRTRACK         10.      1E-6                                         &
+USRTRACK         -1.      DOSE      -77.    DtctrA    4.19E6     1000.daCa_44
+USRTRACK         10.      1E-6                                         &
+AUXSCORE    USRTRACK -2004600.             dtCa_46   daCa_46
+USRTRACK         -1.      DOSE      -74.    DtctrT    4.19E6     1000.dtCa_46
+USRTRACK         10.      1E-6                                         &
+USRTRACK         -1.      DOSE      -75.    DtctrH    4.19E6     1000.dhCa_46
+USRTRACK         10.      1E-6                                         &
+USRTRACK         -1.      DOSE      -76.    DtctrB    4.19E6     1000.dbCa_46
+USRTRACK         10.      1E-6                                         &
+USRTRACK         -1.      DOSE      -77.    DtctrA    4.19E6     1000.daCa_46
+USRTRACK         10.      1E-6                                         &
+AUXSCORE    USRTRACK -2004800.             dtCa_48   daCa_48
+USRTRACK         -1.      DOSE      -74.    DtctrT    4.19E6     1000.dtCa_48
+USRTRACK         10.      1E-6                                         &
+USRTRACK         -1.      DOSE      -75.    DtctrH    4.19E6     1000.dhCa_48
+USRTRACK         10.      1E-6                                         &
+USRTRACK         -1.      DOSE      -76.    DtctrB    4.19E6     1000.dbCa_48
+USRTRACK         10.      1E-6                                         &
+USRTRACK         -1.      DOSE      -77.    DtctrA    4.19E6     1000.daCa_48
+USRTRACK         10.      1E-6                                         &
+AUXSCORE    USRTRACK -2104500.             dtSc_45   daSc_45
+USRTRACK         -1.      DOSE      -74.    DtctrT    4.19E6     1000.dtSc_45
+USRTRACK         10.      1E-6                                         &
+USRTRACK         -1.      DOSE      -75.    DtctrH    4.19E6     1000.dhSc_45
+USRTRACK         10.      1E-6                                         &
+USRTRACK         -1.      DOSE      -76.    DtctrB    4.19E6     1000.dbSc_45
+USRTRACK         10.      1E-6                                         &
+USRTRACK         -1.      DOSE      -77.    DtctrA    4.19E6     1000.daSc_45
+USRTRACK         10.      1E-6                                         &
+AUXSCORE    USRTRACK -2204600.             dtTi_46   daTi_46
+USRTRACK         -1.      DOSE      -74.    DtctrT    4.19E6     1000.dtTi_46
+USRTRACK         10.      1E-6                                         &
+USRTRACK         -1.      DOSE      -75.    DtctrH    4.19E6     1000.dhTi_46
+USRTRACK         10.      1E-6                                         &
+USRTRACK         -1.      DOSE      -76.    DtctrB    4.19E6     1000.dbTi_46
+USRTRACK         10.      1E-6                                         &
+USRTRACK         -1.      DOSE      -77.    DtctrA    4.19E6     1000.daTi_46
+USRTRACK         10.      1E-6                                         &
+AUXSCORE    USRTRACK -2204700.             dtTi_47   daTi_47
+USRTRACK         -1.      DOSE      -74.    DtctrT    4.19E6     1000.dtTi_47
+USRTRACK         10.      1E-6                                         &
+USRTRACK         -1.      DOSE      -75.    DtctrH    4.19E6     1000.dhTi_47
+USRTRACK         10.      1E-6                                         &
+USRTRACK         -1.      DOSE      -76.    DtctrB    4.19E6     1000.dbTi_47
+USRTRACK         10.      1E-6                                         &
+USRTRACK         -1.      DOSE      -77.    DtctrA    4.19E6     1000.daTi_47
+USRTRACK         10.      1E-6                                         &
+AUXSCORE    USRTRACK -2204800.             dtTi_48   daTi_48
+USRTRACK         -1.      DOSE      -74.    DtctrT    4.19E6     1000.dtTi_48
+USRTRACK         10.      1E-6                                         &
+USRTRACK         -1.      DOSE      -75.    DtctrH    4.19E6     1000.dhTi_48
+USRTRACK         10.      1E-6                                         &
+USRTRACK         -1.      DOSE      -76.    DtctrB    4.19E6     1000.dbTi_48
+USRTRACK         10.      1E-6                                         &
+USRTRACK         -1.      DOSE      -77.    DtctrA    4.19E6     1000.daTi_48
+USRTRACK         10.      1E-6                                         &
+AUXSCORE    USRTRACK -2204900.             dtTi_49   daTi_49
+USRTRACK         -1.      DOSE      -74.    DtctrT    4.19E6     1000.dtTi_49
+USRTRACK         10.      1E-6                                         &
+USRTRACK         -1.      DOSE      -75.    DtctrH    4.19E6     1000.dhTi_49
+USRTRACK         10.      1E-6                                         &
+USRTRACK         -1.      DOSE      -76.    DtctrB    4.19E6     1000.dbTi_49
+USRTRACK         10.      1E-6                                         &
+USRTRACK         -1.      DOSE      -77.    DtctrA    4.19E6     1000.daTi_49
+USRTRACK         10.      1E-6                                         &
+AUXSCORE    USRTRACK -2205000.             dtTi_50   daTi_50
+USRTRACK         -1.      DOSE      -74.    DtctrT    4.19E6     1000.dtTi_50
+USRTRACK         10.      1E-6                                         &
+USRTRACK         -1.      DOSE      -75.    DtctrH    4.19E6     1000.dhTi_50
+USRTRACK         10.      1E-6                                         &
+USRTRACK         -1.      DOSE      -76.    DtctrB    4.19E6     1000.dbTi_50
+USRTRACK         10.      1E-6                                         &
+USRTRACK         -1.      DOSE      -77.    DtctrA    4.19E6     1000.daTi_50
+USRTRACK         10.      1E-6                                         &
+AUXSCORE    USRTRACK -2305000.              dtV_50    daV_50
+USRTRACK         -1.      DOSE      -74.    DtctrT    4.19E6     1000.dtV_50
+USRTRACK         10.      1E-6                                         &
+USRTRACK         -1.      DOSE      -75.    DtctrH    4.19E6     1000.dhV_50
+USRTRACK         10.      1E-6                                         &
+USRTRACK         -1.      DOSE      -76.    DtctrB    4.19E6     1000.dbV_50
+USRTRACK         10.      1E-6                                         &
+USRTRACK         -1.      DOSE      -77.    DtctrA    4.19E6     1000.daV_50
+USRTRACK         10.      1E-6                                         &
+AUXSCORE    USRTRACK -2305100.              dtV_51    daV_51
+USRTRACK         -1.      DOSE      -74.    DtctrT    4.19E6     1000.dtV_51
+USRTRACK         10.      1E-6                                         &
+USRTRACK         -1.      DOSE      -75.    DtctrH    4.19E6     1000.dhV_51
+USRTRACK         10.      1E-6                                         &
+USRTRACK         -1.      DOSE      -76.    DtctrB    4.19E6     1000.dbV_51
+USRTRACK         10.      1E-6                                         &
+USRTRACK         -1.      DOSE       77.    DtctrA    4.19E6     1000.daV_51
+USRTRACK         10.      1E-6                                         &
+AUXSCORE    USRTRACK -2405000.             dtCr_50   daCr_50
+USRTRACK         -1.      DOSE      -74.    DtctrT    4.19E6     1000.dtCr_50
+USRTRACK         10.      1E-6                                         &
+USRTRACK         -1.      DOSE      -75.    DtctrH    4.19E6     1000.dhCr_50
+USRTRACK         10.      1E-6                                         &
+USRTRACK         -1.      DOSE      -76.    DtctrB    4.19E6     1000.dbCr_50
+USRTRACK         10.      1E-6                                         &
+USRTRACK         -1.      DOSE      -77.    DtctrA    4.19E6     1000.daCr_50
+USRTRACK         10.      1E-6                                         &
+AUXSCORE    USRTRACK -2405200.             daCr_52   daCr_52
+USRTRACK         -1.      DOSE      -74.    DtctrT    4.19E6     1000.dtCr_52
+USRTRACK         10.      1E-6                                         &
+USRTRACK         -1.      DOSE      -75.    DtctrH    4.19E6     1000.dhCr_52
+USRTRACK         10.      1E-6                                         &
+USRTRACK         -1.      DOSE      -76.    DtctrB    4.19E6     1000.dbCr_52
+USRTRACK         10.      1E-6                                         &
+USRTRACK         -1.      DOSE      -77.    DtctrA    4.19E6     1000.daCr_52
+USRTRACK         10.      1E-6                                         &
+AUXSCORE    USRTRACK -2405300.             dtCr_53   daCr_53
+USRTRACK         -1.      DOSE      -74.    DtctrT    4.19E6     1000.dtCr_53
+USRTRACK         10.      1E-6                                         &
+USRTRACK         -1.      DOSE      -75.    DtctrH    4.19E6     1000.dhCr_53
+USRTRACK         10.      1E-6                                         &
+USRTRACK         -1.      DOSE      -76.    DtctrB    4.19E6     1000.dbCr_53
+USRTRACK         10.      1E-6                                         &
+USRTRACK         -1.      DOSE      -77.    DtctrA    4.19E6     1000.daCr_53
+USRTRACK         10.      1E-6                                         &
+AUXSCORE    USRTRACK -2405400.             dtCr_54   daCr_54
+USRTRACK         -1.      DOSE      -74.    DtctrT    4.19E6     1000.dtCr_54
+USRTRACK         10.      1E-6                                         &
+USRTRACK         -1.      DOSE      -75.    DtctrH    4.19E6     1000.dhCr_54
+USRTRACK         10.      1E-6                                         &
+USRTRACK         -1.      DOSE      -76.    DtctrB    4.19E6     1000.dbCr_54
+USRTRACK         10.      1E-6                                         &
+USRTRACK         -1.      DOSE      -77.    DtctrA    4.19E6     1000.daCr_54
+USRTRACK         10.      1E-6                                         &
+AUXSCORE    USRTRACK -2505500.             dtMn_55   daMn_55
+USRTRACK         -1.      DOSE      -74.    DtctrT    4.19E6     1000.dtMn_55
+USRTRACK         10.      1E-6                                         &
+USRTRACK         -1.      DOSE      -75.    DtctrH    4.19E6     1000.dhMn_55
+USRTRACK         10.      1E-6                                         &
+USRTRACK         -1.      DOSE      -76.    DtctrB    4.19E6     1000.dbMn_55
+USRTRACK         10.      1E-6                                         &
+USRTRACK         -1.      DOSE      -77.    DtctrA    4.19E6     1000.daMn_55
+USRTRACK         10.      1E-6                                         &
+AUXSCORE    USRTRACK -2605400.             dtFe_54   daFe_54
+USRTRACK         -1.      DOSE      -74.    DtctrT    4.19E6     1000.dtFe_54
+USRTRACK         10.      1E-6                                         &
+USRTRACK         -1.      DOSE      -75.    DtctrH    4.19E6     1000.dhFe_54
+USRTRACK         10.      1E-6                                         &
+USRTRACK         -1.      DOSE      -76.    DtctrB    4.19E6     1000.dbFe_54
+USRTRACK         10.      1E-6                                         &
+USRTRACK         -1.      DOSE      -77.    DtctrA    4.19E6     1000.daFe_54
+USRTRACK         10.      1E-6                                         &
+AUXSCORE    USRTRACK -2605600.             dtFe_56   daFe_56
+USRTRACK         -1.      DOSE      -74.    DtctrT    4.19E6     1000.dtFe_56
+USRTRACK         10.      1E-6                                         &
+USRTRACK         -1.      DOSE      -75.    DtctrH    4.19E6     1000.dhFe_56
+USRTRACK         10.      1E-6                                         &
+USRTRACK         -1.      DOSE      -76.    DtctrB    4.19E6     1000.dbFe_56
+USRTRACK         10.      1E-6                                         &
+USRTRACK         -1.      DOSE      -77.    DtctrA    4.19E6     1000.daFe_56
+USRTRACK         10.      1E-6                                         &
+AUXSCORE    USRTRACK -2605700.             dtFe_57   daFe_57
+USRTRACK         -1.      DOSE      -74.    DtctrT    4.19E6     1000.dtFe_57
+USRTRACK         10.      1E-6                                         &
+USRTRACK         -1.      DOSE      -75.    DtctrH    4.19E6     1000.dhFe_57
+USRTRACK         10.      1E-6                                         &
+USRTRACK         -1.      DOSE      -76.    DtctrB    4.19E6     1000.dbFe_57
+USRTRACK         10.      1E-6                                         &
+USRTRACK         -1.      DOSE      -77.    DtctrA    4.19E6     1000.daFe_57
+USRTRACK         10.      1E-6                                         &
+AUXSCORE    USRTRACK -2605800.             dtFe_58   daFe_58
+USRTRACK         -1.      DOSE      -74.    DtctrT    4.19E6     1000.dtFe_58
+USRTRACK         10.      1E-6                                         &
+USRTRACK         -1.      DOSE      -75.    DtctrH    4.19E6     1000.dhFe_58
+USRTRACK         10.      1E-6                                         &
+USRTRACK         -1.      DOSE      -76.    DtctrB    4.19E6     1000.dbFe_58
+USRTRACK         10.      1E-6                                         &
+USRTRACK         -1.      DOSE      -77.    DtctrA    4.19E6     1000.daFe_58
+USRTRACK         10.      1E-6                                         &
+AUXSCORE    USRTRACK -2705900.             dtCo_59   daCo_59
+USRTRACK         -1.      DOSE      -74.    DtctrT    4.19E6     1000.dtCo_59
+USRTRACK         10.      1E-6                                         &
+USRTRACK         -1.      DOSE      -75.    DtctrH    4.19E6     1000.dhCo_59
+USRTRACK         10.      1E-6                                         &
+USRTRACK         -1.      DOSE      -76.    DtctrB    4.19E6     1000.dbCo_59
+USRTRACK         10.      1E-6                                         &
+USRTRACK         -1.      DOSE      -77.    DtctrA    4.19E6     1000.daCo_59
+USRTRACK         10.      1E-6                                         &
+AUXSCORE    USRTRACK -2805800.             dtNi_58   daNi_58
+USRTRACK         -1.      DOSE      -74.    DtctrT    4.19E6     1000.dtNi_58
+USRTRACK         10.      1E-6                                         &
+USRTRACK         -1.      DOSE      -75.    DtctrH    4.19E6     1000.dhNi_58
+USRTRACK         10.      1E-6                                         &
+USRTRACK         -1.      DOSE      -76.    DtctrB    4.19E6     1000.dbNi_58
+USRTRACK         10.      1E-6                                         &
+USRTRACK         -1.      DOSE      -77.    DtctrA    4.19E6     1000.daNi_58
+USRTRACK         10.      1E-6                                         &
+AUXSCORE    USRTRACK -2806000.             dtNi_60   daNi_60
+USRTRACK         -1.      DOSE      -74.    DtctrT    4.19E6     1000.dtNi_60
+USRTRACK         10.      1E-6                                         &
+USRTRACK         -1.      DOSE      -75.    DtctrH    4.19E6     1000.dhNi_60
+USRTRACK         10.      1E-6                                         &
+USRTRACK         -1.      DOSE      -76.    DtctrB    4.19E6     1000.dbNi_60
+USRTRACK         10.      1E-6                                         &
+USRTRACK         -1.      DOSE      -77.    DtctrA    4.19E6     1000.daNi_60
+USRTRACK         10.      1E-6                                         &
+AUXSCORE    USRTRACK -2806100.             dtNi_61   daNi_61
+USRTRACK         -1.      DOSE      -74.    DtctrT    4.19E6     1000.dtNi_61
+USRTRACK         10.      1E-6                                         &
+USRTRACK         -1.      DOSE      -75.    DtctrH    4.19E6     1000.dhNi_61
+USRTRACK         10.      1E-6                                         &
+USRTRACK         -1.      DOSE      -76.    DtctrB    4.19E6     1000.dbNi_61
+USRTRACK         10.      1E-6                                         &
+USRTRACK         -1.      DOSE      -77.    DtctrA    4.19E6     1000.daNi_61
+USRTRACK         10.      1E-6                                         &
+AUXSCORE    USRTRACK -2806200.             dtNi_62   daNi_62
+USRTRACK         -1.      DOSE      -74.    DtctrT    4.19E6     1000.dtNi_62
+USRTRACK         10.      1E-6                                         &
+USRTRACK         -1.      DOSE      -75.    DtctrH    4.19E6     1000.dhNi_62
+USRTRACK         10.      1E-6                                         &
+USRTRACK         -1.      DOSE      -76.    DtctrB    4.19E6     1000.dbNi_62
+USRTRACK         10.      1E-6                                         &
+USRTRACK         -1.      DOSE      -77.    DtctrA    4.19E6     1000.daNi_62
+USRTRACK         10.      1E-6                                         &
+AUXSCORE    USRTRACK -2906300.             dtCu_63   daCu_63
+USRTRACK         -1.      DOSE      -74.    DtctrT    4.19E6     1000.dtCu_63
+USRTRACK         10.      1E-6                                         &
+USRTRACK         -1.      DOSE      -75.    DtctrH    4.19E6     1000.dhCu_63
+USRTRACK         10.      1E-6                                         &
+USRTRACK         -1.      DOSE      -76.    DtctrB    4.19E6     1000.dbCu_63
+USRTRACK         10.      1E-6                                         &
+USRTRACK         -1.      DOSE      -77.    DtctrA    4.19E6     1000.daCu_63
+USRTRACK         10.      1E-6                                         &
+AUXSCORE    USRTRACK -2906500.             dtCu_65   daCu_65
+USRTRACK         -1.      DOSE      -74.    DtctrT    4.19E6     1000.dtCu_65
+USRTRACK         10.      1E-6                                         &
+USRTRACK         -1.      DOSE      -75.    DtctrH    4.19E6     1000.dhCu_65
+USRTRACK         10.      1E-6                                         &
+USRTRACK         -1.      DOSE      -76.    DtctrB    4.19E6     1000.dbCu_65
+USRTRACK         10.      1E-6                                         &
+USRTRACK         -1.      DOSE      -77.    DtctrA    4.19E6     1000.daCu_65
+USRTRACK         10.      1E-6                                         &
+* ..+....1....+....2....+....3....+....4....+....5....+....6....+....7..
 USRBIN           10.   NEUTRON      -40.     5.1E5     5.1E5      100.GROUNDn
 USRBIN           0.0       0.0     -100.     2550.     2550.        1. &
 USRBIN           10.   NEUTRON      -40.      100.     5.1E5       0.0YMESHn
