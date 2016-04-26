@@ -939,31 +939,24 @@ USRTRACK         -1.  HEAVYION      -24.    GROUND        1.     1000.heavyion
 USRTRACK          1.      1E-6                                         &
 USRTRACK         -1.   DOSE-EQ      -24.    GROUND        1.     1000.dose-eq
 USRTRACK          1.      1E-6                                         &
-* ..+....1....+....2....+....3....+....4....+....5....+....6....+....7..
-*USRBIN           10.   DOSE-EQ      -21.       1E5       1E5       5E5DOSE
-*USRBIN          -1E5      -1E5       0.0      100.      100.      300. &
-*USRBIN           10.    PROTON      -22.       1E5       1E5   500000.PRO
-*USRBIN          -1E5      -1E5       0.0      100.      100.      300. &
-*USRBIN           10.     MUONS      -23.       1E5       1E5   500000.MU
-*USRBIN          -1E5      -1E5       0.0      100.      100.      300. &
-*USRBIN           10.   NEUTRON      -37.       1E5       1E5   500000.NEU
-*USRBIN          -1E5      -1E5       0.0      100.      100.      300. &
-*USRBIN           10.  ELECTRON      -37.       1E5       1E5   500000.ELEC
-*USRBIN          -1E5      -1E5       0.0      100.      100.      300. &
-USRBIN           10.   DOSE-EQ      -38.     5.1E5     5.1E5   -5.00E5TOP
-USRBIN           0.0       0.0  -5.002E5     2550.     2550.        1. &
-USRBIN           10.   DOSE-EQ      -39.     5.1E5     5.1E5   -2.50E5HALFWAY
-USRBIN           0.0       0.0  -2.502E5     2550.     2550.        1. &
-USRBIN           10.   DOSE-EQ      -40.     5.1E5     5.1E5      100.GROUND
+USRBIN           10.   NEUTRON      -40.     5.1E5     5.1E5      100.GROUNDn
 USRBIN           0.0       0.0     -100.     2550.     2550.        1. &
-USRBIN           10.      DOSE      -41.      100.     5.1E5       0.0Haf-side
+USRBIN           10.   NEUTRON      -40.      100.     5.1E5       0.0YMESHn
 USRBIN         -100.       0.0    -5.1E5        1.     2550.     2550. &
-USRBIN           10.   DOSE-EQ      -42.    10000.       1E6       0.0Side_dose
-USRBIN           0.0      -1E6    -1.5E7        1.      200.     1500. &
-USRBIN           10.  BEAMPART      -43.    10000.       1E6       0.0Side_beamp
-USRBIN           0.0      -1E6    -1.5E7        1.      200.     1500. &
-USRBIN           10.   NEUTRON      -44.    10000.       1E6       0.0Side_neu
-USRBIN           0.0      -1E6    -1.5E7        1.      200.     1500. &
+USRBIN           10.   NEUTRON      -40.     5.1E5      100.       0.0XMESHn
+USRBIN            0.     -100.    -5.1E5     2550.        1.     2550. &
+USRBIN           10.    PROTON      -40.     5.1E5     5.1E5      100.GROUNDpro
+USRBIN           0.0       0.0     -100.     2550.     2550.        1. &
+USRBIN           10.    PROTON      -40.      100.     5.1E5       0.0YMESHpro
+USRBIN         -100.       0.0    -5.1E5        1.     2550.     2550. &
+USRBIN           10.    PROTON      -40.     5.1E5      100.       0.0XMESHpro
+USRBIN            0.     -100.    -5.1E5     2550.        1.     2550. &
+USRBIN           10.     E+&E-      -40.     5.1E5     5.1E5      100.GROUNDe
+USRBIN           0.0       0.0     -100.     2550.     2550.        1. &
+USRBIN           10.     E+&E-      -40.      100.     5.1E5       0.0YMESHe
+USRBIN         -100.       0.0    -5.1E5        1.     2550.     2550. &
+USRBIN           10.     E+&E-      -40.     5.1E5      100.       0.0XMESHe
+USRBIN            0.     -100.    -5.1E5     2550.        1.     2550. &
 * ..+....1....+....2....+....3....+....4....+....5....+....6....+....7..
 * Set the random number seed
 RANDOMIZ         1.0
