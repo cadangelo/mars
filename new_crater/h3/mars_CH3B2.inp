@@ -3,12 +3,14 @@ TITLE
 * Set the defaults for precision simulations
 DEFAULTS                                                              PRECISIO
 * Define the beam characteristics
-BEAM            -1.0                                                  PROTON
+* ..+....1....+....2....+....3....+....4....+....5....+....6....+....7..
+BEAM          -100.0                                                  PROTON
 * Define the beam position
+* ..+....1....+....2....+....3....+....4....+....5....+....6....+....7..
 SOURCE           0.0       0.0       0.0     2.0E6     2.0E6     9.9E8GCR
-SOURCE      3.3895E8                                                   &
+SOURCE      3.3895E8       0.0       1.0                                    &
 * Define the beam position
-BEAMPOS          0.0       0.0       2E8                              NEGATIVE
+*BEAMPOS          0.0       0.0       2E8                              NEGATIVE
 GEOBEGIN                                                              COMBNAME
     0    0          
 * Mars Radius
