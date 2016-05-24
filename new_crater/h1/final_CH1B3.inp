@@ -3,14 +3,12 @@ TITLE
 * Set the defaults for precision simulations
 DEFAULTS                                                              PRECISIO
 * Define the beam characteristics
-* ..+....1....+....2....+....3....+....4....+....5....+....6....+....7..
-BEAM          -100.0                                                  PROTON
+BEAM            -1.0                                                  PROTON
 * Define the beam position
-* ..+....1....+....2....+....3....+....4....+....5....+....6....+....7..
 SOURCE           0.0       0.0       0.0     2.0E6     2.0E6     9.9E8GCR
-SOURCE      3.3895E8       0.0       1.0                               &
+SOURCE      3.3895E8                                                   &
 * Define the beam position
-*BEAMPOS          0.0       0.0       2E8                              NEGATIVE
+BEAMPOS          0.0       0.0       2E8                              NEGATIVE
 GEOBEGIN                                                              COMBNAME
     0    0          
 * Mars Radius
@@ -56,45 +54,43 @@ ELL CH2B1      0.0 3.73E5 0.0 0.0 -3.73E5 0.0 1E6
 SPH CH3B3      0.0 0.0 0.0 1.66E5
 ELL CH3B2      0.0 2.89E5 0.0 0.0 -2.89E5 0.0 6.67E5
 ELL CH3B1      0.0 4.71E5 0.0 0.0 -4.71E5 0.0 1E6
-SPH DH1t       0.0 0.0 -494800.0 5000.
-SPH DH2t       0.0 0.0 -3.332E5 5000.
-SPH DH3t       0.0 0.0 -1.666E5 5000.
-SPH DB3b       0.0 1.668E5 110. 5000.
-SPH DB2b       0.0 3.334E5 -50. 5000.
-SPH DB1b       0.0 5.055E5 4680. 5000.
-SPH DH1B3h     0.0 1.445E5 -2.5E5 5000.
-SPH DH1B2h     0.0 2.885E5 -2.5E5 5000.
-SPH DH1B1h     0.0 4.26E5 -2.5E5 5000.
-SPH DH1B3a     0.0 4.17E5 110. 5000.
-SPH DH1B2a     0.0 5.834E5 -370. 5000.
-SPH DH1B1a     0.0 7.501E5 4250. 5000.
-SPH DH2B3a     0.0 3.334E5 105. 5000.
-SPH DH2B2a     0.0 5.001E5 105. 5000.
-SPH DH2B1a     0.0 6.668E5 105. 5000.
-SPH DH3B3a     0.0 2.501E5 105. 5000.
-SPH DH3B2a     0.0 4.168E5 105. 5000.
-SPH DH3B1a     0.0 5.834E5 105. 5000.
-* Mars Radius
-SPH ATMOS28    0.0 0.0 -3.4895E8 3.4895010E+08
+SPH DH1t       0.0 0.0 -499800.0 100.0
+SPH DH2t       0.0 0.0 -3.332E5 100.
+SPH DH3t       0.0 0.0 -1.666E5 100.0
+SPH DB3b       0.0 1.668E5 100. 100.
+SPH DB2b       0.0 3.334E5 -50. 100.
+SPH DB1b       0.0 5.001E5 105. 100.
+SPH DH1B3h     0.0 1.442E5 -2.5E5 100.
+SPH DH1B2h     0.0 2.885E5 -2.5E5 100.
+SPH DH1B1h     0.0 4.335E5 -2.5E5 100.
+SPH DH1B3a     0.0 4.17E5 -130. 100.
+SPH DH1B2a     0.0 5.834E5 -370. 100.
+SPH DH1B1a     0.0 7.501E5 105. 100.
+SPH DH2B3a     0.0 3.334E5 105. 100.
+SPH DH2B2a     0.0 5.001E5 105. 100.
+SPH DH2B1a     0.0 6.668E5 105. 100.
+SPH DH3B3a     0.0 5.834E5 105. 100.0
+SPH DH3B2a     0.0 4.168E5 105. 100.
+SPH DH3B1a     0.0 5.834E5 105. 100.
 END
 * Black hole
 MARS         5 +MARS -REGION
 UNIVERSE     5 -UNIVERSE
 DEEPSPAC     5 -TOPATMOS +UNIVERSE
-GROUND       5 +REGION +MARS -CH1B1 -DH1B1h
+GROUND       5 +REGION +MARS -CH1B3 -DH1B3h
 AVEATMOS     5 +TOPATMOS -MARS +AT_CUT
-ATMOS1       5 -AT_CUT +ATMOS1 -MARS -DB1b -DH1B1a -DB1b
-ATMOS2       5 -AT_CUT +ATMOS2 -ATMOS1 -DB1b -DH1B1a -DB1b
-ATMOS3       5 -AT_CUT +ATMOS3 -ATMOS2 -DB1b -DH1B1a -DB1b
-ATMOS4       5 -AT_CUT +ATMOS4 -ATMOS3 -DH1B1a -DB1b
-ATMOS5       5 -AT_CUT +ATMOS5 -ATMOS4 -DH1B1a -DB1b
-ATMOS6       5 -AT_CUT +ATMOS6 -ATMOS5 -DH1B1a -DB1b
-ATMOS7       5 -AT_CUT +ATMOS7 -ATMOS6 -DH1B1a -DB1b
-ATMOS8       5 -AT_CUT +ATMOS8 -ATMOS7 -DH1B1a -DB1b
-ATMOS9       5 -AT_CUT +ATMOS9 -ATMOS8 -DH1B1a -DB1b
-ATMOS10      5 -AT_CUT +ATMOS10 -ATMOS9 -DH1B1a -DB1b
-ATMOS11      5 -AT_CUT +ATMOS11 -ATMOS10 -DH1B1a -DB1b
-ATMOS12      5 -AT_CUT +ATMOS12 -ATMOS11 -DH1B1a -DB1b
+ATMOS1       5 -AT_CUT +ATMOS1 -MARS -DB3b -DH1B3a
+ATMOS2       5 -AT_CUT +ATMOS2 -ATMOS1 -DB3b -DH1B3a
+ATMOS3       5 -AT_CUT +ATMOS3 -ATMOS2 -DB3b -DH1B3a
+ATMOS4       5 -AT_CUT +ATMOS4 -ATMOS3
+ATMOS5       5 -AT_CUT +ATMOS5 -ATMOS4
+ATMOS6       5 -AT_CUT +ATMOS6 -ATMOS5
+ATMOS7       5 -AT_CUT +ATMOS7 -ATMOS6
+ATMOS8       5 -AT_CUT +ATMOS8 -ATMOS7
+ATMOS9       5 -AT_CUT +ATMOS9 -ATMOS8
+ATMOS10      5 -AT_CUT +ATMOS10 -ATMOS9
+ATMOS11      5 -AT_CUT +ATMOS11 -ATMOS10
+ATMOS12      5 -AT_CUT +ATMOS12 -ATMOS11
 ATMOS13      5 -AT_CUT +ATMOS13 -ATMOS12
 ATMOS14      5 -AT_CUT +ATMOS14 -ATMOS13
 ATMOS15      5 -AT_CUT +ATMOS15 -ATMOS14
@@ -111,11 +107,11 @@ ATMOS25      5 -AT_CUT +ATMOS25 -ATMOS24
 ATMOS26      5 -AT_CUT +ATMOS26 -ATMOS25
 ATMOS27      5 -AT_CUT +ATMOS27 -ATMOS26
 ATMOS28      5 -AT_CUT +TOPATMOS -ATMOS27
-CRATER       5 +CH1B1 +MARS -DH1t -DH1B1h
+CRATER       5 +CH1B3 +MARS -DH1t -DH1B3h
 DtctrT       5 +DH1t
-DtctrH       5 +DH1B1h
-DtctrB       5 +DB1b
-DtctrA       5 +DH1B1a
+DtctrH       5 +DH1B3h
+DtctrB       5 +DB3b
+DtctrA       5 +DH1B3a
 END
 GEOEND
 * ..+....1....+....2....+....3....+....4....+....5....+....6....+....7..
@@ -341,26 +337,6 @@ ASSIGNMA     SILICON    DtctrB
 ASSIGNMA     SILICON    DtctrA
 EMF
 LOW-NEUT        260.                           0.0                -11.
-*USRBDX          109.    PROTON      -25.    GROUND    ATMOS1        1.GtoAT1_pro
-*USRBDX            1.      1E-6     1000.6.28318531       0.0        1. &
-*USRBDX          109.   NEUTRON      -25.    GROUND    ATMOS1        1.GtoAT1_n
-*USRBDX            1.      1E-6     1000.6.28318531       0.0        1. &
-*USRBDX          109.  ELECTRON      -25.    GROUND    ATMOS1        1.GtoAT1_e
-*USRBDX            1.      1E-6     1000.6.28318531       0.0        1. &
-*USRBDX          109.     MUONS      -25.    GROUND    ATMOS1        1.GtoAT1_mu
-*USRBDX            1.      1E-6     1000.6.28318531       0.0        1. &
-*USRBDX          109.    PHOTON      -25.    GROUND    ATMOS1        1.GtoAT1_pho
-*USRBDX            1.      1E-6     1000.6.28318531       0.0        1. &
-*USRBDX          109.  3-HELIUM      -25.    GROUND    ATMOS1        1.GtoAT1_he3
-*USRBDX            1.      1E-6     1000.6.28318531       0.0        1. &
-*USRBDX          109.  4-HELIUM      -25.    GROUND    ATMOS1        1.GtoAT1_he4
-*USRBDX            1.      1E-6     1000.6.28318531       0.0        1. &
-*USRBDX          109.    TRITON      -25.    GROUND    ATMOS1        1.GtoAT1_tri
-*USRBDX            1.      1E-6     1000.6.28318531       0.0        1. &
-*USRBDX          109.  DEUTERON      -25.    GROUND    ATMOS1        1.GtoAT1_deu
-*USRBDX            1.      1E-6     1000.6.28318531       0.0        1. &
-*USRBDX          109.  HEAVYION      -25.    GROUND    ATMOS1        1.GtoAT1_h
-*USRBDX            1.      1E-6     1000.6.28318531       0.0        1. &
 USRTRACK         -1.   NEUTRON      -24.    GROUND        1.     1000.neu
 USRTRACK          1.      1E-6                                         &
 USRTRACK         -1.  ELECTRON      -24.    GROUND        1.     1000.elec
@@ -380,708 +356,708 @@ USRTRACK          1.      1E-6                                         &
 USRTRACK         -1.  HEAVYION      -24.    GROUND        1.     1000.heavyion
 USRTRACK          1.      1E-6                                         &
 AUXSCORE    USRTRACK    PROTON               dtpro     dapro
-USRTRACK         -1.    ENERGY      -74.    DtctrT    4.19E6      900.dtpro
+USRTRACK         -1.    ENERGY      -74.    DtctrT    4.19E6     1000.dtpro
 USRTRACK         10.      1E-6                                         &
-USRTRACK         -1.    ENERGY      -76.    DtctrH    4.19E6      900.dhpro
+USRTRACK         -1.    ENERGY      -75.    DtctrH    4.19E6     1000.dhpro
 USRTRACK         10.      1E-6                                         &
 USRTRACK         -1.    ENERGY      -78.    DtctrB    4.19E6      900.dbpro
 USRTRACK         10.      1E-6                                         &
-USRTRACK         -1.    ENERGY      -80.    DtctrA    4.19E6      900.dapro
+USRTRACK         -1.    ENERGY      -77.    DtctrA    4.19E6     1000.dapro
 USRTRACK         10.      1E-6                                         &
 AUXSCORE    USRTRACK   NEUTRON               dtneu     daneu
-USRTRACK         -1.    ENERGY      -74.    DtctrT    4.19E6      900.dtneu
+USRTRACK         -1.    ENERGY      -74.    DtctrT    4.19E6     1000.dtneu
 USRTRACK         10.      1E-6                                         &
-USRTRACK         -1.    ENERGY      -76.    DtctrH    4.19E6      900.dhneu
+USRTRACK         -1.    ENERGY      -75.    DtctrH    4.19E6     1000.dhneu
 USRTRACK         10.      1E-6                                         &
 USRTRACK         -1.    ENERGY      -78.    DtctrB    4.19E6      900.dbneu
 USRTRACK         10.      1E-6                                         &
-USRTRACK         -1.    ENERGY      -80.    DtctrA    4.19E6      900.daneu
+USRTRACK         -1.    ENERGY      -77.    DtctrA    4.19E6     1000.daneu
 USRTRACK         10.      1E-6                                         &
 AUXSCORE    USRTRACK  ELECTRON              dtelec    daelec
-USRTRACK         -1.    ENERGY      -74.    DtctrT    4.19E6      900.dtelec
+USRTRACK         -1.    ENERGY      -74.    DtctrT    4.19E6     1000.dtelec
 USRTRACK         10.      1E-6                                         &
-USRTRACK         -1.    ENERGY      -76.    DtctrH    4.19E6      900.dhelec
+USRTRACK         -1.    ENERGY      -75.    DtctrH    4.19E6     1000.dhelec
 USRTRACK         10.      1E-6                                         &
 USRTRACK         -1.    ENERGY      -78.    DtctrB    4.19E6      900.dbelec
 USRTRACK         10.      1E-6                                         &
-USRTRACK         -1.    ENERGY      -80.    DtctrA    4.19E6      900.daelec
+USRTRACK         -1.    ENERGY      -77.    DtctrA    4.19E6     1000.daelec
 USRTRACK         10.      1E-6                                         &
 * ..+....1....+....2....+....3....+....4....+....5....+....6....+....7..
 AUXSCORE    USRTRACK  POSITRON               dtpos     dapos
-USRTRACK         -1.    ENERGY      -74.    DtctrT    4.19E6      900.dtpos
+USRTRACK         -1.    ENERGY      -74.    DtctrT    4.19E6     1000.dtpos
 USRTRACK         10.      1E-6                                         &
-USRTRACK         -1.    ENERGY      -76.    DtctrH    4.19E6      900.dhpos
+USRTRACK         -1.    ENERGY      -75.    DtctrH    4.19E6     1000.dhpos
 USRTRACK         10.      1E-6                                         &
 USRTRACK         -1.    ENERGY      -78.    DtctrB    4.19E6      900.dbpos
 USRTRACK         10.      1E-6                                         &
-USRTRACK         -1.    ENERGY      -80.    DtctrA    4.19E6      900.dapos
+USRTRACK         -1.    ENERGY      -77.    DtctrA    4.19E6     1000.dapos
 USRTRACK         10.      1E-6                                         &
 AUXSCORE    USRTRACK     MUONS                dtmu      damu
-USRTRACK         -1.    ENERGY      -74.    DtctrT    4.19E6      900.dtmu
+USRTRACK         -1.    ENERGY      -74.    DtctrT    4.19E6     1000.dtmu
 USRTRACK         10.      1E-6                                         &
-USRTRACK         -1.    ENERGY      -76.    DtctrH    4.19E6      900.dhmu
+USRTRACK         -1.    ENERGY      -75.    DtctrH    4.19E6     1000.dhmu
 USRTRACK         10.      1E-6                                         &
 USRTRACK         -1.    ENERGY      -78.    DtctrB    4.19E6      900.dbmu
 USRTRACK         10.      1E-6                                         &
-USRTRACK         -1.    ENERGY      -80.    DtctrA    4.19E6      900.damu
+USRTRACK         -1.    ENERGY      -77.    DtctrA    4.19E6     1000.damu
 USRTRACK         10.      1E-6                                         &
 AUXSCORE    USRTRACK   PIONS+-                dtpi      dapi
-USRTRACK         -1.    ENERGY      -74.    DtctrT    4.19E6      900.dtpi
+USRTRACK         -1.    ENERGY      -74.    DtctrT    4.19E6     1000.dtpi
 USRTRACK         10.      1E-6                                         &
-USRTRACK         -1.    ENERGY      -76.    DtctrH    4.19E6      900.dhpi
+USRTRACK         -1.    ENERGY      -75.    DtctrH    4.19E6     1000.dhpi
 USRTRACK         10.      1E-6                                         &
 USRTRACK         -1.    ENERGY      -78.    DtctrB    4.19E6      900.dbpi
 USRTRACK         10.      1E-6                                         &
-USRTRACK         -1.    ENERGY      -80.    DtctrA    4.19E6      900.dapi
+USRTRACK         -1.    ENERGY      -77.    DtctrA    4.19E6     1000.dapi
 USRTRACK         10.      1E-6                                         &
 AUXSCORE    USRTRACK    PHOTON               dtpho     dapho
-USRTRACK         -1.    ENERGY      -74.    DtctrT    4.19E6      900.dtpho
+USRTRACK         -1.    ENERGY      -74.    DtctrT    4.19E6     1000.dtpho
 USRTRACK         10.      1E-6                                         &
-USRTRACK         -1.    ENERGY      -76.    DtctrH    4.19E6      900.dhpho
+USRTRACK         -1.    ENERGY      -75.    DtctrH    4.19E6     1000.dhpho
 USRTRACK         10.      1E-6                                         &
 USRTRACK         -1.    ENERGY      -78.    DtctrB    4.19E6      900.dbpho
 USRTRACK         10.      1E-6                                         &
-USRTRACK         -1.    ENERGY      -80.    DtctrA    4.19E6      900.dapho
+USRTRACK         -1.    ENERGY      -77.    DtctrA    4.19E6     1000.dapho
 USRTRACK         10.      1E-6                                         &
 AUXSCORE    USRTRACK  3-HELIUM               dthe3     dahe3
-USRTRACK         -1.    ENERGY      -74.    DtctrT    4.19E6      900.dthe3
+USRTRACK         -1.    ENERGY      -74.    DtctrT    4.19E6     1000.dthe3
 USRTRACK         10.      1E-6                                         &
-USRTRACK         -1.    ENERGY      -76.    DtctrH    4.19E6      900.dhhe3
+USRTRACK         -1.    ENERGY      -75.    DtctrH    4.19E6     1000.dhhe3
 USRTRACK         10.      1E-6                                         &
 USRTRACK         -1.    ENERGY      -78.    DtctrB    4.19E6      900.dbhe3
 USRTRACK         10.      1E-6                                         &
-USRTRACK         -1.    ENERGY      -80.    DtctrA    4.19E6      900.dahe3
+USRTRACK         -1.    ENERGY      -77.    DtctrA    4.19E6     1000.dahe3
 USRTRACK         10.      1E-6                                         &
 AUXSCORE    USRTRACK  4-HELIUM               dthe4     dahe4
-USRTRACK         -1.    ENERGY      -74.    DtctrT    4.19E6      900.dthe4
+USRTRACK         -1.    ENERGY      -74.    DtctrT    4.19E6     1000.dthe4
 USRTRACK         10.      1E-6                                         &
-USRTRACK         -1.    ENERGY      -76.    DtctrH    4.19E6      900.dhhe4
+USRTRACK         -1.    ENERGY      -75.    DtctrH    4.19E6     1000.dhhe4
 USRTRACK         10.      1E-6                                         &
 USRTRACK         -1.    ENERGY      -78.    DtctrB    4.19E6      900.dbhe4
 USRTRACK         10.      1E-6                                         &
-USRTRACK         -1.    ENERGY      -80.    DtctrA    4.19E6      900.dahe4
+USRTRACK         -1.    ENERGY      -77.    DtctrA    4.19E6     1000.dahe4
 USRTRACK         10.      1E-6                                         &
 AUXSCORE    USRTRACK    TRITON               dttri     datri
-USRTRACK         -1.    ENERGY      -74.    DtctrT    4.19E6      900.dttri
+USRTRACK         -1.    ENERGY      -74.    DtctrT    4.19E6     1000.dttri
 USRTRACK         10.      1E-6                                         &
-USRTRACK         -1.    ENERGY      -76.    DtctrH    4.19E6      900.dhtri
+USRTRACK         -1.    ENERGY      -75.    DtctrH    4.19E6     1000.dhtri
 USRTRACK         10.      1E-6                                         &
 USRTRACK         -1.    ENERGY      -78.    DtctrB    4.19E6      900.dbtri
 USRTRACK         10.      1E-6                                         &
-USRTRACK         -1.    ENERGY      -80.    DtctrA    4.19E6      900.datri
+USRTRACK         -1.    ENERGY      -77.    DtctrA    4.19E6     1000.datri
 USRTRACK         10.      1E-6                                         &
 AUXSCORE    USRTRACK  DEUTERON               dhli6     dadeu
-USRTRACK         -1.    ENERGY      -74.    DtctrT    4.19E6      900.dtdeu
+USRTRACK         -1.    ENERGY      -74.    DtctrT    4.19E6     1000.dtdeu
 USRTRACK         10.      1E-6                                         &
-USRTRACK         -1.    ENERGY      -76.    DtctrH    4.19E6      900.dhdeu
+USRTRACK         -1.    ENERGY      -75.    DtctrH    4.19E6     1000.dhdeu
 USRTRACK         10.      1E-6                                         &
 USRTRACK         -1.    ENERGY      -78.    DtctrB    4.19E6      900.dbdeu
 USRTRACK         10.      1E-6                                         &
-USRTRACK         -1.    ENERGY      -80.    DtctrA    4.19E6      900.dadeu
+USRTRACK         -1.    ENERGY      -77.    DtctrA    4.19E6     1000.dadeu
 USRTRACK         10.      1E-6                                         &
 AUXSCORE    USRTRACK  -300600.               dtli6     dali6
-USRTRACK         -1.    ENERGY      -74.    DtctrT    4.19E6      900.dtli6
+USRTRACK         -1.    ENERGY      -74.    DtctrT    4.19E6     1000.dtli6
 USRTRACK         10.      1E-6                                         &
-USRTRACK         -1.    ENERGY      -76.    DtctrH    4.19E6      900.dhli6
+USRTRACK         -1.    ENERGY      -75.    DtctrH    4.19E6     1000.dhli6
 USRTRACK         10.      1E-6                                         &
 USRTRACK         -1.    ENERGY      -78.    DtctrB    4.19E6      900.dbli6
 USRTRACK         10.      1E-6                                         &
-USRTRACK         -1.    ENERGY      -80.    DtctrA    4.19E6      900.dali6
+USRTRACK         -1.    ENERGY      -77.    DtctrA    4.19E6     1000.dali6
 USRTRACK         10.      1E-6                                         &
 AUXSCORE    USRTRACK  -300700.               dtli7     dali7
-USRTRACK         -1.    ENERGY      -74.    DtctrT    4.19E6      900.dtli7
+USRTRACK         -1.    ENERGY      -74.    DtctrT    4.19E6     1000.dtli7
 USRTRACK         10.      1E-6                                         &
-USRTRACK         -1.    ENERGY      -76.    DtctrH    4.19E6      900.dhli7
+USRTRACK         -1.    ENERGY      -75.    DtctrH    4.19E6     1000.dhli7
 USRTRACK         10.      1E-6                                         &
 USRTRACK         -1.    ENERGY      -78.    DtctrB    4.19E6      900.dbli7
 USRTRACK         10.      1E-6                                         &
-USRTRACK         -1.    ENERGY      -80.    DtctrA    4.19E6      900.dali7
+USRTRACK         -1.    ENERGY      -77.    DtctrA    4.19E6     1000.dali7
 USRTRACK         10.      1E-6                                         &
 AUXSCORE    USRTRACK  -400900.               dtbe9     dabe9
-USRTRACK         -1.    ENERGY      -74.    DtctrT    4.19E6      900.dtbe9
+USRTRACK         -1.    ENERGY      -74.    DtctrT    4.19E6     1000.dtbe9
 USRTRACK         10.      1E-6                                         &
-USRTRACK         -1.    ENERGY      -76.    DtctrH    4.19E6      900.dhbe9
+USRTRACK         -1.    ENERGY      -75.    DtctrH    4.19E6     1000.dhbe9
 USRTRACK         10.      1E-6                                         &
 USRTRACK         -1.    ENERGY      -78.    DtctrB    4.19E6      900.dbbe9
 USRTRACK         10.      1E-6                                         &
-USRTRACK         -1.    ENERGY      -80.    DtctrA    4.19E6      900.dabe9
+USRTRACK         -1.    ENERGY      -77.    DtctrA    4.19E6     1000.dabe9
 USRTRACK         10.      1E-6                                         &
 AUXSCORE    USRTRACK  -401000.              dtbe10    dabe10
-USRTRACK         -1.    ENERGY      -74.    DtctrT    4.19E6      900.dtbe10
+USRTRACK         -1.    ENERGY      -74.    DtctrT    4.19E6     1000.dtbe10
 USRTRACK         10.      1E-6                                         &
-USRTRACK         -1.    ENERGY      -76.    DtctrH    4.19E6      900.dhbe10
+USRTRACK         -1.    ENERGY      -75.    DtctrH    4.19E6     1000.dhbe10
 USRTRACK         10.      1E-6                                         &
 USRTRACK         -1.    ENERGY      -78.    DtctrB    4.19E6      900.dbbe10
 USRTRACK         10.      1E-6                                         &
-USRTRACK         -1.    ENERGY      -80.    DtctrA    4.19E6      900.dabe10
+USRTRACK         -1.    ENERGY      -77.    DtctrA    4.19E6     1000.dabe10
 USRTRACK         10.      1E-6                                         &
 AUXSCORE    USRTRACK  -501000.               dtb10     dab10
-USRTRACK         -1.    ENERGY      -74.    DtctrT    4.19E6      900.dtb10
+USRTRACK         -1.    ENERGY      -74.    DtctrT    4.19E6     1000.dtb10
 USRTRACK         10.      1E-6                                         &
-USRTRACK         -1.    ENERGY      -76.    DtctrH    4.19E6      900.dhb10
+USRTRACK         -1.    ENERGY      -75.    DtctrH    4.19E6     1000.dhb10
 USRTRACK         10.      1E-6                                         &
 USRTRACK         -1.    ENERGY      -78.    DtctrB    4.19E6      900.dbb10
 USRTRACK         10.      1E-6                                         &
-USRTRACK         -1.    ENERGY      -80.    DtctrA    4.19E6      900.dab10
+USRTRACK         -1.    ENERGY      -77.    DtctrA    4.19E6     1000.dab10
 USRTRACK         10.      1E-6                                         &
 AUXSCORE    USRTRACK  -501100.               dtb11     dab11
-USRTRACK         -1.    ENERGY      -74.    DtctrT    4.19E6      900.dtb11
+USRTRACK         -1.    ENERGY      -74.    DtctrT    4.19E6     1000.dtb11
 USRTRACK         10.      1E-6                                         &
-USRTRACK         -1.    ENERGY      -76.    DtctrH    4.19E6      900.dhb11
+USRTRACK         -1.    ENERGY      -75.    DtctrH    4.19E6     1000.dhb11
 USRTRACK         10.      1E-6                                         &
 USRTRACK         -1.    ENERGY      -78.    DtctrB    4.19E6      900.dbb11
 USRTRACK         10.      1E-6                                         &
-USRTRACK         -1.    ENERGY      -80.    DtctrA    4.19E6      900.dab11
+USRTRACK         -1.    ENERGY      -77.    DtctrA    4.19E6     1000.dab11
 USRTRACK         10.      1E-6                                         &
 AUXSCORE    USRTRACK  -601200.               dtc12     dac12
-USRTRACK         -1.    ENERGY      -74.    DtctrT    4.19E6      900.dtc12
+USRTRACK         -1.    ENERGY      -74.    DtctrT    4.19E6     1000.dtc12
 USRTRACK         10.      1E-6                                         &
-USRTRACK         -1.    ENERGY      -76.    DtctrH    4.19E6      900.dhc12
+USRTRACK         -1.    ENERGY      -75.    DtctrH    4.19E6     1000.dhc12
 USRTRACK         10.      1E-6                                         &
 USRTRACK         -1.    ENERGY      -78.    DtctrB    4.19E6      900.dbc12
 USRTRACK         10.      1E-6                                         &
-USRTRACK         -1.    ENERGY      -80.    DtctrA    4.19E6      900.dac12
+USRTRACK         -1.    ENERGY      -77.    DtctrA    4.19E6     1000.dac12
 USRTRACK         10.      1E-6                                         &
 AUXSCORE    USRTRACK  -601300.               dtc13     dac13
-USRTRACK         -1.    ENERGY      -74.    DtctrT    4.19E6      900.dtc13
+USRTRACK         -1.    ENERGY      -74.    DtctrT    4.19E6     1000.dtc13
 USRTRACK         10.      1E-6                                         &
-USRTRACK         -1.    ENERGY      -76.    DtctrH    4.19E6      900.dhc13
+USRTRACK         -1.    ENERGY      -75.    DtctrH    4.19E6     1000.dhc13
 USRTRACK         10.      1E-6                                         &
 USRTRACK         -1.    ENERGY      -78.    DtctrB    4.19E6      900.dbc13
 USRTRACK         10.      1E-6                                         &
-USRTRACK         -1.    ENERGY      -80.    DtctrA    4.19E6      900.dac13
+USRTRACK         -1.    ENERGY      -77.    DtctrA    4.19E6     1000.dac13
 USRTRACK         10.      1E-6                                         &
 AUXSCORE    USRTRACK  -701400.               dtn14     dan14
-USRTRACK         -1.    ENERGY      -74.    DtctrT    4.19E6      900.dtn14
+USRTRACK         -1.    ENERGY      -74.    DtctrT    4.19E6     1000.dtn14
 USRTRACK         10.      1E-6                                         &
-USRTRACK         -1.    ENERGY      -76.    DtctrH    4.19E6      900.dhn14
+USRTRACK         -1.    ENERGY      -75.    DtctrH    4.19E6     1000.dhn14
 USRTRACK         10.      1E-6                                         &
 USRTRACK         -1.    ENERGY      -78.    DtctrB    4.19E6      900.dbn14
 USRTRACK         10.      1E-6                                         &
-USRTRACK         -1.    ENERGY      -80.    DtctrA    4.19E6      900.dan14
+USRTRACK         -1.    ENERGY      -77.    DtctrA    4.19E6     1000.dan14
 USRTRACK         10.      1E-6                                         &
 AUXSCORE    USRTRACK  -701500.               dtn15     dan15
-USRTRACK         -1.    ENERGY      -74.    DtctrT    4.19E6      900.dtn15
+USRTRACK         -1.    ENERGY      -74.    DtctrT    4.19E6     1000.dtn15
 USRTRACK         10.      1E-6                                         &
-USRTRACK         -1.    ENERGY      -76.    DtctrH    4.19E6      900.dhn15
+USRTRACK         -1.    ENERGY      -75.    DtctrH    4.19E6     1000.dhn15
 USRTRACK         10.      1E-6                                         &
 USRTRACK         -1.    ENERGY      -78.    DtctrB    4.19E6      900.dbn15
 USRTRACK         10.      1E-6                                         &
-USRTRACK         -1.    ENERGY      -80.    DtctrA    4.19E6      900.dan15
+USRTRACK         -1.    ENERGY      -77.    DtctrA    4.19E6     1000.dan15
 USRTRACK         10.      1E-6                                         &
 AUXSCORE    USRTRACK  -801600.               dto16     dao16
-USRTRACK         -1.    ENERGY      -74.    DtctrT    4.19E6      900.dto16
+USRTRACK         -1.    ENERGY      -74.    DtctrT    4.19E6     1000.dto16
 USRTRACK         10.      1E-6                                         &
-USRTRACK         -1.    ENERGY      -76.    DtctrH    4.19E6      900.dho16
+USRTRACK         -1.    ENERGY      -75.    DtctrH    4.19E6     1000.dho16
 USRTRACK         10.      1E-6                                         &
 USRTRACK         -1.    ENERGY      -78.    DtctrB    4.19E6      900.dbo16
 USRTRACK         10.      1E-6                                         &
-USRTRACK         -1.    ENERGY      -80.    DtctrA    4.19E6      900.dao16
+USRTRACK         -1.    ENERGY      -77.    DtctrA    4.19E6     1000.dao16
 USRTRACK         10.      1E-6                                         &
 AUXSCORE    USRTRACK  -801700.               dto17     dao17
-USRTRACK         -1.    ENERGY      -74.    DtctrT    4.19E6      900.dto17
+USRTRACK         -1.    ENERGY      -74.    DtctrT    4.19E6     1000.dto17
 USRTRACK         10.      1E-6                                         &
-USRTRACK         -1.    ENERGY      -76.    DtctrH    4.19E6      900.dho17
+USRTRACK         -1.    ENERGY      -75.    DtctrH    4.19E6     1000.dho17
 USRTRACK         10.      1E-6                                         &
 USRTRACK         -1.    ENERGY      -78.    DtctrB    4.19E6      900.dbo17
 USRTRACK         10.      1E-6                                         &
-USRTRACK         -1.    ENERGY      -80.    DtctrA    4.19E6      900.dao17
+USRTRACK         -1.    ENERGY      -77.    DtctrA    4.19E6     1000.dao17
 USRTRACK         10.      1E-6                                         &
 AUXSCORE    USRTRACK  -801800.               dto18     dao18
-USRTRACK         -1.    ENERGY      -74.    DtctrT    4.19E6      900.dto18
+USRTRACK         -1.    ENERGY      -74.    DtctrT    4.19E6     1000.dto18
 USRTRACK         10.      1E-6                                         &
-USRTRACK         -1.    ENERGY      -76.    DtctrH    4.19E6      900.dho18
+USRTRACK         -1.    ENERGY      -75.    DtctrH    4.19E6     1000.dho18
 USRTRACK         10.      1E-6                                         &
 USRTRACK         -1.    ENERGY      -78.    DtctrB    4.19E6      900.dbo18
 USRTRACK         10.      1E-6                                         &
-USRTRACK         -1.    ENERGY      -80.    DtctrA    4.19E6      900.dao18
+USRTRACK         -1.    ENERGY      -77.    DtctrA    4.19E6     1000.dao18
 USRTRACK         10.      1E-6                                         &
 AUXSCORE    USRTRACK  -901900.               dtf19     daf19
-USRTRACK         -1.    ENERGY      -74.    DtctrT    4.19E6      900.dtf19
+USRTRACK         -1.    ENERGY      -74.    DtctrT    4.19E6     1000.dtf19
 USRTRACK         10.      1E-6                                         &
-USRTRACK         -1.    ENERGY      -76.    DtctrH    4.19E6      900.dhf19
+USRTRACK         -1.    ENERGY      -75.    DtctrH    4.19E6     1000.dhf19
 USRTRACK         10.      1E-6                                         &
 USRTRACK         -1.    ENERGY      -78.    DtctrB    4.19E6      900.dbf19
 USRTRACK         10.      1E-6                                         &
-USRTRACK         -1.    ENERGY      -80.    DtctrA    4.19E6      900.daf19
+USRTRACK         -1.    ENERGY      -77.    DtctrA    4.19E6     1000.daf19
 USRTRACK         10.      1E-6                                         &
 AUXSCORE    USRTRACK -1002000.              dtne20    dane20       0.0
-USRTRACK         -1.    ENERGY      -74.    DtctrT    4.19E6      900.dtne20
+USRTRACK         -1.    ENERGY      -74.    DtctrT    4.19E6     1000.dtne20
 USRTRACK         10.      1E-6                                         &
-USRTRACK         -1.    ENERGY      -76.    DtctrH    4.19E6      900.dhne20
+USRTRACK         -1.    ENERGY      -75.    DtctrH    4.19E6     1000.dhne20
 USRTRACK         10.      1E-6                                         &
 USRTRACK         -1.    ENERGY      -78.    DtctrB    4.19E6      900.dbne20
 USRTRACK         10.      1E-6                                         &
-USRTRACK         -1.    ENERGY      -80.    DtctrA    4.19E6      900.dane20
+USRTRACK         -1.    ENERGY      -77.    DtctrA    4.19E6     1000.dane20
 USRTRACK         10.      1E-6                                         &
 AUXSCORE    USRTRACK -1002100.              dtne21    dane21       0.0
-USRTRACK         -1.    ENERGY      -74.    DtctrT    4.19E6      900.dtne21
+USRTRACK         -1.    ENERGY      -74.    DtctrT    4.19E6     1000.dtne21
 USRTRACK         10.      1E-6                                         &
-USRTRACK         -1.    ENERGY      -76.    DtctrH    4.19E6      900.dhne21
+USRTRACK         -1.    ENERGY      -75.    DtctrH    4.19E6     1000.dhne21
 USRTRACK         10.      1E-6                                         &
 USRTRACK         -1.    ENERGY      -78.    DtctrB    4.19E6      900.dbne21
 USRTRACK         10.      1E-6                                         &
-USRTRACK         -1.    ENERGY      -80.    DtctrA    4.19E6      900.dane21
+USRTRACK         -1.    ENERGY      -77.    DtctrA    4.19E6     1000.dane21
 USRTRACK         10.      1E-6                                         &
 AUXSCORE    USRTRACK -1002200.              dtne22    dane22       0.0
-USRTRACK         -1.    ENERGY      -74.    DtctrT    4.19E6      900.dtne22
+USRTRACK         -1.    ENERGY      -74.    DtctrT    4.19E6     1000.dtne22
 USRTRACK         10.      1E-6                                         &
-USRTRACK         -1.    ENERGY      -76.    DtctrH    4.19E6      900.dhne22
+USRTRACK         -1.    ENERGY      -75.    DtctrH    4.19E6     1000.dhne22
 USRTRACK         10.      1E-6                                         &
 USRTRACK         -1.    ENERGY      -78.    DtctrB    4.19E6      900.dbne22
 USRTRACK         10.      1E-6                                         &
-USRTRACK         -1.    ENERGY      -80.    DtctrA    4.19E6      900.dane22
+USRTRACK         -1.    ENERGY      -77.    DtctrA    4.19E6     1000.dane22
 USRTRACK         10.      1E-6                                         &
 AUXSCORE    USRTRACK -1102300.              dtna23    dana23       0.0
-USRTRACK         -1.    ENERGY      -74.    DtctrT    4.19E6      900.dtna23
+USRTRACK         -1.    ENERGY      -74.    DtctrT    4.19E6     1000.dtna23
 USRTRACK         10.      1E-6                                         &
-USRTRACK         -1.    ENERGY      -76.    DtctrH    4.19E6      900.dhna23
+USRTRACK         -1.    ENERGY      -75.    DtctrH    4.19E6     1000.dhna23
 USRTRACK         10.      1E-6                                         &
 USRTRACK         -1.    ENERGY      -78.    DtctrB    4.19E6      900.dbna23
 USRTRACK         10.      1E-6                                         &
-USRTRACK         -1.    ENERGY      -80.    DtctrA    4.19E6      900.dana23
+USRTRACK         -1.    ENERGY      -77.    DtctrA    4.19E6     1000.dana23
 USRTRACK         10.      1E-6                                         &
 AUXSCORE    USRTRACK -1202400.              dtmg24    damg24       0.0
-USRTRACK         -1.    ENERGY      -74.    DtctrT    4.19E6      900.dtmg24
+USRTRACK         -1.    ENERGY      -74.    DtctrT    4.19E6     1000.dtmg24
 USRTRACK         10.      1E-6                                         &
-USRTRACK         -1.    ENERGY      -76.    DtctrH    4.19E6      900.dhmg24
+USRTRACK         -1.    ENERGY      -75.    DtctrH    4.19E6     1000.dhmg24
 USRTRACK         10.      1E-6                                         &
 USRTRACK         -1.    ENERGY      -78.    DtctrB    4.19E6      900.dbmg24
 USRTRACK         10.      1E-6                                         &
-USRTRACK         -1.    ENERGY      -80.    DtctrA    4.19E6      900.damg24
+USRTRACK         -1.    ENERGY      -77.    DtctrA    4.19E6     1000.damg24
 USRTRACK         10.      1E-6                                         &
 AUXSCORE    USRTRACK -1202500.              dtmg25    damg25       0.0
-USRTRACK         -1.    ENERGY      -74.    DtctrT    4.19E6      900.dtmg25
+USRTRACK         -1.    ENERGY      -74.    DtctrT    4.19E6     1000.dtmg25
 USRTRACK         10.      1E-6                                         &
-USRTRACK         -1.    ENERGY      -76.    DtctrH    4.19E6      900.dhmg25
+USRTRACK         -1.    ENERGY      -75.    DtctrH    4.19E6     1000.dhmg25
 USRTRACK         10.      1E-6                                         &
 USRTRACK         -1.    ENERGY      -78.    DtctrB    4.19E6      900.dbmg25
 USRTRACK         10.      1E-6                                         &
-USRTRACK         -1.    ENERGY      -80.    DtctrA    4.19E6      900.damg25
+USRTRACK         -1.    ENERGY      -77.    DtctrA    4.19E6     1000.damg25
 USRTRACK         10.      1E-6                                         &
 AUXSCORE    USRTRACK -1202600.              dtmg26    damg26       0.0
-USRTRACK         -1.    ENERGY      -74.    DtctrT    4.19E6      900.dtmg26
+USRTRACK         -1.    ENERGY      -74.    DtctrT    4.19E6     1000.dtmg26
 USRTRACK         10.      1E-6                                         &
-USRTRACK         -1.    ENERGY      -76.    DtctrH    4.19E6      900.dhmg26
+USRTRACK         -1.    ENERGY      -75.    DtctrH    4.19E6     1000.dhmg26
 USRTRACK         10.      1E-6                                         &
 USRTRACK         -1.    ENERGY      -78.    DtctrB    4.19E6      900.dbmg26
 USRTRACK         10.      1E-6                                         &
-USRTRACK         -1.    ENERGY      -80.    DtctrA    4.19E6      900.damg26
+USRTRACK         -1.    ENERGY      -77.    DtctrA    4.19E6     1000.damg26
 USRTRACK         10.      1E-6                                         &
 AUXSCORE    USRTRACK -1302700.              dtal27    daal27       0.0
-USRTRACK         -1.    ENERGY      -74.    DtctrT    4.19E6      900.dtal27
+USRTRACK         -1.    ENERGY      -74.    DtctrT    4.19E6     1000.dtal27
 USRTRACK         10.      1E-6                                         &
-USRTRACK         -1.    ENERGY      -76.    DtctrH    4.19E6      900.dhal27
+USRTRACK         -1.    ENERGY      -75.    DtctrH    4.19E6     1000.dhal27
 USRTRACK         10.      1E-6                                         &
 USRTRACK         -1.    ENERGY      -78.    DtctrB    4.19E6      900.dbal27
 USRTRACK         10.      1E-6                                         &
-USRTRACK         -1.    ENERGY      -80.    DtctrA    4.19E6      900.daal27
+USRTRACK         -1.    ENERGY      -77.    DtctrA    4.19E6     1000.daal27
 USRTRACK         10.      1E-6                                         &
 AUXSCORE    USRTRACK -1402800.              dtsi28    dasi28       0.0
-USRTRACK         -1.    ENERGY      -74.    DtctrT    4.19E6      900.dtsi28
+USRTRACK         -1.    ENERGY      -74.    DtctrT    4.19E6     1000.dtsi28
 USRTRACK         10.      1E-6                                         &
-USRTRACK         -1.    ENERGY      -76.    DtctrH    4.19E6      900.dhsi28
+USRTRACK         -1.    ENERGY      -75.    DtctrH    4.19E6     1000.dhsi28
 USRTRACK         10.      1E-6                                         &
 USRTRACK         -1.    ENERGY      -78.    DtctrB    4.19E6      900.dbsi28
 USRTRACK         10.      1E-6                                         &
-USRTRACK         -1.    ENERGY      -80.    DtctrA    4.19E6      900.dasi28
+USRTRACK         -1.    ENERGY      -77.    DtctrA    4.19E6     1000.dasi28
 USRTRACK         10.      1E-6                                         &
 AUXSCORE    USRTRACK -1402900.              dtsi29    dasi29       0.0
-USRTRACK         -1.    ENERGY      -74.    DtctrT    4.19E6      900.dtsi29
+USRTRACK         -1.    ENERGY      -74.    DtctrT    4.19E6     1000.dtsi29
 USRTRACK         10.      1E-6                                         &
-USRTRACK         -1.    ENERGY      -76.    DtctrH    4.19E6      900.dhsi29
+USRTRACK         -1.    ENERGY      -75.    DtctrH    4.19E6     1000.dhsi29
 USRTRACK         10.      1E-6                                         &
 USRTRACK         -1.    ENERGY      -78.    DtctrB    4.19E6      900.dbsi29
 USRTRACK         10.      1E-6                                         &
-USRTRACK         -1.    ENERGY      -80.    DtctrA    4.19E6      900.dasi29
+USRTRACK         -1.    ENERGY      -77.    DtctrA    4.19E6     1000.dasi29
 USRTRACK         10.      1E-6                                         &
 AUXSCORE    USRTRACK -1403000.              dtsi30    dasi30       0.0
-USRTRACK         -1.    ENERGY      -74.    DtctrT    4.19E6      900.dtsi30
+USRTRACK         -1.    ENERGY      -74.    DtctrT    4.19E6     1000.dtsi30
 USRTRACK         10.      1E-6                                         &
-USRTRACK         -1.    ENERGY      -76.    DtctrH    4.19E6      900.dhsi30
+USRTRACK         -1.    ENERGY      -75.    DtctrH    4.19E6     1000.dhsi30
 USRTRACK         10.      1E-6                                         &
 USRTRACK         -1.    ENERGY      -78.    DtctrB    4.19E6      900.dbsi30
 USRTRACK         10.      1E-6                                         &
-USRTRACK         -1.    ENERGY      -80.    DtctrA    4.19E6      900.dasi30
+USRTRACK         -1.    ENERGY      -77.    DtctrA    4.19E6     1000.dasi30
 USRTRACK         10.      1E-6                                         &
 AUXSCORE    USRTRACK -1503100.               dtp31     dap31       0.0
-USRTRACK         -1.    ENERGY      -74.    DtctrT    4.19E6      900.dtp31
+USRTRACK         -1.    ENERGY      -74.    DtctrT    4.19E6     1000.dtp31
 USRTRACK         10.      1E-6                                         &
-USRTRACK         -1.    ENERGY      -76.    DtctrH    4.19E6      900.dhp31
+USRTRACK         -1.    ENERGY      -75.    DtctrH    4.19E6     1000.dhp31
 USRTRACK         10.      1E-6                                         &
 USRTRACK         -1.    ENERGY      -78.    DtctrB    4.19E6      900.dbp31
 USRTRACK         10.      1E-6                                         &
-USRTRACK         -1.    ENERGY      -80.    DtctrA    4.19E6      900.dap31
+USRTRACK         -1.    ENERGY      -77.    DtctrA    4.19E6     1000.dap31
 USRTRACK         10.      1E-6                                         &
 AUXSCORE    USRTRACK -1603200.               dts32     das32       0.0
-USRTRACK         -1.    ENERGY      -74.    DtctrT    4.19E6      900.dts32
+USRTRACK         -1.    ENERGY      -74.    DtctrT    4.19E6     1000.dts32
 USRTRACK         10.      1E-6                                         &
-USRTRACK         -1.    ENERGY      -76.    DtctrH    4.19E6      900.dhs32
+USRTRACK         -1.    ENERGY      -75.    DtctrH    4.19E6     1000.dhs32
 USRTRACK         10.      1E-6                                         &
 USRTRACK         -1.    ENERGY      -78.    DtctrB    4.19E6      900.dbs32
 USRTRACK         10.      1E-6                                         &
-USRTRACK         -1.    ENERGY      -80.    DtctrA    4.19E6      900.das32
+USRTRACK         -1.    ENERGY      -77.    DtctrA    4.19E6     1000.das32
 USRTRACK         10.      1E-6                                         &
 AUXSCORE    USRTRACK -1603300.               dts33     das33       0.0
-USRTRACK         -1.    ENERGY      -74.    DtctrT    4.19E6      900.dts33
+USRTRACK         -1.    ENERGY      -74.    DtctrT    4.19E6     1000.dts33
 USRTRACK         10.      1E-6                                         &
-USRTRACK         -1.    ENERGY      -76.    DtctrH    4.19E6      900.dhs33
+USRTRACK         -1.    ENERGY      -75.    DtctrH    4.19E6     1000.dhs33
 USRTRACK         10.      1E-6                                         &
 USRTRACK         -1.    ENERGY      -78.    DtctrB    4.19E6      900.dbs33
 USRTRACK         10.      1E-6                                         &
-USRTRACK         -1.    ENERGY      -80.    DtctrA    4.19E6      900.das33
+USRTRACK         -1.    ENERGY      -77.    DtctrA    4.19E6     1000.das33
 USRTRACK         10.      1E-6                                         &
 AUXSCORE    USRTRACK -1603400.               dts34     das34       0.0
-USRTRACK         -1.    ENERGY      -74.    DtctrT    4.19E6      900.dts34
+USRTRACK         -1.    ENERGY      -74.    DtctrT    4.19E6     1000.dts34
 USRTRACK         10.      1E-6                                         &
-USRTRACK         -1.    ENERGY      -76.    DtctrH    4.19E6      900.dhs34
+USRTRACK         -1.    ENERGY      -75.    DtctrH    4.19E6     1000.dhs34
 USRTRACK         10.      1E-6                                         &
 USRTRACK         -1.    ENERGY      -78.    DtctrB    4.19E6      900.dbs34
 USRTRACK         10.      1E-6                                         &
-USRTRACK         -1.    ENERGY      -80.    DtctrA    4.19E6      900.das34
+USRTRACK         -1.    ENERGY      -77.    DtctrA    4.19E6     1000.das34
 USRTRACK         10.      1E-6                                         &
 AUXSCORE    USRTRACK -1603600.               dts36     das36       0.0
-USRTRACK         -1.    ENERGY      -74.    DtctrT    4.19E6      900.dts36
+USRTRACK         -1.    ENERGY      -74.    DtctrT    4.19E6     1000.dts36
 USRTRACK         10.      1E-6                                         &
-USRTRACK         -1.    ENERGY      -76.    DtctrH    4.19E6      900.dhs36
+USRTRACK         -1.    ENERGY      -75.    DtctrH    4.19E6     1000.dhs36
 USRTRACK         10.      1E-6                                         &
 USRTRACK         -1.    ENERGY      -78.    DtctrB    4.19E6      900.dbs36
 USRTRACK         10.      1E-6                                         &
-USRTRACK         -1.    ENERGY      -80.    DtctrA    4.19E6      900.das36
+USRTRACK         -1.    ENERGY      -77.    DtctrA    4.19E6     1000.das36
 USRTRACK         10.      1E-6                                         &
 * ..+....1....+....2....+....3....+....4....+....5....+....6....+....7..
 AUXSCORE    USRTRACK -1703500.             dtCl_35   daCl_35
-USRTRACK         -1.    ENERGY      -74.    DtctrT    4.19E6      900.dtCl_35
+USRTRACK         -1.    ENERGY      -74.    DtctrT    4.19E6     1000.dtCl_35
 USRTRACK         10.      1E-6                                         &
-USRTRACK         -1.    ENERGY      -76.    DtctrH    4.19E6      900.dhCl_35
+USRTRACK         -1.    ENERGY      -75.    DtctrH    4.19E6     1000.dhCl_35
 USRTRACK         10.      1E-6                                         &
 USRTRACK         -1.    ENERGY      -78.    DtctrB    4.19E6      900.dbCl_35
 USRTRACK         10.      1E-6                                         &
-USRTRACK         -1.    ENERGY      -80.    DtctrA    4.19E6      900.daCl_35
+USRTRACK         -1.    ENERGY      -77.    DtctrA    4.19E6     1000.daCl_35
 USRTRACK         10.      1E-6                                         &
 AUXSCORE    USRTRACK -1703700.             dtCl_37   daCl_37
-USRTRACK         -1.    ENERGY      -74.    DtctrT    4.19E6      900.dtCl_37
+USRTRACK         -1.    ENERGY      -74.    DtctrT    4.19E6     1000.dtCl_37
 USRTRACK         10.      1E-6                                         &
-USRTRACK         -1.    ENERGY      -76.    DtctrH    4.19E6      900.dhCl_37
+USRTRACK         -1.    ENERGY      -75.    DtctrH    4.19E6     1000.dhCl_37
 USRTRACK         10.      1E-6                                         &
 USRTRACK         -1.    ENERGY      -78.    DtctrB    4.19E6      900.dbCl_37
 USRTRACK         10.      1E-6                                         &
-USRTRACK         -1.    ENERGY      -80.    DtctrA    4.19E6      900.daCl_37
+USRTRACK         -1.    ENERGY      -77.    DtctrA    4.19E6     1000.daCl_37
 USRTRACK         10.      1E-6                                         &
 AUXSCORE    USRTRACK -1803600.             dtAr_36   daAr_36
-USRTRACK         -1.    ENERGY      -74.    DtctrT    4.19E6      900.dtAr_36
+USRTRACK         -1.    ENERGY      -74.    DtctrT    4.19E6     1000.dtAr_36
 USRTRACK         10.      1E-6                                         &
-USRTRACK         -1.    ENERGY      -76.    DtctrH    4.19E6      900.dhAr_36
+USRTRACK         -1.    ENERGY      -75.    DtctrH    4.19E6     1000.dhAr_36
 USRTRACK         10.      1E-6                                         &
 USRTRACK         -1.    ENERGY      -78.    DtctrB    4.19E6      900.dbAr_36
 USRTRACK         10.      1E-6                                         &
-USRTRACK         -1.    ENERGY      -80.    DtctrA    4.19E6      900.daAr_36
+USRTRACK         -1.    ENERGY      -77.    DtctrA    4.19E6     1000.daAr_36
 USRTRACK         10.      1E-6                                         &
 AUXSCORE    USRTRACK -1803800.             dtAr_38   daAr_38
-USRTRACK         -1.    ENERGY      -74.    DtctrT    4.19E6      900.dtAr_38
+USRTRACK         -1.    ENERGY      -74.    DtctrT    4.19E6     1000.dtAr_38
 USRTRACK         10.      1E-6                                         &
-USRTRACK         -1.    ENERGY      -76.    DtctrH    4.19E6      900.dhAr_38
+USRTRACK         -1.    ENERGY      -75.    DtctrH    4.19E6     1000.dhAr_38
 USRTRACK         10.      1E-6                                         &
 USRTRACK         -1.    ENERGY      -78.    DtctrB    4.19E6      900.dbAr_38
 USRTRACK         10.      1E-6                                         &
-USRTRACK         -1.    ENERGY      -80.    DtctrA    4.19E6      900.daAr_38
+USRTRACK         -1.    ENERGY      -77.    DtctrA    4.19E6     1000.daAr_38
 USRTRACK         10.      1E-6                                         &
 AUXSCORE    USRTRACK -1804000.             dtAr_40   daAr_40
-USRTRACK         -1.    ENERGY      -74.    DtctrT    4.19E6      900.dtAr_40
+USRTRACK         -1.    ENERGY      -74.    DtctrT    4.19E6     1000.dtAr_40
 USRTRACK         10.      1E-6                                         &
-USRTRACK         -1.    ENERGY      -76.    DtctrH    4.19E6      900.dhAr_40
+USRTRACK         -1.    ENERGY      -75.    DtctrH    4.19E6     1000.dhAr_40
 USRTRACK         10.      1E-6                                         &
 USRTRACK         -1.    ENERGY      -78.    DtctrB    4.19E6      900.dbAr_40
 USRTRACK         10.      1E-6                                         &
-USRTRACK         -1.    ENERGY      -80.    DtctrA    4.19E6      900.daAr_40
+USRTRACK         -1.    ENERGY      -77.    DtctrA    4.19E6     1000.daAr_40
 USRTRACK         10.      1E-6                                         &
 AUXSCORE    USRTRACK -1903900.              dtK_39    daK_39
-USRTRACK         -1.    ENERGY      -74.    DtctrT    4.19E6      900.dtK_39
+USRTRACK         -1.    ENERGY      -74.    DtctrT    4.19E6     1000.dtK_39
 USRTRACK         10.      1E-6                                         &
-USRTRACK         -1.    ENERGY      -76.    DtctrH    4.19E6      900.dhK_39
+USRTRACK         -1.    ENERGY      -75.    DtctrH    4.19E6     1000.dhK_39
 USRTRACK         10.      1E-6                                         &
 USRTRACK         -1.    ENERGY      -78.    DtctrB    4.19E6      900.dbK_39
 USRTRACK         10.      1E-6                                         &
-USRTRACK         -1.    ENERGY      -80.    DtctrA    4.19E6      900.daK_39
+USRTRACK         -1.    ENERGY      -77.    DtctrA    4.19E6     1000.daK_39
 USRTRACK         10.      1E-6                                         &
 AUXSCORE    USRTRACK -1904100.              dtK_41    daK_41
-USRTRACK         -1.    ENERGY      -74.    DtctrT    4.19E6      900.dtK_41
+USRTRACK         -1.    ENERGY      -74.    DtctrT    4.19E6     1000.dtK_41
 USRTRACK         10.      1E-6                                         &
-USRTRACK         -1.    ENERGY      -76.    DtctrH    4.19E6      900.dhK_41
+USRTRACK         -1.    ENERGY      -75.    DtctrH    4.19E6     1000.dhK_41
 USRTRACK         10.      1E-6                                         &
 USRTRACK         -1.    ENERGY      -78.    DtctrB    4.19E6      900.dbK_41
 USRTRACK         10.      1E-6                                         &
-USRTRACK         -1.    ENERGY      -80.    DtctrA    4.19E6      900.daK_41
+USRTRACK         -1.    ENERGY      -77.    DtctrA    4.19E6     1000.daK_41
 USRTRACK         10.      1E-6                                         &
 AUXSCORE    USRTRACK -2004000.             dtCa_40   daCa_40
-USRTRACK         -1.    ENERGY      -74.    DtctrT    4.19E6      900.dtCa_40
+USRTRACK         -1.    ENERGY      -74.    DtctrT    4.19E6     1000.dtCa_40
 USRTRACK         10.      1E-6                                         &
-USRTRACK         -1.    ENERGY      -76.    DtctrH    4.19E6      900.dhCa_40
+USRTRACK         -1.    ENERGY      -75.    DtctrH    4.19E6     1000.dhCa_40
 USRTRACK         10.      1E-6                                         &
 USRTRACK         -1.    ENERGY      -78.    DtctrB    4.19E6      900.dbCa_40
 USRTRACK         10.      1E-6                                         &
-USRTRACK         -1.    ENERGY      -80.    DtctrA    4.19E6      900.daCa_40
+USRTRACK         -1.    ENERGY      -77.    DtctrA    4.19E6     1000.daCa_40
 USRTRACK         10.      1E-6                                         &
 AUXSCORE    USRTRACK -2004200.             dtCa_42   daCa_42
-USRTRACK         -1.    ENERGY      -74.    DtctrT    4.19E6      900.dtCa_42
+USRTRACK         -1.    ENERGY      -74.    DtctrT    4.19E6     1000.dtCa_42
 USRTRACK         10.      1E-6                                         &
-USRTRACK         -1.    ENERGY      -76.    DtctrH    4.19E6      900.dhCa_42
+USRTRACK         -1.    ENERGY      -75.    DtctrH    4.19E6     1000.dhCa_42
 USRTRACK         10.      1E-6                                         &
 USRTRACK         -1.    ENERGY      -78.    DtctrB    4.19E6      900.dbCa_42
 USRTRACK         10.      1E-6                                         &
-USRTRACK         -1.    ENERGY      -80.    DtctrA    4.19E6      900.daCa_42
+USRTRACK         -1.    ENERGY      -77.    DtctrA    4.19E6     1000.daCa_42
 USRTRACK         10.      1E-6                                         &
 AUXSCORE    USRTRACK -2004300.             dtCa_43   daCa_43
-USRTRACK         -1.    ENERGY      -74.    DtctrT    4.19E6      900.dtCa_43
+USRTRACK         -1.    ENERGY      -74.    DtctrT    4.19E6     1000.dtCa_43
 USRTRACK         10.      1E-6                                         &
-USRTRACK         -1.    ENERGY      -76.    DtctrH    4.19E6      900.dhCa_43
+USRTRACK         -1.    ENERGY      -75.    DtctrH    4.19E6     1000.dhCa_43
 USRTRACK         10.      1E-6                                         &
 USRTRACK         -1.    ENERGY      -78.    DtctrB    4.19E6      900.dbCa_43
 USRTRACK         10.      1E-6                                         &
-USRTRACK         -1.    ENERGY      -80.    DtctrA    4.19E6      900.daCa_43
+USRTRACK         -1.    ENERGY      -77.    DtctrA    4.19E6     1000.daCa_43
 USRTRACK         10.      1E-6                                         &
 AUXSCORE    USRTRACK -2004400.             dtCa_44   daCa_44
-USRTRACK         -1.    ENERGY      -74.    DtctrT    4.19E6      900.dtCa_44
+USRTRACK         -1.    ENERGY      -74.    DtctrT    4.19E6     1000.dtCa_44
 USRTRACK         10.      1E-6                                         &
-USRTRACK         -1.    ENERGY      -76.    DtctrH    4.19E6      900.dhCa_44
+USRTRACK         -1.    ENERGY      -75.    DtctrH    4.19E6     1000.dhCa_44
 USRTRACK         10.      1E-6                                         &
 USRTRACK         -1.    ENERGY      -78.    DtctrB    4.19E6      900.dbCa_44
 USRTRACK         10.      1E-6                                         &
-USRTRACK         -1.    ENERGY      -80.    DtctrA    4.19E6      900.daCa_44
+USRTRACK         -1.    ENERGY      -77.    DtctrA    4.19E6     1000.daCa_44
 USRTRACK         10.      1E-6                                         &
 AUXSCORE    USRTRACK -2004600.             dtCa_46   daCa_46
-USRTRACK         -1.    ENERGY      -74.    DtctrT    4.19E6      900.dtCa_46
+USRTRACK         -1.    ENERGY      -74.    DtctrT    4.19E6     1000.dtCa_46
 USRTRACK         10.      1E-6                                         &
-USRTRACK         -1.    ENERGY      -76.    DtctrH    4.19E6      900.dhCa_46
+USRTRACK         -1.    ENERGY      -75.    DtctrH    4.19E6     1000.dhCa_46
 USRTRACK         10.      1E-6                                         &
 USRTRACK         -1.    ENERGY      -78.    DtctrB    4.19E6      900.dbCa_46
 USRTRACK         10.      1E-6                                         &
-USRTRACK         -1.    ENERGY      -80.    DtctrA    4.19E6      900.daCa_46
+USRTRACK         -1.    ENERGY      -77.    DtctrA    4.19E6     1000.daCa_46
 USRTRACK         10.      1E-6                                         &
 AUXSCORE    USRTRACK -2004800.             dtCa_48   daCa_48
-USRTRACK         -1.    ENERGY      -74.    DtctrT    4.19E6      900.dtCa_48
+USRTRACK         -1.    ENERGY      -74.    DtctrT    4.19E6     1000.dtCa_48
 USRTRACK         10.      1E-6                                         &
-USRTRACK         -1.    ENERGY      -76.    DtctrH    4.19E6      900.dhCa_48
+USRTRACK         -1.    ENERGY      -75.    DtctrH    4.19E6     1000.dhCa_48
 USRTRACK         10.      1E-6                                         &
 USRTRACK         -1.    ENERGY      -78.    DtctrB    4.19E6      900.dbCa_48
 USRTRACK         10.      1E-6                                         &
-USRTRACK         -1.    ENERGY      -80.    DtctrA    4.19E6      900.daCa_48
+USRTRACK         -1.    ENERGY      -77.    DtctrA    4.19E6     1000.daCa_48
 USRTRACK         10.      1E-6                                         &
 AUXSCORE    USRTRACK -2104500.             dtSc_45   daSc_45
-USRTRACK         -1.    ENERGY      -74.    DtctrT    4.19E6      900.dtSc_45
+USRTRACK         -1.    ENERGY      -74.    DtctrT    4.19E6     1000.dtSc_45
 USRTRACK         10.      1E-6                                         &
-USRTRACK         -1.    ENERGY      -76.    DtctrH    4.19E6      900.dhSc_45
+USRTRACK         -1.    ENERGY      -75.    DtctrH    4.19E6     1000.dhSc_45
 USRTRACK         10.      1E-6                                         &
 USRTRACK         -1.    ENERGY      -78.    DtctrB    4.19E6      900.dbSc_45
 USRTRACK         10.      1E-6                                         &
-USRTRACK         -1.    ENERGY      -80.    DtctrA    4.19E6      900.daSc_45
+USRTRACK         -1.    ENERGY      -77.    DtctrA    4.19E6     1000.daSc_45
 USRTRACK         10.      1E-6                                         &
 AUXSCORE    USRTRACK -2204600.             dtTi_46   daTi_46
-USRTRACK         -1.    ENERGY      -74.    DtctrT    4.19E6      900.dtTi_46
+USRTRACK         -1.    ENERGY      -74.    DtctrT    4.19E6     1000.dtTi_46
 USRTRACK         10.      1E-6                                         &
-USRTRACK         -1.    ENERGY      -76.    DtctrH    4.19E6      900.dhTi_46
+USRTRACK         -1.    ENERGY      -75.    DtctrH    4.19E6     1000.dhTi_46
 USRTRACK         10.      1E-6                                         &
 USRTRACK         -1.    ENERGY      -78.    DtctrB    4.19E6      900.dbTi_46
 USRTRACK         10.      1E-6                                         &
-USRTRACK         -1.    ENERGY      -80.    DtctrA    4.19E6      900.daTi_46
+USRTRACK         -1.    ENERGY      -77.    DtctrA    4.19E6     1000.daTi_46
 USRTRACK         10.      1E-6                                         &
 AUXSCORE    USRTRACK -2204700.             dtTi_47   daTi_47
-USRTRACK         -1.    ENERGY      -74.    DtctrT    4.19E6      900.dtTi_47
+USRTRACK         -1.    ENERGY      -74.    DtctrT    4.19E6     1000.dtTi_47
 USRTRACK         10.      1E-6                                         &
-USRTRACK         -1.    ENERGY      -76.    DtctrH    4.19E6      900.dhTi_47
+USRTRACK         -1.    ENERGY      -75.    DtctrH    4.19E6     1000.dhTi_47
 USRTRACK         10.      1E-6                                         &
 USRTRACK         -1.    ENERGY      -78.    DtctrB    4.19E6      900.dbTi_47
 USRTRACK         10.      1E-6                                         &
-USRTRACK         -1.    ENERGY      -80.    DtctrA    4.19E6      900.daTi_47
+USRTRACK         -1.    ENERGY      -77.    DtctrA    4.19E6     1000.daTi_47
 USRTRACK         10.      1E-6                                         &
 AUXSCORE    USRTRACK -2204800.             dtTi_48   daTi_48
-USRTRACK         -1.    ENERGY      -74.    DtctrT    4.19E6      900.dtTi_48
+USRTRACK         -1.    ENERGY      -74.    DtctrT    4.19E6     1000.dtTi_48
 USRTRACK         10.      1E-6                                         &
-USRTRACK         -1.    ENERGY      -76.    DtctrH    4.19E6      900.dhTi_48
+USRTRACK         -1.    ENERGY      -75.    DtctrH    4.19E6     1000.dhTi_48
 USRTRACK         10.      1E-6                                         &
 USRTRACK         -1.    ENERGY      -78.    DtctrB    4.19E6      900.dbTi_48
 USRTRACK         10.      1E-6                                         &
-USRTRACK         -1.    ENERGY      -80.    DtctrA    4.19E6      900.daTi_48
+USRTRACK         -1.    ENERGY      -77.    DtctrA    4.19E6     1000.daTi_48
 USRTRACK         10.      1E-6                                         &
 AUXSCORE    USRTRACK -2204900.             dtTi_49   daTi_49
-USRTRACK         -1.    ENERGY      -74.    DtctrT    4.19E6      900.dtTi_49
+USRTRACK         -1.    ENERGY      -74.    DtctrT    4.19E6     1000.dtTi_49
 USRTRACK         10.      1E-6                                         &
-USRTRACK         -1.    ENERGY      -76.    DtctrH    4.19E6      900.dhTi_49
+USRTRACK         -1.    ENERGY      -75.    DtctrH    4.19E6     1000.dhTi_49
 USRTRACK         10.      1E-6                                         &
 USRTRACK         -1.    ENERGY      -78.    DtctrB    4.19E6      900.dbTi_49
 USRTRACK         10.      1E-6                                         &
-USRTRACK         -1.    ENERGY      -80.    DtctrA    4.19E6      900.daTi_49
+USRTRACK         -1.    ENERGY      -77.    DtctrA    4.19E6     1000.daTi_49
 USRTRACK         10.      1E-6                                         &
 AUXSCORE    USRTRACK -2205000.             dtTi_50   daTi_50
-USRTRACK         -1.    ENERGY      -74.    DtctrT    4.19E6      900.dtTi_50
+USRTRACK         -1.    ENERGY      -74.    DtctrT    4.19E6     1000.dtTi_50
 USRTRACK         10.      1E-6                                         &
-USRTRACK         -1.    ENERGY      -76.    DtctrH    4.19E6      900.dhTi_50
+USRTRACK         -1.    ENERGY      -75.    DtctrH    4.19E6     1000.dhTi_50
 USRTRACK         10.      1E-6                                         &
 USRTRACK         -1.    ENERGY      -78.    DtctrB    4.19E6      900.dbTi_50
 USRTRACK         10.      1E-6                                         &
-USRTRACK         -1.    ENERGY      -80.    DtctrA    4.19E6      900.daTi_50
+USRTRACK         -1.    ENERGY      -77.    DtctrA    4.19E6     1000.daTi_50
 USRTRACK         10.      1E-6                                         &
 AUXSCORE    USRTRACK -2305000.              dtV_50    daV_50
-USRTRACK         -1.    ENERGY      -74.    DtctrT    4.19E6      900.dtV_50
+USRTRACK         -1.    ENERGY      -74.    DtctrT    4.19E6     1000.dtV_50
 USRTRACK         10.      1E-6                                         &
-USRTRACK         -1.    ENERGY      -76.    DtctrH    4.19E6      900.dhV_50
+USRTRACK         -1.    ENERGY      -75.    DtctrH    4.19E6     1000.dhV_50
 USRTRACK         10.      1E-6                                         &
 USRTRACK         -1.    ENERGY      -78.    DtctrB    4.19E6      900.dbV_50
 USRTRACK         10.      1E-6                                         &
-USRTRACK         -1.    ENERGY      -80.    DtctrA    4.19E6      900.daV_50
+USRTRACK         -1.    ENERGY      -77.    DtctrA    4.19E6     1000.daV_50
 USRTRACK         10.      1E-6                                         &
 AUXSCORE    USRTRACK -2305100.              dtV_51    daV_51
-USRTRACK         -1.    ENERGY      -74.    DtctrT    4.19E6      900.dtV_51
+USRTRACK         -1.    ENERGY      -74.    DtctrT    4.19E6     1000.dtV_51
 USRTRACK         10.      1E-6                                         &
-USRTRACK         -1.    ENERGY      -76.    DtctrH    4.19E6      900.dhV_51
+USRTRACK         -1.    ENERGY      -75.    DtctrH    4.19E6     1000.dhV_51
 USRTRACK         10.      1E-6                                         &
 USRTRACK         -1.    ENERGY      -78.    DtctrB    4.19E6      900.dbV_51
 USRTRACK         10.      1E-6                                         &
-USRTRACK         -1.    ENERGY      -80.    DtctrA    4.19E6      900.daV_51
+USRTRACK         -1.    ENERGY       77.    DtctrA    4.19E6     1000.daV_51
 USRTRACK         10.      1E-6                                         &
 AUXSCORE    USRTRACK -2405000.             dtCr_50   daCr_50
-USRTRACK         -1.    ENERGY      -74.    DtctrT    4.19E6      900.dtCr_50
+USRTRACK         -1.    ENERGY      -74.    DtctrT    4.19E6     1000.dtCr_50
 USRTRACK         10.      1E-6                                         &
-USRTRACK         -1.    ENERGY      -76.    DtctrH    4.19E6      900.dhCr_50
+USRTRACK         -1.    ENERGY      -75.    DtctrH    4.19E6     1000.dhCr_50
 USRTRACK         10.      1E-6                                         &
 USRTRACK         -1.    ENERGY      -78.    DtctrB    4.19E6      900.dbCr_50
 USRTRACK         10.      1E-6                                         &
-USRTRACK         -1.    ENERGY      -80.    DtctrA    4.19E6      900.daCr_50
+USRTRACK         -1.    ENERGY      -77.    DtctrA    4.19E6     1000.daCr_50
 USRTRACK         10.      1E-6                                         &
 AUXSCORE    USRTRACK -2405200.             daCr_52   daCr_52
-USRTRACK         -1.    ENERGY      -74.    DtctrT    4.19E6      900.dtCr_52
+USRTRACK         -1.    ENERGY      -74.    DtctrT    4.19E6     1000.dtCr_52
 USRTRACK         10.      1E-6                                         &
-USRTRACK         -1.    ENERGY      -76.    DtctrH    4.19E6      900.dhCr_52
+USRTRACK         -1.    ENERGY      -75.    DtctrH    4.19E6     1000.dhCr_52
 USRTRACK         10.      1E-6                                         &
 USRTRACK         -1.    ENERGY      -78.    DtctrB    4.19E6      900.dbCr_52
 USRTRACK         10.      1E-6                                         &
-USRTRACK         -1.    ENERGY      -80.    DtctrA    4.19E6      900.daCr_52
+USRTRACK         -1.    ENERGY      -77.    DtctrA    4.19E6     1000.daCr_52
 USRTRACK         10.      1E-6                                         &
 AUXSCORE    USRTRACK -2405300.             dtCr_53   daCr_53
-USRTRACK         -1.    ENERGY      -74.    DtctrT    4.19E6      900.dtCr_53
+USRTRACK         -1.    ENERGY      -74.    DtctrT    4.19E6     1000.dtCr_53
 USRTRACK         10.      1E-6                                         &
-USRTRACK         -1.    ENERGY      -76.    DtctrH    4.19E6      900.dhCr_53
+USRTRACK         -1.    ENERGY      -75.    DtctrH    4.19E6     1000.dhCr_53
 USRTRACK         10.      1E-6                                         &
 USRTRACK         -1.    ENERGY      -78.    DtctrB    4.19E6      900.dbCr_53
 USRTRACK         10.      1E-6                                         &
-USRTRACK         -1.    ENERGY      -80.    DtctrA    4.19E6      900.daCr_53
+USRTRACK         -1.    ENERGY      -77.    DtctrA    4.19E6     1000.daCr_53
 USRTRACK         10.      1E-6                                         &
 AUXSCORE    USRTRACK -2405400.             dtCr_54   daCr_54
-USRTRACK         -1.    ENERGY      -74.    DtctrT    4.19E6      900.dtCr_54
+USRTRACK         -1.    ENERGY      -74.    DtctrT    4.19E6     1000.dtCr_54
 USRTRACK         10.      1E-6                                         &
-USRTRACK         -1.    ENERGY      -76.    DtctrH    4.19E6      900.dhCr_54
+USRTRACK         -1.    ENERGY      -75.    DtctrH    4.19E6     1000.dhCr_54
 USRTRACK         10.      1E-6                                         &
 USRTRACK         -1.    ENERGY      -78.    DtctrB    4.19E6      900.dbCr_54
 USRTRACK         10.      1E-6                                         &
-USRTRACK         -1.    ENERGY      -80.    DtctrA    4.19E6      900.daCr_54
+USRTRACK         -1.    ENERGY      -77.    DtctrA    4.19E6     1000.daCr_54
 USRTRACK         10.      1E-6                                         &
 AUXSCORE    USRTRACK -2505500.             dtMn_55   daMn_55
-USRTRACK         -1.    ENERGY      -74.    DtctrT    4.19E6      900.dtMn_55
+USRTRACK         -1.    ENERGY      -74.    DtctrT    4.19E6     1000.dtMn_55
 USRTRACK         10.      1E-6                                         &
-USRTRACK         -1.    ENERGY      -76.    DtctrH    4.19E6      900.dhMn_55
+USRTRACK         -1.    ENERGY      -75.    DtctrH    4.19E6     1000.dhMn_55
 USRTRACK         10.      1E-6                                         &
 USRTRACK         -1.    ENERGY      -78.    DtctrB    4.19E6      900.dbMn_55
 USRTRACK         10.      1E-6                                         &
-USRTRACK         -1.    ENERGY      -80.    DtctrA    4.19E6      900.daMn_55
+USRTRACK         -1.    ENERGY      -77.    DtctrA    4.19E6     1000.daMn_55
 USRTRACK         10.      1E-6                                         &
 AUXSCORE    USRTRACK -2605400.             dtFe_54   daFe_54
-USRTRACK         -1.    ENERGY      -74.    DtctrT    4.19E6      900.dtFe_54
+USRTRACK         -1.    ENERGY      -74.    DtctrT    4.19E6     1000.dtFe_54
 USRTRACK         10.      1E-6                                         &
-USRTRACK         -1.    ENERGY      -76.    DtctrH    4.19E6      900.dhFe_54
+USRTRACK         -1.    ENERGY      -75.    DtctrH    4.19E6     1000.dhFe_54
 USRTRACK         10.      1E-6                                         &
 USRTRACK         -1.    ENERGY      -78.    DtctrB    4.19E6      900.dbFe_54
 USRTRACK         10.      1E-6                                         &
-USRTRACK         -1.    ENERGY      -80.    DtctrA    4.19E6      900.daFe_54
+USRTRACK         -1.    ENERGY      -77.    DtctrA    4.19E6     1000.daFe_54
 USRTRACK         10.      1E-6                                         &
 AUXSCORE    USRTRACK -2605600.             dtFe_56   daFe_56
-USRTRACK         -1.    ENERGY      -74.    DtctrT    4.19E6      900.dtFe_56
+USRTRACK         -1.    ENERGY      -74.    DtctrT    4.19E6     1000.dtFe_56
 USRTRACK         10.      1E-6                                         &
-USRTRACK         -1.    ENERGY      -76.    DtctrH    4.19E6      900.dhFe_56
+USRTRACK         -1.    ENERGY      -75.    DtctrH    4.19E6     1000.dhFe_56
 USRTRACK         10.      1E-6                                         &
 USRTRACK         -1.    ENERGY      -78.    DtctrB    4.19E6      900.dbFe_56
 USRTRACK         10.      1E-6                                         &
-USRTRACK         -1.    ENERGY      -80.    DtctrA    4.19E6      900.daFe_56
+USRTRACK         -1.    ENERGY      -77.    DtctrA    4.19E6     1000.daFe_56
 USRTRACK         10.      1E-6                                         &
 AUXSCORE    USRTRACK -2605700.             dtFe_57   daFe_57
-USRTRACK         -1.    ENERGY      -74.    DtctrT    4.19E6      900.dtFe_57
+USRTRACK         -1.    ENERGY      -74.    DtctrT    4.19E6     1000.dtFe_57
 USRTRACK         10.      1E-6                                         &
-USRTRACK         -1.    ENERGY      -76.    DtctrH    4.19E6      900.dhFe_57
+USRTRACK         -1.    ENERGY      -75.    DtctrH    4.19E6     1000.dhFe_57
 USRTRACK         10.      1E-6                                         &
 USRTRACK         -1.    ENERGY      -78.    DtctrB    4.19E6      900.dbFe_57
 USRTRACK         10.      1E-6                                         &
-USRTRACK         -1.    ENERGY      -80.    DtctrA    4.19E6      900.daFe_57
+USRTRACK         -1.    ENERGY      -77.    DtctrA    4.19E6     1000.daFe_57
 USRTRACK         10.      1E-6                                         &
 AUXSCORE    USRTRACK -2605800.             dtFe_58   daFe_58
-USRTRACK         -1.    ENERGY      -74.    DtctrT    4.19E6      900.dtFe_58
+USRTRACK         -1.    ENERGY      -74.    DtctrT    4.19E6     1000.dtFe_58
 USRTRACK         10.      1E-6                                         &
-USRTRACK         -1.    ENERGY      -76.    DtctrH    4.19E6      900.dhFe_58
+USRTRACK         -1.    ENERGY      -75.    DtctrH    4.19E6     1000.dhFe_58
 USRTRACK         10.      1E-6                                         &
 USRTRACK         -1.    ENERGY      -78.    DtctrB    4.19E6      900.dbFe_58
 USRTRACK         10.      1E-6                                         &
-USRTRACK         -1.    ENERGY      -80.    DtctrA    4.19E6      900.daFe_58
+USRTRACK         -1.    ENERGY      -77.    DtctrA    4.19E6     1000.daFe_58
 USRTRACK         10.      1E-6                                         &
 AUXSCORE    USRTRACK -2705900.             dtCo_59   daCo_59
-USRTRACK         -1.    ENERGY      -74.    DtctrT    4.19E6      900.dtCo_59
+USRTRACK         -1.    ENERGY      -74.    DtctrT    4.19E6     1000.dtCo_59
 USRTRACK         10.      1E-6                                         &
-USRTRACK         -1.    ENERGY      -76.    DtctrH    4.19E6      900.dhCo_59
+USRTRACK         -1.    ENERGY      -75.    DtctrH    4.19E6     1000.dhCo_59
 USRTRACK         10.      1E-6                                         &
 USRTRACK         -1.    ENERGY      -78.    DtctrB    4.19E6      900.dbCo_59
 USRTRACK         10.      1E-6                                         &
-USRTRACK         -1.    ENERGY      -80.    DtctrA    4.19E6      900.daCo_59
+USRTRACK         -1.    ENERGY      -77.    DtctrA    4.19E6     1000.daCo_59
 USRTRACK         10.      1E-6                                         &
 AUXSCORE    USRTRACK -2805800.             dtNi_58   daNi_58
-USRTRACK         -1.    ENERGY      -74.    DtctrT    4.19E6      900.dtNi_58
+USRTRACK         -1.    ENERGY      -74.    DtctrT    4.19E6     1000.dtNi_58
 USRTRACK         10.      1E-6                                         &
-USRTRACK         -1.    ENERGY      -76.    DtctrH    4.19E6      900.dhNi_58
+USRTRACK         -1.    ENERGY      -75.    DtctrH    4.19E6     1000.dhNi_58
 USRTRACK         10.      1E-6                                         &
 USRTRACK         -1.    ENERGY      -78.    DtctrB    4.19E6      900.dbNi_58
 USRTRACK         10.      1E-6                                         &
-USRTRACK         -1.    ENERGY      -80.    DtctrA    4.19E6      900.daNi_58
+USRTRACK         -1.    ENERGY      -77.    DtctrA    4.19E6     1000.daNi_58
 USRTRACK         10.      1E-6                                         &
 AUXSCORE    USRTRACK -2806000.             dtNi_60   daNi_60
-USRTRACK         -1.    ENERGY      -74.    DtctrT    4.19E6      900.dtNi_60
+USRTRACK         -1.    ENERGY      -74.    DtctrT    4.19E6     1000.dtNi_60
 USRTRACK         10.      1E-6                                         &
-USRTRACK         -1.    ENERGY      -76.    DtctrH    4.19E6      900.dhNi_60
+USRTRACK         -1.    ENERGY      -75.    DtctrH    4.19E6     1000.dhNi_60
 USRTRACK         10.      1E-6                                         &
 USRTRACK         -1.    ENERGY      -78.    DtctrB    4.19E6      900.dbNi_60
 USRTRACK         10.      1E-6                                         &
-USRTRACK         -1.    ENERGY      -80.    DtctrA    4.19E6      900.daNi_60
+USRTRACK         -1.    ENERGY      -77.    DtctrA    4.19E6     1000.daNi_60
 USRTRACK         10.      1E-6                                         &
 AUXSCORE    USRTRACK -2806100.             dtNi_61   daNi_61
-USRTRACK         -1.    ENERGY      -74.    DtctrT    4.19E6      900.dtNi_61
+USRTRACK         -1.    ENERGY      -74.    DtctrT    4.19E6     1000.dtNi_61
 USRTRACK         10.      1E-6                                         &
-USRTRACK         -1.    ENERGY      -76.    DtctrH    4.19E6      900.dhNi_61
+USRTRACK         -1.    ENERGY      -75.    DtctrH    4.19E6     1000.dhNi_61
 USRTRACK         10.      1E-6                                         &
 USRTRACK         -1.    ENERGY      -78.    DtctrB    4.19E6      900.dbNi_61
 USRTRACK         10.      1E-6                                         &
-USRTRACK         -1.    ENERGY      -80.    DtctrA    4.19E6      900.daNi_61
+USRTRACK         -1.    ENERGY      -77.    DtctrA    4.19E6     1000.daNi_61
 USRTRACK         10.      1E-6                                         &
 AUXSCORE    USRTRACK -2806200.             dtNi_62   daNi_62
-USRTRACK         -1.    ENERGY      -74.    DtctrT    4.19E6      900.dtNi_62
+USRTRACK         -1.    ENERGY      -74.    DtctrT    4.19E6     1000.dtNi_62
 USRTRACK         10.      1E-6                                         &
-USRTRACK         -1.    ENERGY      -76.    DtctrH    4.19E6      900.dhNi_62
+USRTRACK         -1.    ENERGY      -75.    DtctrH    4.19E6     1000.dhNi_62
 USRTRACK         10.      1E-6                                         &
 USRTRACK         -1.    ENERGY      -78.    DtctrB    4.19E6      900.dbNi_62
 USRTRACK         10.      1E-6                                         &
-USRTRACK         -1.    ENERGY      -80.    DtctrA    4.19E6      900.daNi_62
+USRTRACK         -1.    ENERGY      -77.    DtctrA    4.19E6     1000.daNi_62
 USRTRACK         10.      1E-6                                         &
 AUXSCORE    USRTRACK -2906300.             dtCu_63   daCu_63
-USRTRACK         -1.    ENERGY      -74.    DtctrT    4.19E6      900.dtCu_63
+USRTRACK         -1.    ENERGY      -74.    DtctrT    4.19E6     1000.dtCu_63
 USRTRACK         10.      1E-6                                         &
-USRTRACK         -1.    ENERGY      -76.    DtctrH    4.19E6      900.dhCu_63
+USRTRACK         -1.    ENERGY      -75.    DtctrH    4.19E6     1000.dhCu_63
 USRTRACK         10.      1E-6                                         &
 USRTRACK         -1.    ENERGY      -78.    DtctrB    4.19E6      900.dbCu_63
 USRTRACK         10.      1E-6                                         &
-USRTRACK         -1.    ENERGY      -80.    DtctrA    4.19E6      900.daCu_63
+USRTRACK         -1.    ENERGY      -77.    DtctrA    4.19E6     1000.daCu_63
 USRTRACK         10.      1E-6                                         &
 AUXSCORE    USRTRACK -2906500.             dtCu_65   daCu_65
-USRTRACK         -1.    ENERGY      -74.    DtctrT    4.19E6      900.dtCu_65
+USRTRACK         -1.    ENERGY      -74.    DtctrT    4.19E6     1000.dtCu_65
 USRTRACK         10.      1E-6                                         &
-USRTRACK         -1.    ENERGY      -76.    DtctrH    4.19E6      900.dhCu_65
+USRTRACK         -1.    ENERGY      -75.    DtctrH    4.19E6     1000.dhCu_65
 USRTRACK         10.      1E-6                                         &
 USRTRACK         -1.    ENERGY      -78.    DtctrB    4.19E6      900.dbCu_65
 USRTRACK         10.      1E-6                                         &
-USRTRACK         -1.    ENERGY      -80.    DtctrA    4.19E6      900.daCu_65
+USRTRACK         -1.    ENERGY      -77.    DtctrA    4.19E6     1000.daCu_65
 USRTRACK         10.      1E-6                                         &
 * ..+....1....+....2....+....3....+....4....+....5....+....6....+....7..
 USRBIN           10.   NEUTRON      -40.     5.1E5     5.1E5      100.GROUNDn
@@ -1093,17 +1069,17 @@ USRBIN            0.     -100.    -5.1E5     2000.        1.     2000. &
 USRBIN           10.    PROTON      -40.     5.1E5     5.1E5      100.GROUNDpro
 USRBIN           0.0       0.0     -100.     2000.     2000.        1. &
 *USRBIN           10.    PROTON      -40.      100.     5.1E5       1E5YMESHpro
-*USRBIN         -100.       0.0    -5.1E5        1.     2000.     2000. &
+*USRBIN         -100.       0.0    -5.1E5     2000.     2550.     2550. &
 USRBIN           10.    PROTON      -40.     5.1E5      100.       1E5XMESHpro
 USRBIN            0.     -100.    -5.1E5     2000.        1.     2000. &
 USRBIN           10.     E+&E-      -40.     5.1E5     5.1E5      100.GROUNDe
 USRBIN           0.0       0.0     -100.     2000.     2000.        1. &
 *USRBIN           10.     E+&E-      -40.      100.     5.1E5       1E5YMESHe
-*USRBIN         -100.       0.0    -5.1E5        1.     2000.     2000. &
+*USRBIN         -100.       0.0    -5.1E5     2000.     2550.     2550. &
 USRBIN           10.     E+&E-      -40.     5.1E5      100.       1E5XMESHe
 USRBIN            0.     -100.    -5.1E5     2000.        1.     2000. &
 * Set the random number seed
 RANDOMIZ         1.0
 * Set the number of primary histories to be simulated in the run
-START          1.0E5                            1.
+START          1.0E4                            1.
 STOP

@@ -56,45 +56,49 @@ ELL CH2B1      0.0 3.73E5 0.0 0.0 -3.73E5 0.0 1E6
 SPH CH3B3      0.0 0.0 0.0 1.66E5
 ELL CH3B2      0.0 2.89E5 0.0 0.0 -2.89E5 0.0 6.67E5
 ELL CH3B1      0.0 4.71E5 0.0 0.0 -4.71E5 0.0 1E6
-SPH DH1t       0.0 0.0 -494800.0 5000.
-SPH DH2t       0.0 0.0 -3.332E5 5000.
-SPH DH3t       0.0 0.0 -1.666E5 5000.
-SPH DB3b       0.0 1.668E5 110. 5000.
-SPH DB2b       0.0 3.334E5 -50. 5000.
-SPH DB1b       0.0 5.055E5 4680. 5000.
-SPH DH1B3h     0.0 1.445E5 -2.5E5 5000.
-SPH DH1B2h     0.0 2.885E5 -2.5E5 5000.
-SPH DH1B1h     0.0 4.26E5 -2.5E5 5000.
-SPH DH1B3a     0.0 4.17E5 110. 5000.
-SPH DH1B2a     0.0 5.834E5 -370. 5000.
-SPH DH1B1a     0.0 7.501E5 4250. 5000.
-SPH DH2B3a     0.0 3.334E5 105. 5000.
-SPH DH2B2a     0.0 5.001E5 105. 5000.
-SPH DH2B1a     0.0 6.668E5 105. 5000.
-SPH DH3B3a     0.0 2.501E5 105. 5000.
-SPH DH3B2a     0.0 4.168E5 105. 5000.
-SPH DH3B1a     0.0 5.834E5 105. 5000.
-* Mars Radius
-SPH ATMOS28    0.0 0.0 -3.4895E8 3.4895010E+08
+SPH DH1t       0.0 0.0 -499800.0 100.0
+SPH DH2t       0.0 0.0 -3.332E5 100.
+SPH DH3t       0.0 0.0 -1.663E5 100.0
+SPH DB3b       0.0 1.668E5 110. 100.
+SPH DB2b       0.0 3.336E5 -50. 100.
+SPH DB1b       0.0 5.001E5 -250. 100.
+SPH DH1B3h     0.0 1.445E5 -2.5E5 100.
+SPH DH1B2h     0.0 2.885E5 -2.5E5 100.
+SPH DH1B1h     0.0 4.335E5 -2.5E5 100.
+SPH DH2B3h     0.0 1.440E5 1.666E5 100.0
+SPH DH2B2h     0.0 2.888E5 1.666E5 100.0
+SPH DH2B1h     0.0 4.332E5 1.666E5 100.0
+SPH DH3B3h     0.0 1.445E5 -0.8333E5 100.0
+SPH DH3B2h     0.0 2.885E5 -0.8333E5 100.0
+SPH DH3B1h     0.0 4.343E5 -0.8333E5 100.0
+SPH DH1B3a     0.0 4.17E5 -130. 100.
+SPH DH1B2a     0.0 5.834E5 -370. 100.
+SPH DH1B1a     0.0 7.501E5 105. 100.
+SPH DH2B3a     0.0 3.334E5 105. 100.
+SPH DH2B2a     0.0 5.001E5 105. 100.
+SPH DH2B1a     0.0 6.668E5 -530. 100.
+SPH DH3B3a     0.0 5.834E5 105. 100.0
+SPH DH3B2a     0.0 4.168E5 -120. 100.
+SPH DH3B1a     0.0 5.834E5 -350. 100.
 END
 * Black hole
 MARS         5 +MARS -REGION
 UNIVERSE     5 -UNIVERSE
 DEEPSPAC     5 -TOPATMOS +UNIVERSE
-GROUND       5 +REGION +MARS -CH1B1 -DH1B1h
+GROUND       5 +REGION +MARS -CH3B2 -DH3B2h
 AVEATMOS     5 +TOPATMOS -MARS +AT_CUT
-ATMOS1       5 -AT_CUT +ATMOS1 -MARS -DB1b -DH1B1a -DB1b
-ATMOS2       5 -AT_CUT +ATMOS2 -ATMOS1 -DB1b -DH1B1a -DB1b
-ATMOS3       5 -AT_CUT +ATMOS3 -ATMOS2 -DB1b -DH1B1a -DB1b
-ATMOS4       5 -AT_CUT +ATMOS4 -ATMOS3 -DH1B1a -DB1b
-ATMOS5       5 -AT_CUT +ATMOS5 -ATMOS4 -DH1B1a -DB1b
-ATMOS6       5 -AT_CUT +ATMOS6 -ATMOS5 -DH1B1a -DB1b
-ATMOS7       5 -AT_CUT +ATMOS7 -ATMOS6 -DH1B1a -DB1b
-ATMOS8       5 -AT_CUT +ATMOS8 -ATMOS7 -DH1B1a -DB1b
-ATMOS9       5 -AT_CUT +ATMOS9 -ATMOS8 -DH1B1a -DB1b
-ATMOS10      5 -AT_CUT +ATMOS10 -ATMOS9 -DH1B1a -DB1b
-ATMOS11      5 -AT_CUT +ATMOS11 -ATMOS10 -DH1B1a -DB1b
-ATMOS12      5 -AT_CUT +ATMOS12 -ATMOS11 -DH1B1a -DB1b
+ATMOS1       5 -AT_CUT +ATMOS1 -MARS -DB2b -DH3B2a
+ATMOS2       5 -AT_CUT +ATMOS2 -ATMOS1 -DB2b -DH3B2a
+ATMOS3       5 -AT_CUT +ATMOS3 -ATMOS2 -DB2b -DH3B2a
+ATMOS4       5 -AT_CUT +ATMOS4 -ATMOS3
+ATMOS5       5 -AT_CUT +ATMOS5 -ATMOS4
+ATMOS6       5 -AT_CUT +ATMOS6 -ATMOS5
+ATMOS7       5 -AT_CUT +ATMOS7 -ATMOS6
+ATMOS8       5 -AT_CUT +ATMOS8 -ATMOS7
+ATMOS9       5 -AT_CUT +ATMOS9 -ATMOS8
+ATMOS10      5 -AT_CUT +ATMOS10 -ATMOS9
+ATMOS11      5 -AT_CUT +ATMOS11 -ATMOS10
+ATMOS12      5 -AT_CUT +ATMOS12 -ATMOS11
 ATMOS13      5 -AT_CUT +ATMOS13 -ATMOS12
 ATMOS14      5 -AT_CUT +ATMOS14 -ATMOS13
 ATMOS15      5 -AT_CUT +ATMOS15 -ATMOS14
@@ -111,11 +115,11 @@ ATMOS25      5 -AT_CUT +ATMOS25 -ATMOS24
 ATMOS26      5 -AT_CUT +ATMOS26 -ATMOS25
 ATMOS27      5 -AT_CUT +ATMOS27 -ATMOS26
 ATMOS28      5 -AT_CUT +TOPATMOS -ATMOS27
-CRATER       5 +CH1B1 +MARS -DH1t -DH1B1h
-DtctrT       5 +DH1t
-DtctrH       5 +DH1B1h
-DtctrB       5 +DB1b
-DtctrA       5 +DH1B1a
+CRATER       5 +CH3B2 +MARS -DH3t -DH3B2h
+DtctrT       5 +DH3t
+DtctrH       5 +DH3B2h
+DtctrB       5 +DB2b
+DtctrA       5 +DH3B2a
 END
 GEOEND
 * ..+....1....+....2....+....3....+....4....+....5....+....6....+....7..
@@ -341,26 +345,6 @@ ASSIGNMA     SILICON    DtctrB
 ASSIGNMA     SILICON    DtctrA
 EMF
 LOW-NEUT        260.                           0.0                -11.
-*USRBDX          109.    PROTON      -25.    GROUND    ATMOS1        1.GtoAT1_pro
-*USRBDX            1.      1E-6     1000.6.28318531       0.0        1. &
-*USRBDX          109.   NEUTRON      -25.    GROUND    ATMOS1        1.GtoAT1_n
-*USRBDX            1.      1E-6     1000.6.28318531       0.0        1. &
-*USRBDX          109.  ELECTRON      -25.    GROUND    ATMOS1        1.GtoAT1_e
-*USRBDX            1.      1E-6     1000.6.28318531       0.0        1. &
-*USRBDX          109.     MUONS      -25.    GROUND    ATMOS1        1.GtoAT1_mu
-*USRBDX            1.      1E-6     1000.6.28318531       0.0        1. &
-*USRBDX          109.    PHOTON      -25.    GROUND    ATMOS1        1.GtoAT1_pho
-*USRBDX            1.      1E-6     1000.6.28318531       0.0        1. &
-*USRBDX          109.  3-HELIUM      -25.    GROUND    ATMOS1        1.GtoAT1_he3
-*USRBDX            1.      1E-6     1000.6.28318531       0.0        1. &
-*USRBDX          109.  4-HELIUM      -25.    GROUND    ATMOS1        1.GtoAT1_he4
-*USRBDX            1.      1E-6     1000.6.28318531       0.0        1. &
-*USRBDX          109.    TRITON      -25.    GROUND    ATMOS1        1.GtoAT1_tri
-*USRBDX            1.      1E-6     1000.6.28318531       0.0        1. &
-*USRBDX          109.  DEUTERON      -25.    GROUND    ATMOS1        1.GtoAT1_deu
-*USRBDX            1.      1E-6     1000.6.28318531       0.0        1. &
-*USRBDX          109.  HEAVYION      -25.    GROUND    ATMOS1        1.GtoAT1_h
-*USRBDX            1.      1E-6     1000.6.28318531       0.0        1. &
 USRTRACK         -1.   NEUTRON      -24.    GROUND        1.     1000.neu
 USRTRACK          1.      1E-6                                         &
 USRTRACK         -1.  ELECTRON      -24.    GROUND        1.     1000.elec
@@ -1092,18 +1076,18 @@ USRBIN           10.   NEUTRON      -40.     5.1E5      100.       1E5XMESHn
 USRBIN            0.     -100.    -5.1E5     2000.        1.     2000. &
 USRBIN           10.    PROTON      -40.     5.1E5     5.1E5      100.GROUNDpro
 USRBIN           0.0       0.0     -100.     2000.     2000.        1. &
-*USRBIN           10.    PROTON      -40.      100.     5.1E5       1E5YMESHpro
-*USRBIN         -100.       0.0    -5.1E5        1.     2000.     2000. &
+USRBIN           10.    PROTON      -40.      100.     5.1E5       1E5YMESHpro
+USRBIN         -100.       0.0    -5.1E5        1.     2000.     2000. &
 USRBIN           10.    PROTON      -40.     5.1E5      100.       1E5XMESHpro
 USRBIN            0.     -100.    -5.1E5     2000.        1.     2000. &
 USRBIN           10.     E+&E-      -40.     5.1E5     5.1E5      100.GROUNDe
 USRBIN           0.0       0.0     -100.     2000.     2000.        1. &
-*USRBIN           10.     E+&E-      -40.      100.     5.1E5       1E5YMESHe
-*USRBIN         -100.       0.0    -5.1E5        1.     2000.     2000. &
+USRBIN           10.     E+&E-      -40.      100.     5.1E5       1E5YMESHe
+USRBIN         -100.       0.0    -5.1E5        1.     2000.     2000. &
 USRBIN           10.     E+&E-      -40.     5.1E5      100.       1E5XMESHe
 USRBIN            0.     -100.    -5.1E5     2000.        1.     2000. &
 * Set the random number seed
 RANDOMIZ         1.0
 * Set the number of primary histories to be simulated in the run
-START          1.0E5                            1.
+START          1.0E4                            1.
 STOP
