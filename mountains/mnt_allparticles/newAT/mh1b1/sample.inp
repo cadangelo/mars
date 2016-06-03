@@ -1,0 +1,19 @@
+* Define the beam position
+SOURCE           0.0       0.0       0.0     2.0E6     2.0E6     9.9E8GCR
+SOURCE      3.3895E8       26.       1.0                               &
+* Set the number of primary histories to be simulated in the run
+START          1.0E2                            1.
+GEOBEGIN                                                              COMBNAME
+    0    0          
+SPH outer      0.0 0.0 0.0 100.
+SPH inner      0.0 0.0 0.0 50.
+END
+inside       5 +inner
+outside      5 +outer -inner
+END
+GEOEND
+USRBDX          109.                -21.    inside   outside        1.in_to_out
+USRBDX           10.      1E-6     1000.                            1. &
+USRBDX          109.                -23.   outside    inside        1.out_to_in
+USRBDX           10.      1E-6     1000.                            1. &
+STOP
