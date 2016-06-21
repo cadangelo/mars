@@ -7,6 +7,7 @@ BEAM         -1000.0                                                  HEAVYION
 * Define the beam position
 SOURCE    378950001.       0.0       0.0       0.0       0.0       0.0SPHERE
 SOURCE           0.0       0.0       1.0                               &
+IONTRANS         -2.
 *
 GEOBEGIN                                                              COMBNAME
     0    0          
@@ -1060,24 +1061,24 @@ USRBDX           99.  HEAVYION      -32.      MARS    ATMOS1        1.U_G_be9
 USRBDX         8334.   9.36E-3       85. 6.2831853       0.0       36. &
 AUXSCORE      USRBDX  -401000.            D_G_be10  U_G_be10
 USRBDX           99.  HEAVYION      -28.    ATMOS1      MARS        1.D_G_be10
-USRBDX         9260.    1.4E-2       85. 6.2831853       0.0       36. &
+USRBDX         9260.   1.04E-2       85. 6.2831853       0.0       36. &
 USRBDX           99.  HEAVYION      -32.      MARS    ATMOS1        1.U_G_be10
-USRBDX         9260.    1.4E-2       85. 6.2831853       0.0       36. &
+USRBDX         9260.   1.04E-2       85. 6.2831853       0.0       36. &
 AUXSCORE      USRBDX  -501000.             D_G_b10   U_G_b10
 USRBDX           99.  HEAVYION      -28.    ATMOS1      MARS        1.D_G_b10
-USRBDX         9260.    1.4E-2       85. 6.2831853       0.0       36. &
+USRBDX         9260.   1.04E-2       85. 6.2831853       0.0       36. &
 USRBDX           99.  HEAVYION      -32.      MARS    ATMOS1        1.U_G_b10
-USRBDX         9260.    1.4E-2       85. 6.2831853       0.0       36. &
+USRBDX         9260.   1.04E-2       85. 6.2831853       0.0       36. &
 AUXSCORE      USRBDX  -501200.             D_G_b11   U_G_b11
 USRBDX           99.  HEAVYION      -28.    ATMOS1      MARS        1.D_G_b11
-USRBDX        11112.   1.24E-2       85. 6.2831853       0.0       36. &
+USRBDX        11112.   1.14E-2       85. 6.2831853       0.0       36. &
 USRBDX           99.  HEAVYION      -32.      MARS    ATMOS1        1.U_G_b11
-USRBDX        11112.   1.24E-2       85. 6.2831853       0.0       36. &
+USRBDX        11112.   1.14E-2       85. 6.2831853       0.0       36. &
 AUXSCORE      USRBDX  -601200.             D_G_c12   U_G_c12
 USRBDX           99.  HEAVYION      -28.    ATMOS1      MARS        1.D_G_c12
-USRBDX        11112.   1.24E-2       85. 6.2831853       0.0       36. &
+USRBDX        11112.   1.25E-2       85. 6.2831853       0.0       36. &
 USRBDX           99.  HEAVYION      -32.      MARS    ATMOS1        1.U_G_c12
-USRBDX        11112.   1.24E-2       85. 6.2831853       0.0       36. &
+USRBDX        11112.   1.25E-2       85. 6.2831853       0.0       36. &
 AUXSCORE      USRBDX  -601300.             D_G_c13   U_G_c13
 USRBDX           99.  HEAVYION      -28.    ATMOS1      MARS        1.D_G_c13
 USRBDX        12038.   1.35E-2       85. 6.2831853       0.0       36. &
@@ -1085,9 +1086,9 @@ USRBDX           99.  HEAVYION      -32.      MARS    ATMOS1        1.U_G_c13
 USRBDX        12038.   1.35E-2       85. 6.2831853       0.0       36. &
 AUXSCORE      USRBDX  -701400.             D_G_n14   U_G_n14
 USRBDX           99.  HEAVYION      -28.    ATMOS1      MARS        1.D_G_n14
-USRBDX        12964.   1.45E-2       85. 6.2831853       0.0       36. &
+USRBDX        12964.   1.46E-2       85. 6.2831853       0.0       36. &
 USRBDX           99.  HEAVYION      -32.      MARS    ATMOS1        1.U_G_n14
-USRBDX        12964.   1.45E-2       85. 6.2831853       0.0       36. &
+USRBDX        12964.   1.46E-2       85. 6.2831853       0.0       36. &
 AUXSCORE      USRBDX  -701500.             D_G_n15   U_G_n15
 USRBDX           99.  HEAVYION      -28.    ATMOS1      MARS        1.D_G_n15
 USRBDX        13890.   1.56E-2       85. 6.2831853       0.0       36. &
@@ -1100,9 +1101,9 @@ USRBDX           99.  HEAVYION      -32.      MARS    ATMOS1        1.U_G_o16
 USRBDX        14816.   1.66E-2       85. 6.2831853       0.0       36. &
 AUXSCORE      USRBDX  -801700.             D_G_o17   U_G_o17
 USRBDX           99.  HEAVYION      -28.    ATMOS1      MARS        1.D_G_o17
-USRBDX        15742.   1.76E-2       85. 6.2831853       0.0       36. &
+USRBDX        15742.   1.77E-2       85. 6.2831853       0.0       36. &
 USRBDX           99.  HEAVYION      -32.      MARS    ATMOS1        1.U_G_o17
-USRBDX        15742.   1.76E-2       85. 6.2831853       0.0       36. &
+USRBDX        15742.   1.77E-2       85. 6.2831853       0.0       36. &
 AUXSCORE      USRBDX  -801800.             D_G_o18   U_G_o18
 USRBDX           99.  HEAVYION      -28.    ATMOS1      MARS        1.D_G_o18
 USRBDX        16668.   1.87E-2       85. 6.2831853       0.0       36. &
@@ -1110,14 +1111,14 @@ USRBDX           99.  HEAVYION      -32.      MARS    ATMOS1        1.U_G_o18
 USRBDX        16668.   1.87E-2       85. 6.2831853       0.0       36. &
 AUXSCORE      USRBDX  -901900.             D_G_f19   U_G_f19
 USRBDX           99.  HEAVYION      -28.    ATMOS1      MARS        1.D_G_f19
-USRBDX        17594.   1.97E-2       85. 6.2831853       0.0       36. &
+USRBDX        17594.   1.98E-2       85. 6.2831853       0.0       36. &
 USRBDX           99.  HEAVYION      -32.      MARS    ATMOS1        1.U_G_f19
-USRBDX        17594.   1.97E-2       85. 6.2831853       0.0       36. &
+USRBDX        17594.   1.98E-2       85. 6.2831853       0.0       36. &
 AUXSCORE      USRBDX -1002000.            D_G_ne20  U_G_ne20
 USRBDX           99.  HEAVYION      -28.    ATMOS1      MARS        1.D_G_ne20
-USRBDX        18520.    2.8E-2       85. 6.2831853       0.0       36. &
+USRBDX        18520.   2.08E-2       85. 6.2831853       0.0       36. &
 USRBDX           99.  HEAVYION      -32.      MARS    ATMOS1        1.U_G_ne20
-USRBDX        18520.    2.8E-2       85. 6.2831853       0.0       36. &
+USRBDX        18520.   2.08E-2       85. 6.2831853       0.0       36. &
 AUXSCORE      USRBDX -1002100.             D_G_s36  U_G_al27
 USRBDX           99.  HEAVYION      -28.    ATMOS1      MARS        1.D_G_ne21
 USRBDX        19446.   2.18E-2       85. 6.2831853       0.0       36. &
@@ -1125,9 +1126,9 @@ USRBDX           99.  HEAVYION      -32.      MARS    ATMOS1        1.U_G_ne21
 USRBDX        19446.   2.18E-2       85. 6.2831853       0.0       36. &
 AUXSCORE      USRBDX -1002200.            D_G_ne22  U_G_ne22
 USRBDX           99.  HEAVYION      -28.    ATMOS1      MARS        1.D_G_ne22
-USRBDX        20372.   2.28E-2       85. 6.2831853       0.0       36. &
+USRBDX        20372.   2.29E-2       85. 6.2831853       0.0       36. &
 USRBDX           99.  HEAVYION      -32.      MARS    ATMOS1        1.U_G_ne22
-USRBDX        20372.   2.28E-2       85. 6.2831853       0.0       36. &
+USRBDX        20372.   2.29E-2       85. 6.2831853       0.0       36. &
 AUXSCORE      USRBDX -1102300.            D_G_na23  U_G_na23
 USRBDX           99.  HEAVYION      -28.    ATMOS1      MARS        1.D_G_na23
 USRBDX        21298.   2.39E-2       85. 6.2831853       0.0       36. &
@@ -1135,9 +1136,9 @@ USRBDX           99.  HEAVYION      -32.      MARS    ATMOS1        1.U_G_na23
 USRBDX        21298.   2.39E-2       85. 6.2831853       0.0       36. &
 AUXSCORE      USRBDX -1202400.            D_G_mg24  U_G_mg24
 USRBDX           99.  HEAVYION      -28.    ATMOS1      MARS        1.D_G_mg24
-USRBDX        22224.   2.49E-2       85. 6.2831853       0.0       36. &
+USRBDX        22224.    2.5E-2       85. 6.2831853       0.0       36. &
 USRBDX           99.  HEAVYION      -32.      MARS    ATMOS1        1.U_G_mg24
-USRBDX        22224.   2.49E-2       85. 6.2831853       0.0       36. &
+USRBDX        22224.    2.5E-2       85. 6.2831853       0.0       36. &
 AUXSCORE      USRBDX -1202500.            D_G_mg25  U_G_mg25
 USRBDX           99.  HEAVYION      -28.    ATMOS1      MARS        1.D_G_mg25
 USRBDX        23150.   2.60E-2       85. 6.2831853       0.0       36. &
@@ -1150,9 +1151,9 @@ USRBDX           99.  HEAVYION      -32.      MARS    ATMOS1        1.U_G_mg26
 USRBDX        24076.   2.70E-2       85. 6.2831853       0.0       36. &
 AUXSCORE      USRBDX -1302700.            D_G_al27  U_G_al27
 USRBDX           99.  HEAVYION      -28.    ATMOS1      MARS        1.D_G_al27
-USRBDX        25002.   2.80E-2       85. 6.2831853       0.0       36. &
+USRBDX        25002.   2.81E-2       85. 6.2831853       0.0       36. &
 USRBDX           99.  HEAVYION      -32.      MARS    ATMOS1        1.U_G_al27
-USRBDX        25002.   2.80E-2       85. 6.2831853       0.0       36. &
+USRBDX        25002.   2.81E-2       85. 6.2831853       0.0       36. &
 AUXSCORE      USRBDX -1402800.            D_G_si28  U_G_si28
 USRBDX           99.  HEAVYION      -28.    ATMOS1      MARS        1.D_G_si28
 USRBDX        25928.   2.91E-2       85. 6.2831853       0.0       36. &
@@ -1160,9 +1161,9 @@ USRBDX           99.  HEAVYION      -32.      MARS    ATMOS1        1.U_G_si28
 USRBDX        25928.   2.91E-2       85. 6.2831853       0.0       36. &
 AUXSCORE      USRBDX -1402900.            D_G_si29  U_G_si29
 USRBDX           99.  HEAVYION      -28.    ATMOS1      MARS        1.D_G_si29
-USRBDX        26854.    3.1E-2       85. 6.2831853       0.0       36. &
+USRBDX        26854.   3.02E-2       85. 6.2831853       0.0       36. &
 USRBDX           99.  HEAVYION      -32.      MARS    ATMOS1        1.U_G_si29
-USRBDX        26854.    3.1E-2       85. 6.2831853       0.0       36. &
+USRBDX        26854.   3.02E-2       85. 6.2831853       0.0       36. &
 AUXSCORE      USRBDX -1403000.            D_G_si30  U_G_si30
 USRBDX           99.  HEAVYION      -28.    ATMOS1      MARS        1.D_G_si30
 USRBDX        27780.   3.12E-2       85. 6.2831853       0.0       36. &
@@ -1175,9 +1176,9 @@ USRBDX           99.  HEAVYION      -32.      MARS    ATMOS1        1.U_G_p31
 USRBDX        28706.   3.22E-2       85. 6.2831853       0.0       36. &
 AUXSCORE      USRBDX -1603200.             D_G_s32   U_G_s32
 USRBDX           99.  HEAVYION      -28.    ATMOS1      MARS        1.D_G_s32
-USRBDX        29632.   3.32E-2       85. 6.2831853       0.0       36. &
+USRBDX        29632.   3.33E-2       85. 6.2831853       0.0       36. &
 USRBDX           99.  HEAVYION      -32.      MARS    ATMOS1        1.U_G_s32
-USRBDX        29632.   3.32E-2       85. 6.2831853       0.0       36. &
+USRBDX        29632.   3.33E-2       85. 6.2831853       0.0       36. &
 AUXSCORE      USRBDX -1603300.             D_G_s33   U_G_s33
 USRBDX           99.  HEAVYION      -28.    ATMOS1      MARS        1.D_G_s33
 USRBDX        30558.   3.43E-2       85. 6.2831853       0.0       36. &
@@ -1185,9 +1186,9 @@ USRBDX           99.  HEAVYION      -32.      MARS    ATMOS1        1.U_G_s33
 USRBDX        30558.   3.43E-2       85. 6.2831853       0.0       36. &
 AUXSCORE      USRBDX -1603400.             D_G_s34   U_G_s34
 USRBDX           99.  HEAVYION      -28.    ATMOS1      MARS        1.D_G_s34
-USRBDX        31484.   3.53E-2       85. 6.2831853       0.0       36. &
+USRBDX        31484.   3.54E-2       85. 6.2831853       0.0       36. &
 USRBDX           99.  HEAVYION      -32.      MARS    ATMOS1        1.U_G_s34
-USRBDX        31484.   3.53E-2       85. 6.2831853       0.0       36. &
+USRBDX        31484.   3.54E-2       85. 6.2831853       0.0       36. &
 AUXSCORE      USRBDX -1603600.             D_G_s36   U_G_s36
 USRBDX           99.  HEAVYION      -28.    ATMOS1      MARS        1.D_G_s36
 USRBDX        33336.   3.74E-2       85. 6.2831853       0.0       36. &
