@@ -8,7 +8,7 @@ BEAM         -1000.0                                                  HEAVYION
 SOURCE    378950001.       0.0       0.0       0.0       0.0       0.0SPHERE
 SOURCE           0.0       0.0       1.0                               &
 IONTRANS    HEAVYION
-PHYSICS          0.5       0.5       0.5                              DPMTHRES
+PHYSICS         0.50      0.50      0.50                            1.DPMTHRES
 *
 GEOBEGIN                                                              COMBNAME
     0    0          
