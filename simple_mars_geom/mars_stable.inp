@@ -7,7 +7,7 @@ BEAM         -1000.0                                                  HEAVYION
 * Define the beam position
 SOURCE    378950001.       0.0       0.0       0.0       0.0       0.0SPHERE
 SOURCE           0.0       0.0       1.0                               &
-IONTRANS         -2.
+IONTRANS    HEAVYION
 *
 GEOBEGIN                                                              COMBNAME
     0    0          
@@ -389,7 +389,7 @@ USRTRACK         -1.    ENERGY      -78.    ATMOS1 9.0293E22       85.dbdeu
 USRTRACK     1.85E+3   2.08E-3                                         &
 USRTRACK         -1.    ENERGY      -80.   ATMOS218.89466E24       85.dadeu
 USRTRACK     1.85E+3   2.08E-3                                         &
-AUXSCORE    USRTRACK  -300600.               dtli6     dali6
+AUXSCORE    USRTRACK  -600300.               dtli6     dali6
 USRTRACK         -1.  HEAVYION      -74.      MARS1.77983E26       85.dtli6
 USRTRACK     5.56E+3   6.24E-3                                         &
 USRTRACK         -1.  HEAVYION      -76.    ATMOS1 9.0293E22       85.dhli6
@@ -398,7 +398,7 @@ USRTRACK         -1.    ENERGY      -78.    ATMOS1 9.0293E22       85.dbli6
 USRTRACK     5.56E+3   6.24E-3                                         &
 USRTRACK         -1.    ENERGY      -80.   ATMOS218.89466E24       85.dali6
 USRTRACK     5.56E+3   6.24E-3                                         &
-AUXSCORE    USRTRACK  -300700.               dtli7     dali7
+AUXSCORE    USRTRACK  -700300.               dtli7     dali7
 USRTRACK         -1.  HEAVYION      -74.      MARS1.77983E26       85.dtli7
 USRTRACK     6.48E+3   7.28E-3                                         &
 USRTRACK         -1.  HEAVYION      -76.    ATMOS1 9.0293E22       85.dhli7
@@ -407,7 +407,7 @@ USRTRACK         -1.    ENERGY      -78.    ATMOS1 9.0293E22       85.dbli7
 USRTRACK     6.48E+3   7.28E-3                                         &
 USRTRACK         -1.    ENERGY      -80.   ATMOS218.89466E24       85.dali7
 USRTRACK     6.48E+3   7.28E-3                                         &
-AUXSCORE    USRTRACK  -400900.               dtbe9     dabe9
+AUXSCORE    USRTRACK  -900400.               dtbe9     dabe9
 USRTRACK         -1.  HEAVYION      -74.      MARS1.77983E26       85.dtbe9
 USRTRACK     8.33E+3   9.36E-3                                         &
 USRTRACK         -1.  HEAVYION      -76.    ATMOS1 9.0293E22       85.dhbe9
@@ -416,7 +416,7 @@ USRTRACK         -1.    ENERGY      -78.    ATMOS1 9.0293E22       85.dbbe9
 USRTRACK     8.33E+3   9.36E-3                                         &
 USRTRACK         -1.    ENERGY      -80.   ATMOS218.89466E24       85.dabe9
 USRTRACK     8.33E+3   9.36E-3                                         &
-AUXSCORE    USRTRACK  -401000.              dtbe10    dabe10
+AUXSCORE    USRTRACK -1000400.              dtbe10    dabe10
 USRTRACK         -1.  HEAVYION      -74.      MARS1.77983E26       85.dtbe10
 USRTRACK     9.26E+3   1.04E-2                                         &
 USRTRACK         -1.  HEAVYION      -76.    ATMOS1 9.0293E22       85.dhbe10
@@ -425,7 +425,7 @@ USRTRACK         -1.    ENERGY      -78.    ATMOS1 9.0293E22       85.dbbe10
 USRTRACK     9.26E+3   1.04E-2                                         &
 USRTRACK         -1.    ENERGY      -80.   ATMOS218.89466E24       85.dabe10
 USRTRACK     9.26E+3   1.04E-2                                         &
-AUXSCORE    USRTRACK  -501000.               dtb10     dab10
+AUXSCORE    USRTRACK -1000500.               dtb10     dab10
 USRTRACK         -1.  HEAVYION      -74.      MARS1.77983E26       85.dtb10
 USRTRACK     9.23E+3   1.04E-2                                         &
 USRTRACK         -1.  HEAVYION      -76.    ATMOS1 9.0293E22       85.dhb10
@@ -434,7 +434,7 @@ USRTRACK         -1.    ENERGY      -78.    ATMOS1 9.0293E22       85.dbb10
 USRTRACK     9.23E+3   1.04E-2                                         &
 USRTRACK         -1.    ENERGY      -80.   ATMOS218.89466E24       85.dab10
 USRTRACK     9.23E+3   1.04E-2                                         &
-AUXSCORE    USRTRACK  -501100.               dtb11     dab11
+AUXSCORE    USRTRACK -1100500.               dtb11     dab11
 USRTRACK         -1.  HEAVYION      -74.      MARS1.77983E26       85.dtb11
 USRTRACK     1.02E+4   1.14E-2                                         &
 USRTRACK         -1.  HEAVYION      -76.    ATMOS1 9.0293E22       85.dhb11
@@ -443,7 +443,7 @@ USRTRACK         -1.    ENERGY      -78.    ATMOS1 9.0293E22       85.dbb11
 USRTRACK     1.02E+4   1.14E-2                                         &
 USRTRACK         -1.    ENERGY      -80.   ATMOS218.89466E24       85.dab11
 USRTRACK     1.02E+4   1.14E-2                                         &
-AUXSCORE    USRTRACK  -601200.               dtc12     dac12
+AUXSCORE    USRTRACK -1200600.               dtc12     dac12
 USRTRACK         -1.  HEAVYION      -74.      MARS1.77983E26       85.dtc12
 USRTRACK     1.11E+4   1.25E-2                                         &
 USRTRACK         -1.  HEAVYION      -76.    ATMOS1 9.0293E22       85.dhc12
@@ -452,7 +452,7 @@ USRTRACK         -1.    ENERGY      -78.    ATMOS1 9.0293E22       85.dbc12
 USRTRACK     1.11E+4   1.25E-2                                         &
 USRTRACK         -1.    ENERGY      -80.   ATMOS218.89466E24       85.dac12
 USRTRACK     1.11E+4   1.25E-2                                         &
-AUXSCORE    USRTRACK  -601300.               dtc13     dac13
+AUXSCORE    USRTRACK -1300600.               dtc13     dac13
 USRTRACK         -1.  HEAVYION      -74.      MARS1.77983E26       85.dtc13
 USRTRACK      1.2E+4   1.35E-2                                         &
 USRTRACK         -1.  HEAVYION      -76.    ATMOS1 9.0293E22       85.dhc13
@@ -461,7 +461,7 @@ USRTRACK         -1.    ENERGY      -78.    ATMOS1 9.0293E22       85.dbc13
 USRTRACK      1.2E+4   1.35E-2                                         &
 USRTRACK         -1.    ENERGY      -80.   ATMOS218.89466E24       85.dac13
 USRTRACK      1.2E+4   1.35E-2                                         &
-AUXSCORE    USRTRACK  -701400.               dtn14     dan14
+AUXSCORE    USRTRACK -1400700.               dtn14     dan14
 USRTRACK         -1.  HEAVYION      -74.      MARS1.77983E26       85.dtn14
 USRTRACK      1.3E+4   1.46E-2                                         &
 USRTRACK         -1.  HEAVYION      -76.    ATMOS1 9.0293E22       85.dhn14
@@ -470,7 +470,7 @@ USRTRACK         -1.    ENERGY      -78.    ATMOS1 9.0293E22       85.dbn14
 USRTRACK      1.3E+4   1.46E-2                                         &
 USRTRACK         -1.    ENERGY      -80.   ATMOS218.89466E24       85.dan14
 USRTRACK      1.3E+4   1.46E-2                                         &
-AUXSCORE    USRTRACK  -701500.               dtn15     dan15
+AUXSCORE    USRTRACK -1500700.               dtn15     dan15
 USRTRACK         -1.  HEAVYION      -74.      MARS1.77983E26       85.dtn15
 USRTRACK     1.39E+4   1.56E-2                                         &
 USRTRACK         -1.  HEAVYION      -76.    ATMOS1 9.0293E22       85.dhn15
@@ -479,7 +479,7 @@ USRTRACK         -1.    ENERGY      -78.    ATMOS1 9.0293E22       85.dbn15
 USRTRACK     1.39E+4   1.56E-2                                         &
 USRTRACK         -1.    ENERGY      -80.   ATMOS218.89466E24       85.dan15
 USRTRACK     1.39E+4   1.56E-2                                         &
-AUXSCORE    USRTRACK  -801600.               dto16     dao16
+AUXSCORE    USRTRACK -1600800.               dto16     dao16
 USRTRACK         -1.  HEAVYION      -74.      MARS1.77983E26       85.dto16
 USRTRACK     1.48E+4   1.66E-2                                         &
 USRTRACK         -1.  HEAVYION      -76.    ATMOS1 9.0293E22       85.dho16
@@ -488,7 +488,7 @@ USRTRACK         -1.    ENERGY      -78.    ATMOS1 9.0293E22       85.dbo16
 USRTRACK     1.48E+4   1.66E-2                                         &
 USRTRACK         -1.    ENERGY      -80.   ATMOS218.89466E24       85.dao16
 USRTRACK     1.48E+4   1.66E-2                                         &
-AUXSCORE    USRTRACK  -801700.               dto17     dao17
+AUXSCORE    USRTRACK -1700800.               dto17     dao17
 USRTRACK         -1.  HEAVYION      -74.      MARS1.77983E26       85.dto17
 USRTRACK     1.57E+4   1.77E-2                                         &
 USRTRACK         -1.  HEAVYION      -76.    ATMOS1 9.0293E22       85.dho17
@@ -497,7 +497,7 @@ USRTRACK         -1.    ENERGY      -78.    ATMOS1 9.0293E22       85.dbo17
 USRTRACK     1.57E+4   1.77E-2                                         &
 USRTRACK         -1.    ENERGY      -80.   ATMOS218.89466E24       85.dao17
 USRTRACK     1.57E+4   1.77E-2                                         &
-AUXSCORE    USRTRACK  -801800.               dto18     dao18
+AUXSCORE    USRTRACK -1800800.               dto18     dao18
 USRTRACK         -1.  HEAVYION      -74.      MARS1.77983E26       85.dto18
 USRTRACK     1.67E+4   1.87E-2                                         &
 USRTRACK         -1.  HEAVYION      -76.    ATMOS1 9.0293E22       85.dho18
@@ -506,7 +506,7 @@ USRTRACK         -1.    ENERGY      -78.    ATMOS1 9.0293E22       85.dbo18
 USRTRACK     1.67E+4   1.87E-2                                         &
 USRTRACK         -1.    ENERGY      -80.   ATMOS218.89466E24       85.dao18
 USRTRACK     1.67E+4   1.87E-2                                         &
-AUXSCORE    USRTRACK  -901900.               dtf19     daf19
+AUXSCORE    USRTRACK -1900900.               dtf19     daf19
 USRTRACK         -1.  HEAVYION      -74.      MARS1.77983E26       85.dtf19
 USRTRACK     1.76E+4   1.98E-2                                         &
 USRTRACK         -1.  HEAVYION      -76.    ATMOS1 9.0293E22       85.dhf19
@@ -515,7 +515,7 @@ USRTRACK         -1.    ENERGY      -78.    ATMOS1 9.0293E22       85.dbf19
 USRTRACK     1.76E+4   1.98E-2                                         &
 USRTRACK         -1.    ENERGY      -80.   ATMOS218.89466E24       85.daf19
 USRTRACK     1.76E+4   1.98E-2                                         &
-AUXSCORE    USRTRACK -1002000.              dtne20    dane20       0.0
+AUXSCORE    USRTRACK -2001000.              dtne20    dane20       0.0
 USRTRACK         -1.  HEAVYION      -74.      MARS1.77983E26       85.dtne20
 USRTRACK     1.85E+4   2.08E-2                                         &
 USRTRACK         -1.  HEAVYION      -76.    ATMOS1 9.0293E22       85.dhne20
@@ -524,7 +524,7 @@ USRTRACK         -1.    ENERGY      -78.    ATMOS1 9.0293E22       85.dbne20
 USRTRACK     1.85E+4   2.08E-2                                         &
 USRTRACK         -1.    ENERGY      -80.   ATMOS218.89466E24       85.dane20
 USRTRACK     1.85E+4   2.08E-2                                         &
-AUXSCORE    USRTRACK -1002100.              dtne21    dane21       0.0
+AUXSCORE    USRTRACK -2101000.              dtne21    dane21       0.0
 USRTRACK         -1.  HEAVYION      -74.      MARS1.77983E26       85.dtne21
 USRTRACK     1.94E+4   2.18E-2                                         &
 USRTRACK         -1.  HEAVYION      -76.    ATMOS1 9.0293E22       85.dhne21
@@ -533,7 +533,7 @@ USRTRACK         -1.    ENERGY      -78.    ATMOS1 9.0293E22       85.dbne21
 USRTRACK     1.94E+4   2.18E-2                                         &
 USRTRACK         -1.    ENERGY      -80.   ATMOS218.89466E24       85.dane21
 USRTRACK     1.94E+4   2.18E-2                                         &
-AUXSCORE    USRTRACK -1002200.              dtne22    dane22       0.0
+AUXSCORE    USRTRACK -2201000.              dtne22    dane22       0.0
 USRTRACK         -1.  HEAVYION      -74.      MARS1.77983E26       85.dtne22
 USRTRACK     2.04E+4   2.29E-2                                         &
 USRTRACK         -1.  HEAVYION      -76.    ATMOS1 9.0293E22       85.dhne22
@@ -542,7 +542,7 @@ USRTRACK         -1.    ENERGY      -78.    ATMOS1 9.0293E22       85.dbne22
 USRTRACK     2.04E+4   2.29E-2                                         &
 USRTRACK         -1.    ENERGY      -80.   ATMOS218.89466E24       85.dane22
 USRTRACK     2.04E+4   2.29E-2                                         &
-AUXSCORE    USRTRACK -1102300.              dtna23    dana23       0.0
+AUXSCORE    USRTRACK -2301100.              dtna23    dana23       0.0
 USRTRACK         -1.  HEAVYION      -74.      MARS1.77983E26       85.dtna23
 USRTRACK     2.13E+4   2.39E-2                                         &
 USRTRACK         -1.  HEAVYION      -76.    ATMOS1 9.0293E22       85.dhna23
@@ -551,7 +551,7 @@ USRTRACK         -1.    ENERGY      -78.    ATMOS1 9.0293E22       85.dbna23
 USRTRACK     2.13E+4   2.39E-2                                         &
 USRTRACK         -1.    ENERGY      -80.   ATMOS218.89466E24       85.dana23
 USRTRACK     2.13E+4   2.39E-2                                         &
-AUXSCORE    USRTRACK -1202400.              dtmg24    damg24       0.0
+AUXSCORE    USRTRACK -2401200.              dtmg24    damg24       0.0
 USRTRACK         -1.  HEAVYION      -74.      MARS1.77983E26       85.dtmg24
 USRTRACK     2.22E+4    2.5E-2                                         &
 USRTRACK         -1.  HEAVYION      -76.    ATMOS1 9.0293E22       85.dhmg24
@@ -560,7 +560,7 @@ USRTRACK         -1.    ENERGY      -78.    ATMOS1 9.0293E22       85.dbmg24
 USRTRACK     2.22E+4    2.5E-2                                         &
 USRTRACK         -1.    ENERGY      -80.   ATMOS218.89466E24       85.damg24
 USRTRACK     2.22E+4    2.5E-2                                         &
-AUXSCORE    USRTRACK -1202500.              dtmg25    damg25       0.0
+AUXSCORE    USRTRACK -2501200.              dtmg25    damg25       0.0
 USRTRACK         -1.  HEAVYION      -74.      MARS1.77983E26       85.dtmg25
 USRTRACK     2.32E+4    2.6E-2                                         &
 USRTRACK         -1.  HEAVYION      -76.    ATMOS1 9.0293E22       85.dhmg25
@@ -569,7 +569,7 @@ USRTRACK         -1.    ENERGY      -78.    ATMOS1 9.0293E22       85.dbmg25
 USRTRACK     2.32E+4    2.6E-2                                         &
 USRTRACK         -1.    ENERGY      -80.   ATMOS218.89466E24       85.damg25
 USRTRACK     2.32E+4    2.6E-2                                         &
-AUXSCORE    USRTRACK -1202600.              dtmg26    damg26       0.0
+AUXSCORE    USRTRACK -2601200.              dtmg26    damg26       0.0
 USRTRACK         -1.  HEAVYION      -74.      MARS1.77983E26       85.dtmg26
 USRTRACK     2.41E+4    2.7E-2                                         &
 USRTRACK         -1.  HEAVYION      -76.    ATMOS1 9.0293E22       85.dhmg26
@@ -578,7 +578,7 @@ USRTRACK         -1.    ENERGY      -78.    ATMOS1 9.0293E22       85.dbmg26
 USRTRACK     2.41E+4    2.7E-2                                         &
 USRTRACK         -1.    ENERGY      -80.   ATMOS218.89466E24       85.damg26
 USRTRACK     2.41E+4    2.7E-2                                         &
-AUXSCORE    USRTRACK -1302700.              dtal27    daal27       0.0
+AUXSCORE    USRTRACK -2701300.              dtal27    daal27       0.0
 USRTRACK         -1.  HEAVYION      -74.      MARS1.77983E26       85.dtal27
 USRTRACK      2.5E+4   2.81E-2                                         &
 USRTRACK         -1.  HEAVYION      -76.    ATMOS1 9.0293E22       85.dhal27
@@ -587,7 +587,7 @@ USRTRACK         -1.    ENERGY      -78.    ATMOS1 9.0293E22       85.dbal27
 USRTRACK      2.5E+4   2.81E-2                                         &
 USRTRACK         -1.    ENERGY      -80.   ATMOS218.89466E24       85.daal27
 USRTRACK      2.5E+4   2.81E-2                                         &
-AUXSCORE    USRTRACK -1402800.              dtsi28    dasi28       0.0
+AUXSCORE    USRTRACK -2801400.              dtsi28    dasi28       0.0
 USRTRACK         -1.  HEAVYION      -74.      MARS1.77983E26       85.dtsi28
 USRTRACK     2.59E+4   2.91E-2                                         &
 USRTRACK         -1.  HEAVYION      -76.    ATMOS1 9.0293E22       85.dhsi28
@@ -596,7 +596,7 @@ USRTRACK         -1.    ENERGY      -78.    ATMOS1 9.0293E22       85.dbsi28
 USRTRACK     2.59E+4   2.91E-2                                         &
 USRTRACK         -1.    ENERGY      -80.   ATMOS218.89466E24       85.dasi28
 USRTRACK     2.59E+4   2.91E-2                                         &
-AUXSCORE    USRTRACK -1402900.              dtsi29    dasi29       0.0
+AUXSCORE    USRTRACK -2901400.              dtsi29    dasi29       0.0
 USRTRACK         -1.  HEAVYION      -74.      MARS1.77983E26       85.dtsi29
 USRTRACK     2.69E+4   3.02E-2                                         &
 USRTRACK         -1.  HEAVYION      -76.    ATMOS1 9.0293E22       85.dhsi29
@@ -605,7 +605,7 @@ USRTRACK         -1.    ENERGY      -78.    ATMOS1 9.0293E22       85.dbsi29
 USRTRACK     2.69E+4   3.02E-2                                         &
 USRTRACK         -1.    ENERGY      -80.   ATMOS218.89466E24       85.dasi29
 USRTRACK     2.69E+4   3.02E-2                                         &
-AUXSCORE    USRTRACK -1403000.              dtsi30    dasi30       0.0
+AUXSCORE    USRTRACK -3001400.              dtsi30    dasi30       0.0
 USRTRACK         -1.  HEAVYION      -74.      MARS1.77983E26       85.dtsi30
 USRTRACK     2.78E+4   3.12E-2                                         &
 USRTRACK         -1.  HEAVYION      -76.    ATMOS1 9.0293E22       85.dhsi30
@@ -614,7 +614,7 @@ USRTRACK         -1.    ENERGY      -78.    ATMOS1 9.0293E22       85.dbsi30
 USRTRACK     2.78E+4   3.12E-2                                         &
 USRTRACK         -1.    ENERGY      -80.   ATMOS218.89466E24       85.dasi30
 USRTRACK     2.78E+4   3.12E-2                                         &
-AUXSCORE    USRTRACK -1503100.               dtp31     dap31       0.0
+AUXSCORE    USRTRACK -3101500.               dtp31     dap31       0.0
 USRTRACK         -1.  HEAVYION      -74.      MARS1.77983E26       85.dtp31
 USRTRACK     2.87E+4   3.22E-2                                         &
 USRTRACK         -1.  HEAVYION      -76.    ATMOS1 9.0293E22       85.dhp31
@@ -623,7 +623,7 @@ USRTRACK         -1.    ENERGY      -78.    ATMOS1 9.0293E22       85.dbp31
 USRTRACK     2.87E+4   3.22E-2                                         &
 USRTRACK         -1.    ENERGY      -80.   ATMOS218.89466E24       85.dap31
 USRTRACK     2.87E+4   3.22E-2                                         &
-AUXSCORE    USRTRACK -1603200.               dts32     das32       0.0
+AUXSCORE    USRTRACK -3201600.               dts32     das32       0.0
 USRTRACK         -1.  HEAVYION      -74.      MARS1.77983E26       85.dts32
 USRTRACK     2.96E+4   3.33E-2                                         &
 USRTRACK         -1.  HEAVYION      -76.    ATMOS1 9.0293E22       85.dhs32
@@ -632,7 +632,7 @@ USRTRACK         -1.    ENERGY      -78.    ATMOS1 9.0293E22       85.dbs32
 USRTRACK     2.96E+4   3.33E-2                                         &
 USRTRACK         -1.    ENERGY      -80.   ATMOS218.89466E24       85.das32
 USRTRACK     2.96E+4   3.33E-2                                         &
-AUXSCORE    USRTRACK -1603300.               dts33     das33       0.0
+AUXSCORE    USRTRACK -3301600.               dts33     das33       0.0
 USRTRACK         -1.  HEAVYION      -74.      MARS1.77983E26       85.dts33
 USRTRACK     3.06E+4   3.43E-2                                         &
 USRTRACK         -1.  HEAVYION      -76.    ATMOS1 9.0293E22       85.dhs33
@@ -641,7 +641,7 @@ USRTRACK         -1.    ENERGY      -78.    ATMOS1 9.0293E22       85.dbs33
 USRTRACK     3.06E+4   3.43E-2                                         &
 USRTRACK         -1.    ENERGY      -80.   ATMOS218.89466E24       85.das33
 USRTRACK     3.06E+4   3.43E-2                                         &
-AUXSCORE    USRTRACK -1603400.               dts34     das34       0.0
+AUXSCORE    USRTRACK -3401600.               dts34     das34       0.0
 USRTRACK         -1.  HEAVYION      -74.      MARS1.77983E26       85.dts34
 USRTRACK     3.15E+4   3.54E-2                                         &
 USRTRACK         -1.  HEAVYION      -76.    ATMOS1 9.0293E22       85.dhs34
@@ -650,7 +650,7 @@ USRTRACK         -1.    ENERGY      -78.    ATMOS1 9.0293E22       85.dbs34
 USRTRACK     3.15E+4   3.54E-2                                         &
 USRTRACK         -1.    ENERGY      -80.   ATMOS218.89466E24       85.das34
 USRTRACK     3.15E+4   3.54E-2                                         &
-AUXSCORE    USRTRACK -1603600.               dts36     das36       0.0
+AUXSCORE    USRTRACK -3601600.               dts36     das36       0.0
 USRTRACK         -1.  HEAVYION      -74.      MARS1.77983E26       85.dts36
 USRTRACK     3.33E+4   3.74E-2                                         &
 USRTRACK         -1.  HEAVYION      -76.    ATMOS1 9.0293E22       85.dhs36
@@ -1044,152 +1044,152 @@ USRBDX           99.  DEUTERON      -28.    ATMOS1      MARS  1.53E+18D_G_deu
 USRBDX       1.85E+3   2.08E-3       85. 6.2831853       0.0       36. &
 USRBDX           99.  DEUTERON      -32.      MARS    ATMOS1  1.53E+18U_G_deu
 USRBDX       1.85E+3   2.08E-3       85. 6.2831853       0.0       36. &
-AUXSCORE      USRBDX  -300600.             D_G_li6   U_G_li6
+AUXSCORE      USRBDX  -600300.             D_G_li6   U_G_li6
 USRBDX           99.  HEAVYION      -28.    ATMOS1      MARS  1.53E+18D_G_li6
 USRBDX         5556.   6.24E-3       85. 6.2831853       0.0       36. &
 USRBDX           99.  HEAVYION      -32.      MARS    ATMOS1  1.53E+18U_G_li6
 USRBDX         5556.   6.24E-3       85. 6.2831853       0.0       36. &
-AUXSCORE      USRBDX  -300700.             D_G_li7   U_G_li7
+AUXSCORE      USRBDX  -700300.             D_G_li7   U_G_li7
 USRBDX           99.  HEAVYION      -28.    ATMOS1      MARS  1.53E+18D_G_li7
 USRBDX         6482.   7.28E-3       85. 6.2831853       0.0       36. &
 USRBDX           99.  HEAVYION      -32.      MARS    ATMOS1  1.53E+18U_G_li7
 USRBDX         6482.   7.28E-3       85. 6.2831853       0.0       36. &
-AUXSCORE      USRBDX  -400900.             D_G_be9   U_G_be9
+AUXSCORE      USRBDX  -900400.             D_G_be9   U_G_be9
 USRBDX           99.  HEAVYION      -28.    ATMOS1      MARS  1.53E+18D_G_be9
 USRBDX         8334.   9.36E-3       85. 6.2831853       0.0       36. &
 USRBDX           99.  HEAVYION      -32.      MARS    ATMOS1  1.53E+18U_G_be9
 USRBDX         8334.   9.36E-3       85. 6.2831853       0.0       36. &
-AUXSCORE      USRBDX  -401000.            D_G_be10  U_G_be10
+AUXSCORE      USRBDX -1000400.            D_G_be10  U_G_be10
 USRBDX           99.  HEAVYION      -28.    ATMOS1      MARS  1.53E+18D_G_be10
 USRBDX         9260.   1.04E-2       85. 6.2831853       0.0       36. &
 USRBDX           99.  HEAVYION      -32.      MARS    ATMOS1  1.53E+18U_G_be10
 USRBDX         9260.   1.04E-2       85. 6.2831853       0.0       36. &
-AUXSCORE      USRBDX  -501000.             D_G_b10   U_G_b10
+AUXSCORE      USRBDX -1000500.             D_G_b10   U_G_b10
 USRBDX           99.  HEAVYION      -28.    ATMOS1      MARS  1.53E+18D_G_b10
 USRBDX         9260.   1.04E-2       85. 6.2831853       0.0       36. &
 USRBDX           99.  HEAVYION      -32.      MARS    ATMOS1  1.53E+18U_G_b10
 USRBDX         9260.   1.04E-2       85. 6.2831853       0.0       36. &
-AUXSCORE      USRBDX  -501200.             D_G_b11   U_G_b11
+AUXSCORE      USRBDX -1100500.             D_G_b11   U_G_b11
 USRBDX           99.  HEAVYION      -28.    ATMOS1      MARS  1.53E+18D_G_b11
 USRBDX        11112.   1.14E-2       85. 6.2831853       0.0       36. &
 USRBDX           99.  HEAVYION      -32.      MARS    ATMOS1  1.53E+18U_G_b11
 USRBDX        11112.   1.14E-2       85. 6.2831853       0.0       36. &
-AUXSCORE      USRBDX  -601200.             D_G_c12   U_G_c12
+AUXSCORE      USRBDX -1200600.             D_G_c12   U_G_c12
 USRBDX           99.  HEAVYION      -28.    ATMOS1      MARS  1.53E+18D_G_c12
 USRBDX        11112.   1.25E-2       85. 6.2831853       0.0       36. &
 USRBDX           99.  HEAVYION      -32.      MARS    ATMOS1  1.53E+18U_G_c12
 USRBDX        11112.   1.25E-2       85. 6.2831853       0.0       36. &
-AUXSCORE      USRBDX  -601300.             D_G_c13   U_G_c13
+AUXSCORE      USRBDX -1300600.             D_G_c13   U_G_c13
 USRBDX           99.  HEAVYION      -28.    ATMOS1      MARS  1.53E+18D_G_c13
 USRBDX        12038.   1.35E-2       85. 6.2831853       0.0       36. &
 USRBDX           99.  HEAVYION      -32.      MARS    ATMOS1  1.53E+18U_G_c13
 USRBDX        12038.   1.35E-2       85. 6.2831853       0.0       36. &
-AUXSCORE      USRBDX  -701400.             D_G_n14   U_G_n14
+AUXSCORE      USRBDX -1400700.             D_G_n14   U_G_n14
 USRBDX           99.  HEAVYION      -28.    ATMOS1      MARS  1.53E+18D_G_n14
 USRBDX        12964.   1.46E-2       85. 6.2831853       0.0       36. &
 USRBDX           99.  HEAVYION      -32.      MARS    ATMOS1  1.53E+18U_G_n14
 USRBDX        12964.   1.46E-2       85. 6.2831853       0.0       36. &
-AUXSCORE      USRBDX  -701500.             D_G_n15   U_G_n15
+AUXSCORE      USRBDX -1500700.             D_G_n15   U_G_n15
 USRBDX           99.  HEAVYION      -28.    ATMOS1      MARS  1.53E+18D_G_n15
 USRBDX        13890.   1.56E-2       85. 6.2831853       0.0       36. &
 USRBDX           99.  HEAVYION      -32.      MARS    ATMOS1  1.53E+18U_G_n15
 USRBDX        13890.   1.56E-2       85. 6.2831853       0.0       36. &
-AUXSCORE      USRBDX  -801600.             D_G_o16   U_G_o16
+AUXSCORE      USRBDX -1600800.             D_G_o16   U_G_o16
 USRBDX           99.  HEAVYION      -28.    ATMOS1      MARS  1.53E+18D_G_o16
 USRBDX        14816.   1.66E-2       85. 6.2831853       0.0       36. &
 USRBDX           99.  HEAVYION      -32.      MARS    ATMOS1  1.53E+18U_G_o16
 USRBDX        14816.   1.66E-2       85. 6.2831853       0.0       36. &
-AUXSCORE      USRBDX  -801700.             D_G_o17   U_G_o17
+AUXSCORE      USRBDX -1700800.             D_G_o17   U_G_o17
 USRBDX           99.  HEAVYION      -28.    ATMOS1      MARS  1.53E+18D_G_o17
 USRBDX        15742.   1.77E-2       85. 6.2831853       0.0       36. &
 USRBDX           99.  HEAVYION      -32.      MARS    ATMOS1  1.53E+18U_G_o17
 USRBDX        15742.   1.77E-2       85. 6.2831853       0.0       36. &
-AUXSCORE      USRBDX  -801800.             D_G_o18   U_G_o18
+AUXSCORE      USRBDX -1800800.             D_G_o18   U_G_o18
 USRBDX           99.  HEAVYION      -28.    ATMOS1      MARS  1.53E+18D_G_o18
 USRBDX        16668.   1.87E-2       85. 6.2831853       0.0       36. &
 USRBDX           99.  HEAVYION      -32.      MARS    ATMOS1  1.53E+18U_G_o18
 USRBDX        16668.   1.87E-2       85. 6.2831853       0.0       36. &
-AUXSCORE      USRBDX  -901900.             D_G_f19   U_G_f19
+AUXSCORE      USRBDX -1900900.             D_G_f19   U_G_f19
 USRBDX           99.  HEAVYION      -28.    ATMOS1      MARS  1.53E+18D_G_f19
 USRBDX        17594.   1.98E-2       85. 6.2831853       0.0       36. &
 USRBDX           99.  HEAVYION      -32.      MARS    ATMOS1  1.53E+18U_G_f19
 USRBDX        17594.   1.98E-2       85. 6.2831853       0.0       36. &
-AUXSCORE      USRBDX -1002000.            D_G_ne20  U_G_ne20
+AUXSCORE      USRBDX -2001000.            D_G_ne20  U_G_ne20
 USRBDX           99.  HEAVYION      -28.    ATMOS1      MARS  1.53E+18D_G_ne20
 USRBDX        18520.   2.08E-2       85. 6.2831853       0.0       36. &
 USRBDX           99.  HEAVYION      -32.      MARS    ATMOS1  1.53E+18U_G_ne20
 USRBDX        18520.   2.08E-2       85. 6.2831853       0.0       36. &
-AUXSCORE      USRBDX -1002100.             D_G_s36  U_G_al27
+AUXSCORE      USRBDX -2101000.            D_G_ne21  U_G_ne21
 USRBDX           99.  HEAVYION      -28.    ATMOS1      MARS  1.53E+18D_G_ne21
 USRBDX        19446.   2.18E-2       85. 6.2831853       0.0       36. &
 USRBDX           99.  HEAVYION      -32.      MARS    ATMOS1  1.53E+18U_G_ne21
 USRBDX        19446.   2.18E-2       85. 6.2831853       0.0       36. &
-AUXSCORE      USRBDX -1002200.            D_G_ne22  U_G_ne22
+AUXSCORE      USRBDX -2201000.            D_G_ne22  U_G_ne22
 USRBDX           99.  HEAVYION      -28.    ATMOS1      MARS  1.53E+18D_G_ne22
 USRBDX        20372.   2.29E-2       85. 6.2831853       0.0       36. &
 USRBDX           99.  HEAVYION      -32.      MARS    ATMOS1  1.53E+18U_G_ne22
 USRBDX        20372.   2.29E-2       85. 6.2831853       0.0       36. &
-AUXSCORE      USRBDX -1102300.            D_G_na23  U_G_na23
+AUXSCORE      USRBDX -2301100.            D_G_na23  U_G_na23
 USRBDX           99.  HEAVYION      -28.    ATMOS1      MARS  1.53E+18D_G_na23
 USRBDX        21298.   2.39E-2       85. 6.2831853       0.0       36. &
 USRBDX           99.  HEAVYION      -32.      MARS    ATMOS1  1.53E+18U_G_na23
 USRBDX        21298.   2.39E-2       85. 6.2831853       0.0       36. &
-AUXSCORE      USRBDX -1202400.            D_G_mg24  U_G_mg24
+AUXSCORE      USRBDX -2401200.            D_G_mg24  U_G_mg24
 USRBDX           99.  HEAVYION      -28.    ATMOS1      MARS  1.53E+18D_G_mg24
 USRBDX        22224.    2.5E-2       85. 6.2831853       0.0       36. &
 USRBDX           99.  HEAVYION      -32.      MARS    ATMOS1  1.53E+18U_G_mg24
 USRBDX        22224.    2.5E-2       85. 6.2831853       0.0       36. &
-AUXSCORE      USRBDX -1202500.            D_G_mg25  U_G_mg25
+AUXSCORE      USRBDX -2501200.            D_G_mg25  U_G_mg25
 USRBDX           99.  HEAVYION      -28.    ATMOS1      MARS  1.53E+18D_G_mg25
 USRBDX        23150.   2.60E-2       85. 6.2831853       0.0       36. &
 USRBDX           99.  HEAVYION      -32.      MARS    ATMOS1  1.53E+18U_G_mg25
 USRBDX        23150.   2.60E-2       85. 6.2831853       0.0       36. &
-AUXSCORE      USRBDX -1202600.            D_G_mg26  U_G_mg26
+AUXSCORE      USRBDX -2601200.            D_G_mg26  U_G_mg26
 USRBDX           99.  HEAVYION      -28.    ATMOS1      MARS  1.53E+18D_G_mg26
 USRBDX        24076.   2.70E-2       85. 6.2831853       0.0       36. &
 USRBDX           99.  HEAVYION      -32.      MARS    ATMOS1  1.53E+18U_G_mg26
 USRBDX        24076.   2.70E-2       85. 6.2831853       0.0       36. &
-AUXSCORE      USRBDX -1302700.            D_G_al27  U_G_al27
+AUXSCORE      USRBDX -2701300.            D_G_al27  U_G_al27
 USRBDX           99.  HEAVYION      -28.    ATMOS1      MARS  1.53E+18D_G_al27
 USRBDX        25002.   2.81E-2       85. 6.2831853       0.0       36. &
 USRBDX           99.  HEAVYION      -32.      MARS    ATMOS1  1.53E+18U_G_al27
 USRBDX        25002.   2.81E-2       85. 6.2831853       0.0       36. &
-AUXSCORE      USRBDX -1402800.            D_G_si28  U_G_si28
+AUXSCORE      USRBDX -2801400.            D_G_si28  U_G_si28
 USRBDX           99.  HEAVYION      -28.    ATMOS1      MARS  1.53E+18D_G_si28
 USRBDX        25928.   2.91E-2       85. 6.2831853       0.0       36. &
 USRBDX           99.  HEAVYION      -32.      MARS    ATMOS1  1.53E+18U_G_si28
 USRBDX        25928.   2.91E-2       85. 6.2831853       0.0       36. &
-AUXSCORE      USRBDX -1402900.            D_G_si29  U_G_si29
+AUXSCORE      USRBDX -2901400.            D_G_si29  U_G_si29
 USRBDX           99.  HEAVYION      -28.    ATMOS1      MARS  1.53E+18D_G_si29
 USRBDX        26854.   3.02E-2       85. 6.2831853       0.0       36. &
 USRBDX           99.  HEAVYION      -32.      MARS    ATMOS1  1.53E+18U_G_si29
 USRBDX        26854.   3.02E-2       85. 6.2831853       0.0       36. &
-AUXSCORE      USRBDX -1403000.            D_G_si30  U_G_si30
+AUXSCORE      USRBDX -3001400.            D_G_si30  U_G_si30
 USRBDX           99.  HEAVYION      -28.    ATMOS1      MARS  1.53E+18D_G_si30
 USRBDX        27780.   3.12E-2       85. 6.2831853       0.0       36. &
 USRBDX           99.  HEAVYION      -32.      MARS    ATMOS1  1.53E+18U_G_si30
 USRBDX        27780.   3.12E-2       85. 6.2831853       0.0       36. &
-AUXSCORE      USRBDX -1503100.             D_G_p31   U_G_p31
+AUXSCORE      USRBDX -3101500.             D_G_p31   U_G_p31
 USRBDX           99.  HEAVYION      -28.    ATMOS1      MARS  1.53E+18D_G_p31
 USRBDX        28706.   3.22E-2       85. 6.2831853       0.0       36. &
 USRBDX           99.  HEAVYION      -32.      MARS    ATMOS1  1.53E+18U_G_p31
 USRBDX        28706.   3.22E-2       85. 6.2831853       0.0       36. &
-AUXSCORE      USRBDX -1603200.             D_G_s32   U_G_s32
+AUXSCORE      USRBDX -3201600.             D_G_s32   U_G_s32
 USRBDX           99.  HEAVYION      -28.    ATMOS1      MARS  1.53E+18D_G_s32
 USRBDX        29632.   3.33E-2       85. 6.2831853       0.0       36. &
 USRBDX           99.  HEAVYION      -32.      MARS    ATMOS1  1.53E+18U_G_s32
 USRBDX        29632.   3.33E-2       85. 6.2831853       0.0       36. &
-AUXSCORE      USRBDX -1603300.             D_G_s33   U_G_s33
+AUXSCORE      USRBDX -3301600.             D_G_s33   U_G_s33
 USRBDX           99.  HEAVYION      -28.    ATMOS1      MARS  1.53E+18D_G_s33
 USRBDX        30558.   3.43E-2       85. 6.2831853       0.0       36. &
 USRBDX           99.  HEAVYION      -32.      MARS    ATMOS1  1.53E+18U_G_s33
 USRBDX        30558.   3.43E-2       85. 6.2831853       0.0       36. &
-AUXSCORE      USRBDX -1603400.             D_G_s34   U_G_s34
+AUXSCORE      USRBDX -3401600.             D_G_s34   U_G_s34
 USRBDX           99.  HEAVYION      -28.    ATMOS1      MARS  1.53E+18D_G_s34
 USRBDX        31484.   3.54E-2       85. 6.2831853       0.0       36. &
 USRBDX           99.  HEAVYION      -32.      MARS    ATMOS1  1.53E+18U_G_s34
 USRBDX        31484.   3.54E-2       85. 6.2831853       0.0       36. &
-AUXSCORE      USRBDX -1603600.             D_G_s36   U_G_s36
+AUXSCORE      USRBDX -3601600.             D_G_s36   U_G_s36
 USRBDX           99.  HEAVYION      -28.    ATMOS1      MARS  1.53E+18D_G_s36
 USRBDX        33336.   3.74E-2       85. 6.2831853       0.0       36. &
 USRBDX           99.  HEAVYION      -32.      MARS    ATMOS1  1.53E+18U_G_s36
