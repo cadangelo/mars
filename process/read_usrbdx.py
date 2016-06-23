@@ -41,12 +41,15 @@ class UsrbdxFile:
             except:
                 ok = False
 
-class Ave:
-    def __init__(self, usrbdxfile1,usrbdxfile2):
+class AveAdd:
+    def __init__(self, usrbdxfile1,usrbdxfile2,wgt1,wgt2):
         self.num_hist1 = usrbdxfile1.num_primaries
         self.num_hist2 = usrbdxfile2.num_primaries
         self.file1 = usrbdxfile1
         self.file2 = usrbdxfile2
+
+        self.wgt1 = wgt1
+        self.wgt2 = wgt2
 
         self.data = UsrbdxFile()
         self.data.num_histories = self.num_hist1 + self.num_hist2
@@ -68,6 +71,97 @@ class Ave:
             stddev = math.sqrt(stddev2)/mean
 
         return mean,stddev
+
+    def sum(self, value1,value1_err,value2,value2_err):
+        n  = self.num_hist1 +  self.num_hist2
+
+        s1 = value1*self.wgt1
+        s2 = value2*self.wgt2
+        e1 = value1_err
+        e2 = value2_err
+ 
+        SUM = (s1*self.wgt1)+(s2*self.wgt2)
+        if SUM == 0:
+            stddev = 0.0
+        else:
+            stddev = math.sqrt((s1*e1)**2 + (s2*e2)**2)/(SUM)
+        return SUM,stddev
+
+
+    def calculate_sum(self,particle_name):
+        data1 = self.file1.scorers[particle_name]
+        data2 = self.file2.scorers[particle_name]
+        
+        val,stddev = self.sum(data1.total_response,data1.total_response_error,
+                                  data2.total_response,data2.total_response_error)
+        new_total_response = val
+        new_total_response_error = stddev
+
+        new_total_flux = []
+        new_total_flux_error = []
+        for value in range(len(data1.total_flux)):
+            val,stddev = self.sum(data1.total_flux[value],data1.total_flux_error[value],
+                                  data2.total_flux[value],data2.total_flux_error[value])
+            new_total_flux.append(val)
+            new_total_flux_error.append(stddev)
+
+        new_cumul_flux = []
+        new_cumul_flux_error = []
+        for value in range(len(data1.cumul_flux)):
+            val,stddev = self.sum(data1.cumul_flux[value],data1.cumul_flux_error[value],
+                                  data2.cumul_flux[value],data2.cumul_flux_error[value])
+            new_cumul_flux.append(val)
+            new_cumul_flux_error.append(stddev)
+
+        new_angle_flux = []
+        new_angle_flux_error = []
+        for value in range(len(data1.angle_flux)):
+            new_angle_flux_bin = []
+            new_angle_flux_error_bin = []
+            for item in range(len(data1.angle_flux[value])):
+                val,stddev = self.sum(data1.angle_flux[value][item],data1.angle_flux_error[value][item],
+                                      data2.angle_flux[value][item],data2.angle_flux_error[value][item])
+                new_angle_flux_bin.append(val)
+                new_angle_flux_error_bin.append(stddev)
+            new_angle_flux.append(new_angle_flux_bin)
+            new_angle_flux_error.append(new_angle_flux_error_bin)
+
+        new_solid_angle_flux = []
+        new_solid_angle_flux_error = []
+        for value in range(len(data1.solid_angle_flux)):
+            new_solid_angle_flux_bin = []
+            new_solid_angle_flux_error_bin = []
+            for item in range(len(data1.solid_angle_flux[value])):
+                val,stddev = self.sum(data1.solid_angle_flux[value][item],data1.solid_angle_flux_error[value][item],
+                                      data2.solid_angle_flux[value][item],data2.solid_angle_flux_error[value][item])
+                new_solid_angle_flux_bin.append(val)
+                new_solid_angle_flux_error_bin.append(stddev)
+            new_solid_angle_flux.append(new_solid_angle_flux_bin)
+            new_solid_angle_flux_error.append(new_solid_angle_flux_error_bin)
+
+        new_bdx = Usrbdx("")
+        new_bdx.detector_name = data1.detector_name
+        new_bdx.detector_number = data1.detector_number
+        new_bdx.area = data1.area
+        new_bdx.distribution = data1.distribution
+        new_bdx.from_reg = data1.from_reg
+        new_bdx.to_reg = data1.to_reg
+        new_bdx.two_way = data1.two_way
+        new_bdx.total_response = new_total_response
+        new_bdx.total_response_error = new_total_response_error
+        new_bdx.e_bounds = data1.e_bounds
+        new_bdx.total_flux = new_total_flux
+        new_bdx.total_flux_error = new_total_flux_error
+        new_bdx.cumul_flux = new_cumul_flux
+        new_bdx.cumul_flux_error = new_cumul_flux_error 
+        new_bdx.solid_angle_boundaries  = data1.solid_angle_boundaries
+        new_bdx.angle_boundaries = data1.angle_boundaries
+        new_bdx.angle_flux = new_angle_flux
+        new_bdx.angle_flux_error = new_angle_flux_error
+        new_bdx.solid_angle_flux = new_solid_angle_flux
+        new_bdx.solid_angle_flux_error = new_solid_angle_flux_error
+
+        return new_bdx
 
       
     def calculate_average(self,particle_name):
@@ -148,6 +242,12 @@ class Ave:
     def get_ave(self):
         for item in self.file1.scorers.keys():
             usrbdx = self.calculate_average(item)
+            self.data.scorers[item] = usrbdx
+        return self.data      
+
+    def get_sum(self):
+        for item in self.file1.scorers.keys():
+            usrbdx = self.calculate_sum(item)
             self.data.scorers[item] = usrbdx
         return self.data      
 
